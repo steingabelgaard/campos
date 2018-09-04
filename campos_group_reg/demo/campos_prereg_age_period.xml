@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2018 Stein & Gabelgaard ApS
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+
+<odoo noupdate="1">
+
+    <!-- TODO
+    <record model="campos.prereg.age.period" id="campos_prereg_age_period_demo_1">
+       <field name="name">...</field>
+    </record>
+    -->
+
+</odoo>

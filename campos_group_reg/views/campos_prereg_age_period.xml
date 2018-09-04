@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2018 Stein & Gabelgaard ApS
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+
+<odoo>
+
+    <record model="ir.ui.view" id="campos_prereg_age_period_form_view">
+        <field name="name">campos.prereg.age.period.form (in campos_group_reg)</field>
+        <field name="model">campos.prereg.age.period</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <!-- TODO -->
+                </header>
+                <sheet>
+                    <!-- TODO -->
+                    <group>
+                        <field name="name"/>
+                    </group>
+                </sheet>
+                <div class="oe_chatter"></div>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="campos_prereg_age_period_search_view">
+        <field name="name">campos.prereg.age.period.search (in campos_group_reg)</field>
+        <field name="model">campos.prereg.age.period</field>
+        <field name="arch" type="xml">
+            <search>
+                <!-- TODO -->
+            </search>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="campos_prereg_age_period_tree_view">
+        <field name="name">campos.prereg.age.period.tree (in campos_group_reg)</field>
+        <field name="model">campos.prereg.age.period</field>
+        <field name="arch" type="xml">
+            <tree>
+                <!-- TODO -->
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="campos_prereg_age_period_act_window">
+        <field name="name">Campos Prereg Age Period</field>
+        <field name="res_model">campos.prereg.age.period</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[]</field>
+        <field name="context">{}</field>
+    </record>
+
+    <record model="ir.ui.menu" id="campos_prereg_age_period_menu">
+        <field name="name">Campos Prereg Age Period</field>
+        <field name="parent_id" ref="campos_group_reg.campos_main_menu"/>
+        <field name="action" ref="campos_prereg_age_period_act_window"/>
+        <field name="sequence" eval="16"/> <!-- TODO -->
+    </record>
+
+</odoo>

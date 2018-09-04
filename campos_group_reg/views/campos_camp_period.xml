@@ -61,7 +61,7 @@
     </record>
 
     <record model="ir.ui.menu" id="campos_camp_period_menu">
-        <field name="name">Campos Camp Period</field>
+        <field name="name">Camp Periods</field>
         <field name="parent_id" ref="campos_group_reg.campos_config_menu"/>
         <field name="action" ref="campos_camp_period_act_window"/>
         <field name="sequence" eval="32"/>

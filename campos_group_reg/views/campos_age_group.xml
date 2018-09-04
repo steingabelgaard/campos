@@ -50,7 +50,7 @@
     </record>
 
     <record model="ir.actions.act_window" id="campos_age_group_act_window">
-        <field name="name">Campos Age Group</field> <!-- TODO -->
+        <field name="name">Groups</field> <!-- TODO -->
         <field name="res_model">campos.age.group</field>
         <field name="view_mode">tree,form</field>
         <field name="domain">[]</field>

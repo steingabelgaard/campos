@@ -127,6 +127,10 @@
 				<field name="city" />
 				<field name="country_id" />
 				<field name="municipality_id" />
+				<group string="Group By">
+				    <filter name="group_municipality" string="Municipality" context="{'group_by': 'municipality_id'}"/>
+				    <filter name="group_country" string="Country" context="{'group_by': 'country_id'}"/>
+				</group>
 			</search>
 		</field>
 	</record>

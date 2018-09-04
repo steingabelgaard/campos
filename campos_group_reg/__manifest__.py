@@ -15,6 +15,7 @@
         'portal',
         'partner_municipality',
         'web_widget_x2many_2d_matrix',
+        'cms_form',
     ],
     'data': [
         'security/campos_group_reg.xml',

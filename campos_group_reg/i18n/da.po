@@ -1,0 +1,676 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* campos_group_reg
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_active
+msgid "Active"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.ui.view,arch_db:campos_group_reg.campos_group_reg_form_view
+msgid "Address"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_type
+msgid "Address Type"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.ui.view,arch_db:campos_group_reg.campos_prereg_age_period_search_view
+msgid "Age"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_age_group_age_from
+msgid "Age From"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_prereg_age_period_age_group_id
+msgid "Age Group"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.ui.menu,name:campos_group_reg.campos_age_group_menu
+msgid "Age Groups"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_age_group_age_to
+msgid "Age To"
+msgstr ""
+
+#. module: campos_group_reg
+#: selection:campos.group.reg,state:0
+msgid "Attended"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_bank_ids
+msgid "Banks"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_barcode
+msgid "Barcode"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_message_bounce
+msgid "Bounce"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_prereg_age_period_period_id
+msgid "Camp Period"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.actions.act_window,name:campos_group_reg.campos_camp_period_act_window
+#: model:ir.ui.menu,name:campos_group_reg.campos_camp_period_menu
+msgid "Camp Periods"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.ui.menu,name:campos_group_reg.campos_main_menu
+msgid "CampOS"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model,name:campos_group_reg.model_campos_age_group
+msgid "Campos Age Group"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model,name:campos_group_reg.model_campos_camp_period
+msgid "Campos Camp Period"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.actions.act_window,name:campos_group_reg.campos_group_reg_act_window
+#: model:ir.model,name:campos_group_reg.model_campos_group_reg
+msgid "Campos Group Reg"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model,name:campos_group_reg.model_campos_prereg_age_period
+msgid "Campos Prereg Age Period"
+msgstr ""
+
+#. module: campos_group_reg
+#: selection:campos.group.reg,state:0
+msgid "Cancelled"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_channel_ids
+msgid "Channels"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,help:campos_group_reg.field_campos_group_reg_is_company
+msgid "Check if the contact is a company, otherwise it is a person"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,help:campos_group_reg.field_campos_group_reg_customer
+msgid "Check this box if this contact is a customer."
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,help:campos_group_reg.field_campos_group_reg_supplier
+msgid "Check this box if this contact is a vendor. If it's not checked, purchase people will not see it when encoding a purchase order."
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,help:campos_group_reg.field_campos_group_reg_employee
+msgid "Check this box if this contact is an Employee."
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_city
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_contact_city
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_treasurer_city
+#: model:ir.ui.view,arch_db:campos_group_reg.campos_group_reg_form_view
+msgid "City"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_color
+msgid "Color Index"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_commercial_partner_id
+msgid "Commercial Entity"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_company_id
+msgid "Company"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_company_name
+msgid "Company Name"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_commercial_company_name
+msgid "Company Name Entity"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_company_type
+msgid "Company Type"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_contact_address
+msgid "Complete Address"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.ui.menu,name:campos_group_reg.campos_config_menu
+msgid "Configuration"
+msgstr ""
+
+#. module: campos_group_reg
+#: selection:campos.group.reg,state:0
+msgid "Confirmed"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_contact_partner_id
+#: model:ir.ui.view,arch_db:campos_group_reg.campos_group_reg_form_view
+msgid "Contact"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_child_ids
+msgid "Contacts"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,help:campos_group_reg.field_campos_group_reg_message_bounce
+msgid "Counter of the number of bounced emails for this contact"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_commercial_partner_country_id
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_contact_country_id
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_country_id
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_treasurer_country_id
+#: model:ir.ui.view,arch_db:campos_group_reg.campos_group_reg_form_view
+#: model:ir.ui.view,arch_db:campos_group_reg.campos_group_reg_search_view
+msgid "Country"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_age_group_create_uid
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_period_create_uid
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_create_uid
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_prereg_age_period_create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_age_group_create_date
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_period_create_date
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_create_date
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_prereg_age_period_create_date
+msgid "Created on"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_credit_limit
+msgid "Credit Limit"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_date
+msgid "Date"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_period_date_from
+msgid "Date From"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_period_date_to
+msgid "Date To"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_age_group_display_name
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_period_display_name
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_display_name
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_prereg_age_period_display_name
+#: model:ir.model.fields,field_description:campos_group_reg.field_cms_form_campos_group_reg_display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,help:campos_group_reg.field_campos_group_reg_partner_share
+msgid "Either customer (no user), either shared user. Indicated the current partner is a customer without access or with a limited access created for sharing data."
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_contact_email
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_email
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_treasurer_email
+msgid "Email"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_employee
+msgid "Employee"
+msgstr ""
+
+#. module: campos_group_reg
+#: selection:campos.group.reg,state:0
+msgid "Final Registration"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,help:campos_group_reg.field_campos_group_reg_email_formatted
+msgid "Format email address \"Name <email@domain>\""
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_email_formatted
+msgid "Formatted Email"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_partner_id
+msgid "Group"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.ui.view,arch_db:campos_group_reg.campos_group_reg_search_view
+#: model:ir.ui.view,arch_db:campos_group_reg.campos_prereg_age_period_search_view
+msgid "Group By"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.ui.menu,name:campos_group_reg.campos_group_reg_menu
+msgid "Group Registration"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_prereg_age_period_group_reg_id
+msgid "Group registration"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.actions.act_window,name:campos_group_reg.campos_age_group_act_window
+msgid "Groups"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_age_group_id
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_period_id
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_id
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_prereg_age_period_id
+#: model:ir.model.fields,field_description:campos_group_reg.field_cms_form_campos_group_reg_id
+msgid "ID"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_im_status
+msgid "IM Status"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,help:campos_group_reg.field_campos_group_reg_opt_out
+msgid "If opt-out is checked, this contact has refused to receive emails for mass mailing and marketing campaign. Filter 'Available for Mass Mailing' allows users to filter the partners when performing mass mailing."
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,help:campos_group_reg.field_campos_group_reg_lang
+msgid "If the selected language is loaded in the system, all documents related to this contact will be printed in this language. If not, it will be English."
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_image
+msgid "Image"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_industry_id
+msgid "Industry"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_ref
+msgid "Internal Reference"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_is_company
+msgid "Is a Company"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_customer
+msgid "Is a Customer"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_supplier
+msgid "Is a Vendor"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_function
+msgid "Job Position"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_lang
+msgid "Language"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_age_group___last_update
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_period___last_update
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg___last_update
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_prereg_age_period___last_update
+#: model:ir.model.fields,field_description:campos_group_reg.field_cms_form_campos_group_reg___last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_age_group_write_uid
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_period_write_uid
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_write_uid
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_prereg_age_period_write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_age_group_write_date
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_period_write_date
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_write_date
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_prereg_age_period_write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_image_medium
+msgid "Medium-sized image"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,help:campos_group_reg.field_campos_group_reg_image_medium
+msgid "Medium-sized image of this contact. It is automatically resized as a 128x128px image, with aspect ratio preserved. Use this field in form views or some kanban views."
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_contact_mobile
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_mobile
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_treasurer_mobile
+msgid "Mobile"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_municipality_id
+#: model:ir.ui.view,arch_db:campos_group_reg.campos_group_reg_search_view
+msgid "Municipality"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_age_group_name
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_period_name
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_contact_name
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_name
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_treasurer_name
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_prereg_age_period_name
+#: model:ir.ui.view,arch_db:campos_group_reg.campos_group_reg_form_view
+msgid "Name"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_comment
+msgid "Notes"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_opt_out
+msgid "Opt-Out"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_parent_name
+msgid "Parent name"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.ui.view,arch_db:campos_group_reg.campos_prereg_age_period_search_view
+msgid "Period"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_phone
+msgid "Phone"
+msgstr ""
+
+#. module: campos_group_reg
+#: selection:campos.group.reg,state:0
+msgid "Pre Registered"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.ui.view,arch_db:campos_group_reg.campos_group_reg_form_view
+msgid "Pre Registration"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_prereg_ids
+msgid "Pre registrtations"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.actions.act_window,name:campos_group_reg.campos_prereg_age_period_act_window
+#: model:ir.ui.menu,name:campos_group_reg.campos_prereg_age_period_menu
+msgid "Pre-Registration Overview"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_parent_id
+msgid "Related Company"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_user_id
+msgid "Salesperson"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_self
+msgid "Self"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_partner_share
+msgid "Share Partner"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_signup_expiration
+msgid "Signup Expiration"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_signup_token
+msgid "Signup Token"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_signup_type
+msgid "Signup Token Type"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_signup_valid
+msgid "Signup Token is Valid"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_signup_url
+msgid "Signup URL"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_image_small
+msgid "Small-sized image"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,help:campos_group_reg.field_campos_group_reg_image_small
+msgid "Small-sized image of this contact. It is automatically resized as a 64x64px image, with aspect ratio preserved. Use this field anywhere a small image is required."
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_state
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_state_id
+msgid "State"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_contact_street
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_street
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_treasurer_street
+msgid "Street"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.ui.view,arch_db:campos_group_reg.campos_group_reg_form_view
+msgid "Street 2..."
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.ui.view,arch_db:campos_group_reg.campos_group_reg_form_view
+msgid "Street..."
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_contact_street2
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_street2
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_treasurer_street2
+msgid "Street2"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_vat
+msgid "TIN"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_category_id
+msgid "Tags"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,help:campos_group_reg.field_campos_group_reg_vat
+msgid "Tax Identification Number. Fill it if the company is subjected to taxes. Used by the some of the legal statements."
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,help:campos_group_reg.field_campos_group_reg_user_id
+msgid "The internal user that is in charge of communicating with this contact if any."
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,help:campos_group_reg.field_campos_group_reg_tz
+msgid "The partner's timezone, used to output proper date and time values inside printed reports. It is important to set a value for this field. You should use the same timezone that is otherwise used to pick and render date and time values: your computer's timezone."
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,help:campos_group_reg.field_campos_group_reg_image
+msgid "This field holds the image used as avatar for this contact, limited to 1024x1024px"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_tz
+msgid "Timezone"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_tz_offset
+msgid "Timezone offset"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_title
+msgid "Title"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_treasurer_partner_id
+#: model:ir.ui.view,arch_db:campos_group_reg.campos_group_reg_form_view
+msgid "Treasurer"
+msgstr ""
+
+#. module: campos_group_reg
+#: selection:campos.group.reg,state:0
+msgid "Unconfirmed"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,help:campos_group_reg.field_campos_group_reg_type
+msgid "Used to select automatically the right address according to the context in sales and purchases documents."
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_user_ids
+msgid "Users"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_prereg_age_period_value
+msgid "Value"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_website
+msgid "Website"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,help:campos_group_reg.field_campos_group_reg_website
+msgid "Website of Partner or Company"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.ui.view,arch_db:campos_group_reg.campos_group_reg_form_view
+msgid "ZIP"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_contact_zip
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_treasurer_zip
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_zip
+msgid "Zip"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model,name:campos_group_reg.model_cms_form_campos_group_reg
+msgid "cms.form.campos.group.reg"
+msgstr ""

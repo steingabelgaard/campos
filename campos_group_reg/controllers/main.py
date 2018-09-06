@@ -1,7 +1,8 @@
 
 from odoo import http
-from odoo.addons.cms_form.controllers.main import SearchFormControllerMixin
+# from odoo.addons.cms_form.controllers.main import SearchFormControllerMixin
 from odoo.addons.cms_form.controllers.main import FormControllerMixin
+
 
 class GroupRegForm(http.Controller, FormControllerMixin):
     """Partner form w/ tabs."""

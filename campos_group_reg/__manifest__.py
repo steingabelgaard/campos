@@ -26,7 +26,7 @@
         'views/campos_camp_period.xml',
         'security/campos_age_group.xml',
         'views/campos_age_group.xml',
-        
+
     ],
     'demo': [
         'demo/campos_prereg_age_period.xml',

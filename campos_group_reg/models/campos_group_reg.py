@@ -89,8 +89,7 @@ class CamposGroupReg(models.Model):
              'zip': vals['zip'],
              'city': vals['city'],
              'country_id': vals['country_id'],
-             'is_company': True,
-            })
+             'is_company': True,})
         vals['partner_id'] = group_partner.id
 
         if 'contact_name' in vals and vals['contact_name']:
@@ -119,7 +118,7 @@ class CamposGroupReg(models.Model):
                  'email': vals['treasurer_email'],
                  'mobile': vals['treasurer_mobile'],
                  'type': 'invoice',
-                 'parent_id': group_partner.id})               
+                 'parent_id': group_partner.id})
             vals['treasurer_partner_id'] = treasurer_partner.id
         _logger.info('BEFORE CReate')
         return super(CamposGroupReg, self).create(vals)

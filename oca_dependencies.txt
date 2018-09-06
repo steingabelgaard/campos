@@ -1,0 +1,3 @@
+web
+website-cms
+odoo-misc https://{GITHUB_USER}:{GITHUB_TOKEN}@bitbucket.org/steingabelgaard/odoo-misc

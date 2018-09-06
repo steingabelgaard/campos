@@ -118,8 +118,7 @@
 	</record>
 
 	<record model="ir.ui.view" id="campos_group_reg_search_view">
-		<field name="name">campos.group.reg.search (in campos_group_reg)
-		</field>
+		<field name="name">campos.group.reg.search (in campos_group_reg)</field>
 		<field name="model">campos.group.reg</field>
 		<field name="arch" type="xml">
 			<search>
@@ -128,8 +127,10 @@
 				<field name="country_id" />
 				<field name="municipality_id" />
 				<group string="Group By">
-				    <filter name="group_municipality" string="Municipality" context="{'group_by': 'municipality_id'}"/>
-				    <filter name="group_country" string="Country" context="{'group_by': 'country_id'}"/>
+					<filter name="group_municipality" string="Municipality"
+						context="{'group_by': 'municipality_id'}" />
+					<filter name="group_country" string="Country"
+						context="{'group_by': 'country_id'}" />
 				</group>
 			</search>
 		</field>

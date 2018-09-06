@@ -89,7 +89,7 @@ class CamposGroupReg(models.Model):
              'zip': vals['zip'],
              'city': vals['city'],
              'country_id': vals['country_id'],
-             'is_company': True,})
+             'is_company': True})
         vals['partner_id'] = group_partner.id
 
         if 'contact_name' in vals and vals['contact_name']:

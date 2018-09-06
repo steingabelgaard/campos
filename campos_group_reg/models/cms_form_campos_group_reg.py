@@ -1,5 +1,6 @@
 from odoo import models
 
+
 class cmsGroupRegForm(models.AbstractModel):
         """A test model form."""
 

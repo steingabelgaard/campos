@@ -4,9 +4,9 @@
 
 <odoo>
 
-    <record model="ir.model.access" id="campos_age_group_access_name"> <!-- TODO acl id -->
-        <field name="name">campos.age.group access name</field> <!-- TODO acl name -->
-        <field name="model_id" ref="model_campos_age_group"/>
+    <record model="ir.model.access" id="campos_scout_org_access_user">
+        <field name="name">campos.scout.org access user</field>
+        <field name="model_id" ref="model_campos_scout_org"/>
         <!-- TODO review and adapt -->
         <field name="group_id" ref="base.group_user"/>
         <field name="perm_read" eval="1"/>
@@ -14,17 +14,16 @@
         <field name="perm_write" eval="0"/>
         <field name="perm_unlink" eval="0"/>
     </record>
-
-    <record model="ir.model.access" id="campos_age_group_access_manager">
-        <field name="name">campos.age.group access manager</field>
-        <field name="model_id" ref="model_campos_age_group"/>
+    
+    <record model="ir.model.access" id="campos_scout_org_access_manager">
+        <field name="name">campos.scout.org access manager</field>
+        <field name="model_id" ref="model_campos_scout_org"/>
         <!-- TODO review and adapt -->
-        <field name="group_id" ref="group_campos_group_reg_manager"/>
+        <field name="group_id" ref="campos_group_reg.group_campos_group_reg_manager"/>
         <field name="perm_read" eval="1"/>
         <field name="perm_create" eval="1"/>
         <field name="perm_write" eval="1"/>
         <field name="perm_unlink" eval="1"/>
     </record>
-
 
 </odoo>

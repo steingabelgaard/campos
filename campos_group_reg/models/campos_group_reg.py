@@ -79,7 +79,7 @@ class CamposGroupReg(models.Model):
                                  'group_reg_id',
                                  'Pre registrtations',
                                  default=_default_prereg_ids)
-    scout_org_id = fields.Many2one('campos.scout.org', 'Scout organization', required=True)
+    scout_org_id = fields.Many2one('campos.scout.org', 'Scout organization')
     
     @api.model
     def create(self, vals):

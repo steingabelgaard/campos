@@ -18,6 +18,9 @@
         'cms_form',
     ],
     'data': [
+        
+        #'views/res_partner.xml',
+        #'wizards/campos_group_reg_wiz.xml',
         'security/campos_group_reg.xml',
         'views/campos_group_reg.xml',
         'security/campos_prereg_age_period.xml',
@@ -26,6 +29,10 @@
         'views/campos_camp_period.xml',
         'security/campos_age_group.xml',
         'views/campos_age_group.xml',
+        'security/campos_scout_org.xml',
+        'views/campos_scout_org.xml',
+        'data/campos.scout.org.csv',
+        'templates/website_group_add.xml',
 
     ],
     'demo': [

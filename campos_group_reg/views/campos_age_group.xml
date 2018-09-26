@@ -16,8 +16,9 @@
                     <!-- TODO -->
                     <group>
                         <field name="name"/>
-                        <field name="age_to"/>
                         <field name="age_from"/>
+                        <field name="age_to"/>
+                        
                     </group>
                 </sheet>
                 <div class="oe_chatter"></div>
@@ -31,8 +32,8 @@
         <field name="arch" type="xml">
             <search>
                 <field name="name"/>
-                <field name="age_to"/>
                 <field name="age_from"/>
+                <field name="age_to"/>
             </search>
         </field>
     </record>
@@ -43,8 +44,8 @@
         <field name="arch" type="xml">
             <tree>
                 <field name="name"/>
-                <field name="age_to"/>
                 <field name="age_from"/>
+                <field name="age_to"/>
             </tree>
         </field>
     </record>

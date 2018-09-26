@@ -45,11 +45,11 @@ class CamposGroupReg(models.Model):
     state = fields.Selection([
         ('draft', 'Unconfirmed'),
         ('cancel', 'Cancelled'),
-        ('open', 'Confirmed'),
+        ('reg', 'Registred'),
         ('prereg', 'Pre Registered'),
         ('finalreg', 'Final Registration'),
         ('done', 'Attended')
-        ], string='State')
+        ], string='State', default='draft')
 
     # Contact
 
@@ -79,18 +79,20 @@ class CamposGroupReg(models.Model):
                                  'group_reg_id',
                                  'Pre registrtations',
                                  default=_default_prereg_ids)
-
+    scout_org_id = fields.Many2one('campos.scout.org', 'Scout organization', required=True)
+    
     @api.model
     def create(self, vals):
-        group_partner = self.env['res.partner'].create(
-            {'name': vals['name'],
-             'street': vals['street'],
-             'street2': vals['street2'],
-             'zip': vals['zip'],
-             'city': vals['city'],
-             'country_id': vals['country_id'],
-             'is_company': True})
-        vals['partner_id'] = group_partner.id
+        if 'name' in vals and not 'partner_id' in vals:
+            group_partner = self.env['res.partner'].create(
+                {'name': vals['name'],
+                 'street': vals['street'],
+                 'street2': vals['street2'],
+                 'zip': vals['zip'],
+                 'city': vals['city'],
+                 'country_id': vals['country_id'],
+                 'is_company': True})
+            vals['partner_id'] = group_partner.id
 
         if 'contact_name' in vals and vals['contact_name']:
             _logger.info("Creating Contact")
@@ -122,3 +124,8 @@ class CamposGroupReg(models.Model):
             vals['treasurer_partner_id'] = treasurer_partner.id
         _logger.info('BEFORE CReate')
         return super(CamposGroupReg, self).create(vals)
+    
+    def action_registrered(self):
+        self.ensure_one()
+        # TODO Send mails
+        self.state = 'reg'

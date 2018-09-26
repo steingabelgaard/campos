@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	<template id="group_add_1">
+		<t t-call="website.layout">
+			<t t-set="additional_title">Pre Registration</t>
+
+			<div id="wrap" class="container">
+				<h1 class="text-center">
+					Scout Troop Pre - Registration
+				</h1>
+				
+				<div class="row">
+					<section id="forms">
+						<form action="" t-attf-action="/group-reg/add1" method="post">
+							<input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
+							<div
+								class="form-group form-field o_website_form_required_custom">
+								<div class="col-md-3 col-sm-4 text-right">
+									<label class="control-label" for="group_name">Scout Troop Name</label>
+								</div>
+								<div class="col-md-7 col-sm-8">
+									<input type="text" id="group_name" name="group_name"
+										class="form-control" t-att-value="group.get('name')" required="1" />
+								</div>
+							</div>
+							<div class="row"/>
+							<div
+                                class="form-group form-field o_website_form_required_custom">
+                            
+                            <div t-attf-class="form-group #{error.get('group_country_id') and 'has-error' or ''} col-md-3 col-sm-4 text-right">
+                                <label class="control-label" for="group_country_id">Country</label>
+                            </div>
+                            <div class="col-md-7 col-sm-8">
+                            <select name="group_country_id" class="form-control" required="required">
+                                <option value="">Country...</option>
+                                <t t-foreach="countries or []" t-as="country">
+                                    <option t-if="country.id == group.get('country_id')" selected="selected" t-att-value="country.id">
+                                        <t t-esc="country.name" />
+                                    </option>
+                                    <option t-if="country.id != group.get('country_id')" t-att-value="country.id">
+                                        <t t-esc="country.name" />
+                                    </option>
+                                </t>
+                            </select>
+                            </div>
+                            </div>
+                                                    <div class="clearfix" />
+                            <div
+                                class="form-group form-field o_website_form_required_custom">
+                                <div class="col-md-3 col-sm-4 text-right">
+                                    <label class="control-label" for="contact_name">Your Name</label>
+                                </div>
+                                <div class="col-md-7 col-sm-8">
+                                    <input type="text" id="contact_name" name="contact_name"
+                                        class="form-control" t-att-value="contact.get('name')" required="1" />
+                                </div>
+                            </div>
+                            <div
+                                class="form-group form-field o_website_form_required_custom">
+                            
+                                <div t-attf-class="form-group #{error.get('contact_email') and 'has-error' or ''} col-md-3 col-sm-4 text-right">
+                                    <label class="control-label" for="contact_email">Your Email</label>
+                                </div>
+                                <div class="col-md-7 col-sm-8">
+                                    <input type="email" name="contact_email" class="form-control" t-att-value="contact.get('email')" required="required" />
+                                </div>
+                            </div>
+							<div class="clearfix" />
+
+                            <div class="form-group">
+                                <div class="col-md-offset-3 col-sm-offset-4 col-sm-8 col-md-7">
+                                    <button type="submit"
+                                        class="btn btn-default btn-primary mb32 ">Next
+                                    </button>
+                                </div>
+                            </div>
+
+						</form>
+					</section>
+				</div>
+			</div>
+		</t>
+	</template>
+	
+	<template id="group_add_2">
+        <t t-call="website.layout">
+            <t t-set="additional_title">Pre Registration</t>
+
+            <div id="wrap" class="container">
+                <h1 class="text-center">
+                    Scout Troop Pre - Registration
+                </h1>
+                <h2>Details for <span t-esc="group_reg.name"/></h2>
+                
+                <div class="row">
+                    <section id="forms">
+                        <form action="" t-attf-action="/group-reg/add2" method="post">
+                            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
+                            <input type="hidden" name="group_reg_id" t-att-value="group_reg.id" />
+                            
+                            <div
+                                class="form-group form-field o_website_form_required_custom">
+                                <div class="col-md-3 col-sm-4 text-right">
+                                    <label class="control-label" for="group_street">Street</label>
+                                </div>
+                                <div class="col-md-7 col-sm-8">
+                                    <input type="text" id="group_street" name="group_street"
+                                        class="form-control" t-att-value="group.street" required="1" />
+                                </div>
+                            </div>
+                            <div
+                                class="form-group form-field">
+                                <div class="col-md-3 col-sm-4 text-right">
+                                    <label class="control-label" for="group_street2">Street 2</label>
+                                </div>
+                                <div class="col-md-7 col-sm-8">
+                                    <input type="text" id="group_street2" name="group_street2"
+                                        class="form-control" t-att-value="group.street2"/>
+                                </div>
+                            </div>
+                            
+                            <div
+                                class="form-group form-field o_website_form_required_custom">
+                                <div class="col-md-3 col-sm-4 text-right">
+                                    <label class="control-label" for="group_zip">Zip</label>
+                                </div>
+                                <div class="col-md-7 col-sm-8">
+                                    <input type="text" id="group_zip" name="group_zip"
+                                        class="form-control" t-att-value="group.zip" required="1" />
+                                </div>
+                            </div>
+                            
+                            <div
+                                class="form-group form-field o_website_form_required_custom">
+                                <div class="col-md-3 col-sm-4 text-right">
+                                    <label class="control-label" for="group_city">City</label>
+                                </div>
+                                <div class="col-md-7 col-sm-8">
+                                    <input type="text" id="group_city" name="group_city"
+                                        class="form-control" t-att-value="group.city" required="1" />
+                                </div>
+                            </div>
+                            <div class="clearfix" />
+                            <div class="row"/>
+                            <div
+                                class="form-group form-field o_website_form_required_custom">
+                            
+                            <div t-attf-class="form-group #{error.get('group_country_id') and 'has-error' or ''} col-md-3 col-sm-4 text-right">
+                                <label class="control-label" for="group_scout_org_id">Scout Organization</label>
+                            </div> 
+                            
+                            <div class="col-md-7 col-sm-8">
+                            <select name="group_scout_org_id" class="form-control" required="required">
+                                <option value="">Scout Organization...</option>
+                                <t t-foreach="scout_orgs or []" t-as="scout_org">
+                                    <option t-if="scout_org.id == group_reg.scout_org_id.id" selected="selected" t-att-value="scout_org.id">
+                                        <t t-esc="scout_org.name" />
+                                    </option>
+                                    <option t-if="scout_org.id != group_reg.scout_org_id.id" t-att-value="scout_org.id">
+                                        <t t-esc="scout_org.name" />
+                                    </option>
+                                </t>
+                            </select>
+                            </div>
+                            </div>
+                            <div class="clearfix" />
+                            
+                            
+                  <h2>Your contact details (<span t-esc="contact.name"/>)</h2>          
+                            
+                            <div
+                                class="form-group form-field o_website_form_required_custom">
+                                <div class="col-md-3 col-sm-4 text-right">
+                                    <label class="control-label" for="contact_street">Street</label>
+                                </div>
+                                <div class="col-md-7 col-sm-8">
+                                    <input type="text" id="contact_street" name="contact_street"
+                                        class="form-control" t-att-value="contact.street" required="1" />
+                                </div>
+                            </div>
+                            <div
+                                class="form-group form-field">
+                                <div class="col-md-3 col-sm-4 text-right">
+                                    <label class="control-label" for="contact_street2">Street 2</label>
+                                </div>
+                                <div class="col-md-7 col-sm-8">
+                                    <input type="text" id="contact_street2" name="contact_street2"
+                                        class="form-control" t-att-value="contact.street2"/>
+                                </div>
+                            </div>
+                            
+                            <div
+                                class="form-group form-field o_website_form_required_custom">
+                                <div class="col-md-3 col-sm-4 text-right">
+                                    <label class="control-label" for="contact_zip">Zip</label>
+                                </div>
+                                <div class="col-md-7 col-sm-8">
+                                    <input type="text" id="contact_zip" name="contact_zip"
+                                        class="form-control" t-att-value="contact.zip" required="1" />
+                                </div>
+                            </div>
+                            
+                            <div
+                                class="form-group form-field o_website_form_required_custom">
+                                <div class="col-md-3 col-sm-4 text-right">
+                                    <label class="control-label" for="contact_city">City</label>
+                                </div>
+                                <div class="col-md-7 col-sm-8">
+                                    <input type="text" id="contact_city" name="contact_city"
+                                        class="form-control" t-att-value="contact.city" required="1" />
+                                </div>
+                            </div>
+                            
+                            <div class="row"/>
+                            <div
+                                class="form-group form-field o_website_form_required_custom">
+                            
+                           <div t-attf-class="form-group #{error.get('group_country_id') and 'has-error' or ''} col-md-3 col-sm-4 text-right">
+                                <label class="control-label" for="group_country_id">Country</label>
+                            </div>
+                            <div class="col-md-7 col-sm-8">
+                            <select name="contact_country_id" class="form-control" required="required">
+                                <option value="">Country...</option>
+                                <t t-foreach="countries or []" t-as="country">
+                                    <option t-if="country.id == contact.country_id.id" selected="selected" t-att-value="country.id">
+                                        <t t-esc="country.name" />
+                                    </option>
+                                    <option t-if="country.id != contact.country_id.id" t-att-value="country.id">
+                                        <t t-esc="country.name" />
+                                    </option>
+                                </t>
+                            </select>
+                            </div>
+                            </div>
+                            <div class="clearfix" />
+                           
+                            <div class="form-group">
+                                <div class="col-md-offset-3 col-sm-offset-4 col-sm-8 col-md-7">
+                                    <button type="submit"
+                                        class="btn btn-default btn-primary mb32 ">Next
+                                    </button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </t>
+    </template>
+	
+
+    <template id="group_add_3">
+        <t t-call="website.layout">
+            <t t-set="additional_title">Pre Registration</t>
+
+            <div id="wrap" class="container">
+                <h1 class="text-center">
+                    Scout Troop Pre - Registration
+                </h1>
+                <h2>Your Scout Troops Treasurer</h2>
+                
+                <div class="row">
+                    <section id="forms">
+                        <form action="" t-attf-action="/group-reg/add2" method="post">
+                            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
+                            <input type="hidden" name="group_reg_id" t-att-value="group_reg.id" />
+                            <div
+                                class="form-group form-field">
+                                <div class="col-md-7 col-sm-8">
+                                    <input type="checkbox" name="same_as_contact" value="reuse"/>Use Me as Treasurer contact<br/>
+                                </div>
+                            </div>
+                            <div
+                                class="form-group form-field">
+                                <div class="col-md-3 col-sm-4 text-right">
+                                    <label class="control-label" for="treasurer_name">Treasurer Name</label>
+                                </div>
+                                <div class="col-md-7 col-sm-8">
+                                    <input type="text" id="treasurer_name" name="treasurer_name"
+                                        class="form-control" t-att-value="treasurer.get('name')"/>
+                                </div>
+                            </div>
+                            
+                            <div
+                                class="form-group form-field">
+                                <div class="col-md-3 col-sm-4 text-right">
+                                    <label class="control-label" for="treasurer_street">Street</label>
+                                </div>
+                                <div class="col-md-7 col-sm-8">
+                                    <input type="text" id="treasurer_street" name="treasurer_street"
+                                        class="form-control" t-att-value="treasurer.get('street')" />
+                                </div>
+                            </div>
+                            <div
+                                class="form-group form-field">
+                                <div class="col-md-3 col-sm-4 text-right">
+                                    <label class="control-label" for="treasurer_street2">Street 2</label>
+                                </div>
+                                <div class="col-md-7 col-sm-8">
+                                    <input type="text" id="treasurer_street2" name="treasurer_street2"
+                                        class="form-control" t-att-value="treasurer.get('street2')" />
+                                </div>
+                            </div>
+                            
+                            <div
+                                class="form-group form-field ">
+                                <div class="col-md-3 col-sm-4 text-right">
+                                    <label class="control-label" for="treasurer_zip">Zip</label>
+                                </div>
+                                <div class="col-md-7 col-sm-8">
+                                    <input type="text" id="treasurer_zip" name="treasurer_zip"
+                                        class="form-control" t-att-value="treasurer.get('zip')" />
+                                </div>
+                            </div>
+                            
+                            <div
+                                class="form-group form-field">
+                                <div class="col-md-3 col-sm-4 text-right">
+                                    <label class="control-label" for="treasurer_city">City</label>
+                                </div>
+                                <div class="col-md-7 col-sm-8">
+                                    <input type="text" id="treasurer_city" name="treasurer_city"
+                                        class="form-control" t-att-value="treasurer.get('city')" />
+                                </div>
+                            </div>
+                            <div class="clearfix" />
+                            <div
+                                class="form-group form-field o_website_form_required_custom">
+                            
+                            <div t-attf-class="form-group #{error.get('treasurer_country_id') and 'has-error' or ''} col-md-3 col-sm-4 text-right">
+                                <label class="control-label" for="treasurer_country_id">Country</label>
+                            </div>
+                            <div class="col-md-7 col-sm-8">
+                            <select name="contact_country_id" class="form-control" required="required">
+                                <option value="">Country...</option>
+                                <t t-foreach="countries or []" t-as="country">
+                                    <option t-if="country.id == treasurer.get('country_id')" selected="selected" t-att-value="country.id">
+                                        <t t-esc="country.name" />
+                                    </option>
+                                    <option t-if="country.id != treasurer.get('country_id')" t-att-value="country.id">
+                                        <t t-esc="country.name" />
+                                    </option>
+                                </t>
+                            </select>
+                            </div>
+                            </div>
+                            <div class="clearfix" />
+                           
+                            <div class="form-group">
+                                <div class="col-md-offset-3 col-sm-offset-4 col-sm-8 col-md-7">
+                                    <button type="submit"
+                                        class="btn btn-default btn-primary mb32 ">Next
+                                    </button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </t>
+    </template>
+    
+    <template id="group_pre_reg">
+        <t t-call="website.layout">
+            <t t-set="additional_title">Pre Registration</t>
+
+            <div id="wrap" class="container">
+                <h1 class="text-center">
+                    Scout Troop Pre - Registration
+                </h1>
+                <h2>Expected participants for <span t-esc="group_reg.name"/></h2>
+                
+                <div class="row">
+                    <section id="forms">
+                        <form action="" t-attf-action="/group-reg/pre-reg" method="post">
+                            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
+                            <input type="hidden" name="group_reg_id" t-att-value="group_reg.id" />
+                         <table class="table table-hover">
+				            <thead>
+				                <tr>
+				                    <th> </th>
+				                    <th t-foreach="agegroups" t-as="col_label"><span t-field="col_label.name" /></th>
+				                </tr>
+				            </thead>
+				            <tbody>
+				                <tr t-foreach="periods" t-as="row_label">
+				                    <th><span t-field="row_label.name" /></th>
+				                    <td t-foreach="agegroups" t-as="col_label">
+				                        <input type="integer" t-att-name="'%s_%s_%s' % ('cell', col_label.id, row_label.id)" t-att-value='cell[col_label.id][row_label.id]' />
+				                    </td>
+				                </tr>
+				            </tbody>
+				        </table>
+				                                    <div class="clearfix" />
+
+                            <div class="form-group">
+                                <div class="col-md-offset-3 col-sm-offset-4 col-sm-8 col-md-7">
+                                    <button type="submit"
+                                        class="btn btn-default btn-primary mb32 ">Submit
+                                    </button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </t>
+    </template>
+    
+    
+
+	<template id="thank_you">
+		<t t-call="website.layout">
+			<t t-set="additional_title">Pre registration completed</t>
+			<div id="wrap">
+				<div class="container">
+					<h4>Thank you</h4>
+					<p>Your answers have been saved.</p>
+					<a href="/" class="btn btn-default btn-primary mb32">Continue</a>
+				</div>
+			</div>
+		</t>
+	</template>
+	
+	<template id="group_add_email_exist">
+        <t t-call="website.layout">
+            <t t-set="additional_title">Email already registered!</t>
+            <div id="wrap">
+                <div class="container">
+                    <h4>Email already registered!</h4>
+                    <p>Your email address <span t-value="email"/> is already registered in the system.</p>
+                    <p>Please login to update your registrations.</p>
+                    <a href="/web/login" class="btn btn-default btn-primary mb32">Continue</a>
+                </div>
+            </div>
+        </t>
+    </template>
+</odoo>        

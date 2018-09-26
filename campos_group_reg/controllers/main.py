@@ -10,9 +10,9 @@ class GroupRegForm(http.Controller, FormControllerMixin):
     @http.route([
         '/group_reg/add',
         '/group_reg/<model("campos.group.reg"):main_object>/edit',
-    ], type='http', auth='user', website=True)
+    ], type='http', auth='public', website=True)
     def cms_form(self, main_object=None, **kw):
-        model = 'campos.group.reg'
+        model = 'campos.group.reg.wiz'
         return self.make_response(
             model, model_id=main_object and main_object.id, **kw)
 

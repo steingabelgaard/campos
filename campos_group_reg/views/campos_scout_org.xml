@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2018 Stein & Gabelgaard ApS
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+
+<odoo>
+
+    <record model="ir.ui.view" id="campos_scout_org_form_view">
+        <field name="name">campos.scout.org.form (in campos_group_reg)</field>
+        <field name="model">campos.scout.org</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name" />
+                        <field name="country_id" />
+                        <field name="sex" />
+                        <field name="worldorg" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="campos_scout_org_search_view">
+        <field name="name">campos.scout.org.search (in campos_group_reg)</field>
+        <field name="model">campos.scout.org</field>
+        <field name="arch" type="xml">
+            <search>
+                        <field name="name" />
+                        <field name="country_id" />
+                        <field name="sex" />
+                        <field name="worldorg" />
+
+            </search>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="campos_scout_org_tree_view">
+        <field name="name">campos.scout.org.tree (in campos_group_reg)</field>
+        <field name="model">campos.scout.org</field>
+        <field name="arch" type="xml">
+            <tree>
+               <field name="name" />
+               <field name="country_id" />
+               <field name="sex" />
+               <field name="worldorg" />
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="campos_scout_org_act_window">
+        <field name="name">Scout Organizations</field> <!-- TODO -->
+        <field name="res_model">campos.scout.org</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[]</field>
+        <field name="context">{}</field>
+    </record>
+
+    <record model="ir.ui.menu" id="campos_scout_org_menu">
+        <field name="name">Scout Organization</field>
+        <field name="parent_id" ref="campos_config_menu"/>
+        <field name="action" ref="campos_scout_org_act_window"/>
+        <field name="sequence" eval="100"/>
+    </record>
+
+</odoo>

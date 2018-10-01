@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2018-09-06 15:00+0000\n"
-"Last-Translator: Hans Henrik Gabelgaard <hhg@gabelgaard.org>\n"
+"PO-Revision-Date: 2018-10-01 09:02+0000\n"
+"Last-Translator: Christian Eggert <christian@eggert.dk>\n"
 "Language-Team: Danish <https://example.com/projects/campos-11-0/"
 "campos-11-0-campos_group_reg/da/>\n"
 "Language: da\n"
@@ -254,12 +254,12 @@ msgstr "Dato"
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_period_date_from
 msgid "Date From"
-msgstr ""
+msgstr "Fra dato"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_period_date_to
 msgid "Date To"
-msgstr ""
+msgstr "Til dato"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_age_group_display_name
@@ -290,7 +290,7 @@ msgstr "Ansat"
 #. module: campos_group_reg
 #: selection:campos.group.reg,state:0
 msgid "Final Registration"
-msgstr ""
+msgstr "Endelig tilmelding"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,help:campos_group_reg.field_campos_group_reg_email_formatted
@@ -316,12 +316,12 @@ msgstr "Gruppér efter"
 #. module: campos_group_reg
 #: model:ir.ui.menu,name:campos_group_reg.campos_group_reg_menu
 msgid "Group Registration"
-msgstr ""
+msgstr "Gruppe registrering"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_prereg_age_period_group_reg_id
 msgid "Group registration"
-msgstr ""
+msgstr "Gruppe registrering"
 
 #. module: campos_group_reg
 #: model:ir.actions.act_window,name:campos_group_reg.campos_age_group_act_window
@@ -486,23 +486,23 @@ msgstr "Telefon"
 #. module: campos_group_reg
 #: selection:campos.group.reg,state:0
 msgid "Pre Registered"
-msgstr ""
+msgstr "Forhånds registrering"
 
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.campos_group_reg_form_view
 msgid "Pre Registration"
-msgstr ""
+msgstr "Forhånds registrering"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_prereg_ids
 msgid "Pre registrtations"
-msgstr ""
+msgstr "Forhånds registrering"
 
 #. module: campos_group_reg
 #: model:ir.actions.act_window,name:campos_group_reg.campos_prereg_age_period_act_window
 #: model:ir.ui.menu,name:campos_group_reg.campos_prereg_age_period_menu
 msgid "Pre-Registration Overview"
-msgstr ""
+msgstr "Oversigt forhånds registrering"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_parent_id
@@ -578,7 +578,7 @@ msgstr "Vejnavn"
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.campos_group_reg_form_view
 msgid "Street 2..."
-msgstr "Vej..."
+msgstr "Vejnavn 2..."
 
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.campos_group_reg_form_view
@@ -590,7 +590,7 @@ msgstr "Vej..."
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_street2
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_treasurer_street2
 msgid "Street2"
-msgstr "Sted"
+msgstr "vejnavn 2"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_vat
@@ -650,12 +650,12 @@ msgstr "Titel"
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_treasurer_partner_id
 #: model:ir.ui.view,arch_db:campos_group_reg.campos_group_reg_form_view
 msgid "Treasurer"
-msgstr ""
+msgstr "Kasserer"
 
 #. module: campos_group_reg
 #: selection:campos.group.reg,state:0
 msgid "Unconfirmed"
-msgstr ""
+msgstr "Ikke bekræftet"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,help:campos_group_reg.field_campos_group_reg_type
@@ -672,7 +672,7 @@ msgstr "Brugere"
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_prereg_age_period_value
 msgid "Value"
-msgstr ""
+msgstr "Værdi"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_website

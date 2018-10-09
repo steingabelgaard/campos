@@ -82,7 +82,7 @@
         id="campos_prereg_age_period_act_window">
         <field name="name">Pre-Registration Overview</field>
         <field name="res_model">campos.prereg.age.period</field>
-        <field name="view_mode">tree,form,pivot</field>
+        <field name="view_mode">pivot,tree,form</field>
         <field name="domain">[]</field>
         <field name="context">{}</field>
     </record>

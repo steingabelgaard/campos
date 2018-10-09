@@ -11,6 +11,6 @@ class CamposCampPeriod(models.Model):
     _description = 'Campos Camp Period'  # TODO
     _order = 'date_from'
 
-    name = fields.Char()
+    name = fields.Char(translate=True)
     date_from = fields.Date('Date From')
     date_to = fields.Date('Date To')

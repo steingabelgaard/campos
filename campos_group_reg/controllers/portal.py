@@ -111,7 +111,7 @@ class PortalGroupReg(CustomerPortal):
                         group_reg.partner_id.write(group)
                         values['group'] = group_reg.partner_id
                     contact = {}
-                    for f in ['street', 'street2', 'zip', 'city', 'country_id']:
+                    for f in ['street', 'street2', 'zip', 'city', 'country_id', 'mobile']:
                         if post.get('contact_' + f):
                             contact[f] = post.get('contact_' + f)
                     if contact:
@@ -124,7 +124,7 @@ class PortalGroupReg(CustomerPortal):
                         group_reg.treasurer_partner_id = group_reg.contact_partner_id
                     else:    
                         treasurer = {}
-                        for f in ['name', 'street', 'street2', 'zip', 'city', 'country_id']:
+                        for f in ['name', 'street', 'street2', 'zip', 'city', 'country_id','mobile']:
                             if post.get('treasurer_' + f):
                                 treasurer[f] = post.get('treasurer_' + f)
                         if treasurer:

@@ -11,6 +11,6 @@ class CamposAgeGroup(models.Model):
     _description = 'Campos Age Group'  # TODO
     _order = 'age_from'
 
-    name = fields.Char()
+    name = fields.Char(translate=True)
     age_from = fields.Integer('Age From')
     age_to = fields.Integer('Age To')

@@ -212,6 +212,17 @@
                                 </div>
                             </div>
                             
+                             <div
+                                class="form-group form-field o_website_form_required_custom">
+                                <div class="col-md-3 col-sm-4 text-right">
+                                    <label class="control-label" for="contact_mobile">Mobile</label>
+                                </div>
+                                <div class="col-md-7 col-sm-8">
+                                    <input type="text" id="contact_mobile" name="contact_mobile"
+                                        class="form-control" t-att-value="contact.mobile" required="1" />
+                                </div>
+                            </div>
+                            
                             <div class="row"/>
                             <div
                                 class="form-group form-field o_website_form_required_custom">
@@ -266,12 +277,17 @@
                         <form action="" t-attf-action="/group-reg/add2" method="post">
                             <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
                             <input type="hidden" name="group_reg_id" t-att-value="group_reg.id" />
+                            
                             <div
                                 class="form-group form-field">
+                                <div class="col-md-3 col-sm-4 text-right">
+                                    <label class="control-label" for="same_as_contact">Use Me as Treasurer contact</label>
+                                </div>
                                 <div class="col-md-7 col-sm-8">
-                                    <input type="checkbox" name="same_as_contact" value="reuse"/>Use Me as Treasurer contact<br/>
+                                    <input type="checkbox" name="same_as_contact" value="reuse"/>
                                 </div>
                             </div>
+                            <div class="clearfix" />
                             <div
                                 class="form-group form-field">
                                 <div class="col-md-3 col-sm-4 text-right">
@@ -346,6 +362,29 @@
                             </select>
                             </div>
                             </div>
+                            <div class="clearfix" />
+                            <div
+                                class="form-group form-field o_website_form_required_custom">
+                                <div class="col-md-3 col-sm-4 text-right">
+                                    <label class="control-label" for="treasurer_mobile">Mobile</label>
+                                </div>
+                                <div class="col-md-7 col-sm-8">
+                                    <input type="text" id="treasurer_mobile" name="treasurer_mobile"
+                                        class="form-control" t-att-value="treasurer.get('mobile')" required="1" />
+                                </div>
+                            </div>
+                            
+                            <div
+                                class="form-group form-field o_website_form_required_custom">
+                            
+                                <div t-attf-class="form-group #{error.get('treasurer_email') and 'has-error' or ''} col-md-3 col-sm-4 text-right">
+                                    <label class="control-label" for="treasurer_email">Your Email</label>
+                                </div>
+                                <div class="col-md-7 col-sm-8">
+                                    <input type="email" name="treasurer_email" class="form-control" t-att-value="treasurer.get('email')" required="required" />
+                                </div>
+                            </div>
+                            
                             <div class="clearfix" />
                            
                             <div class="form-group">

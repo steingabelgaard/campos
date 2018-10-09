@@ -62,12 +62,27 @@
             </tree>
         </field>
     </record>
+    
+     <record model="ir.ui.view"
+        id="campos_prereg_age_period_pivot_view">
+        <field name="name">campos.prereg.age.period.tree (in campos_group_reg)
+        </field>
+        <field name="model">campos.prereg.age.period</field>
+        <field name="arch" type="xml">
+            <pivot >
+                <field name="group_reg_id" />
+                <field name="period_id" type="col"/>
+                <field name="age_group_id" type="row"/>
+                <field name="value" type="measure"/>
+            </pivot>
+        </field>
+    </record>
 
     <record model="ir.actions.act_window"
         id="campos_prereg_age_period_act_window">
         <field name="name">Pre-Registration Overview</field>
         <field name="res_model">campos.prereg.age.period</field>
-        <field name="view_mode">tree,form</field>
+        <field name="view_mode">tree,form,pivot</field>
         <field name="domain">[]</field>
         <field name="context">{}</field>
     </record>

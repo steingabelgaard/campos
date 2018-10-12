@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2018-10-09 20:55+0000\n"
+"PO-Revision-Date: 2018-10-12 10:02+0000\n"
 "Last-Translator: Christian Eggert <christian@eggert.dk>\n"
 "Language-Team: Danish <https://example.com/projects/campos-11-0/"
 "campos-11-0-campos_group_reg/da/>\n"
@@ -267,7 +267,6 @@ msgstr "Til dato"
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_display_name
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_prereg_age_period_display_name
 #: model:ir.model.fields,field_description:campos_group_reg.field_cms_form_campos_group_reg_display_name
-#, fuzzy
 msgid "Display Name"
 msgstr "Navn"
 
@@ -456,7 +455,6 @@ msgstr "Kommune"
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_treasurer_name
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_prereg_age_period_name
 #: model:ir.ui.view,arch_db:campos_group_reg.campos_group_reg_form_view
-#, fuzzy
 msgid "Name"
 msgstr "Navn"
 

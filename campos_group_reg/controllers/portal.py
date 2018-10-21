@@ -115,7 +115,7 @@ class PortalGroupReg(CustomerPortal):
                         if post.get('contact_' + f):
                             contact[f] = post.get('contact_' + f)
                     if contact:
-                        contact['parent_id'] = group_reg.id
+                        contact['parent_id'] = group_reg.partner_id.id
                         group_reg.contact_partner_id.write(contact)
                         values['contact'] = group_reg.contact_partner_id
                     if post.get('group_scout_org_id', False):
@@ -130,7 +130,7 @@ class PortalGroupReg(CustomerPortal):
                                 treasurer[f] = post.get('treasurer_' + f)
                         if treasurer:
                             if not group_reg.treasurer_partner_id:
-                                treasurer['parent_id'] = group_reg.id
+                                treasurer['parent_id'] = group_reg.partner_id.id
                                 group_reg.treasurer_partner_id = request.env['res.partner'].sudo().create(treasurer)
                             else:
                                 group_reg.treasurer_partner_id.write(treasure)

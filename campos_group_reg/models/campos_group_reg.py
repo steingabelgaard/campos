@@ -32,7 +32,7 @@ class CamposGroupReg(models.Model):
             for a in age_groups
         ]
 
-    partner_id = fields.Many2one('res.partner', 'Group', required=True)
+    partner_id = fields.Many2one('res.partner', 'Group', required=True,  ondelete="restrict")
 
     name = fields.Char(related='partner_id.name', required=True)
     street = fields.Char(related='partner_id.street')

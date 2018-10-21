@@ -53,5 +53,32 @@
         <field name="perm_write" eval="1"/>
         <field name="perm_unlink" eval="0"/>
     </record>
+    
+     
+    <record id="campos_group_reg_portal_rule" model="ir.rule">
+        <field name="name">CampOS Group Reg Portal rule</field>
+        <field name="model_id" ref="model_campos_group_reg"/>
+        <field name="groups" eval="[(4, ref('base.group_portal'))]"/>
+        <field name="domain_force">['|',('contact_partner_id','=',user.partner_id.id),('treasurer_partner_id','=',user.partner_id.id)]</field>
+    </record>
+    
+    <!-- Need to grant access to res_partner also -->
+    <record id="campos_partner_portal_rule" model="ir.rule">
+        <field name="name">CampOS Partner Portal rule</field>
+        <field name="model_id" ref="base.model_res_partner"/>
+        <field name="groups" eval="[(4, ref('base.group_portal'))]"/>
+        <field name="domain_force">[('id', 'child_of', user.commercial_partner_id.id)]</field>
+    </record>
+    
+    <record model="ir.model.access" id="campos_partner_access_portal">
+        <field name="name">campos.partner.portal</field>
+        <field name="model_id" ref="base.model_res_partner"/>
+        <field name="group_id" ref="base.group_portal"/>
+        <field name="perm_read" eval="1"/>
+        <field name="perm_create" eval="1"/>
+        <field name="perm_write" eval="1"/>
+        <field name="perm_unlink" eval="0"/>
+    </record>
+        
 
 </odoo>

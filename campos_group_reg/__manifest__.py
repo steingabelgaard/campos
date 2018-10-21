@@ -33,6 +33,7 @@
         'views/campos_scout_org.xml',
         'data/campos.scout.org.csv',
         'templates/website_group_add.xml',
+        'data/mail_templates.xml',
 
     ],
     'demo': [

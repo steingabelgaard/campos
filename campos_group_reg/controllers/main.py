@@ -8,11 +8,10 @@ class GroupRegForm(http.Controller, FormControllerMixin):
     """Partner form w/ tabs."""
 
     @http.route([
-        '/group_reg/add',
         '/group_reg/<model("campos.group.reg"):main_object>/edit',
-    ], type='http', auth='public', website=True)
+    ], type='http', auth='user', website=True)
     def cms_form(self, main_object=None, **kw):
-        model = 'campos.group.reg.wiz'
+        model = 'campos.group.reg'
         return self.make_response(
             model, model_id=main_object and main_object.id, **kw)
 

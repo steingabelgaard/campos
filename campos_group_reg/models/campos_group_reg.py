@@ -129,3 +129,19 @@ class CamposGroupReg(models.Model):
         self.ensure_one()
         # TODO Send mails
         self.state = 'reg'
+        
+    def action_pre_reg(self):
+        self.ensure_one()
+        self.signup_contacts()
+        self.state = 'prereg'
+    
+        
+    @api.multi
+    def signup_contacts(self):
+        for grp in self:
+            if not grp.contact_partner_id.user_ids:
+                grp.contact_partner_id.signup_and_mail('campos_group_reg.contact_welcome_mail') 
+            if not grp.treasurer_partner_id.user_ids:
+                grp.treasurer_partner_id.signup_and_mail('campos_group_reg.treasurer_welcome_mail') 
+                
+                

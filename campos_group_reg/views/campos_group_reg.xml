@@ -9,7 +9,7 @@
         <field name="arch" type="xml">
             <form>
                 <header>
-                    <!-- TODO -->
+                    <field name="state" widget="statusbar"/>
                 </header>
                 <sheet>
                     <div class="oe_button_box" name="button_box">

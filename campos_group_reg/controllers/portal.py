@@ -115,6 +115,7 @@ class PortalGroupReg(CustomerPortal):
                         if post.get('contact_' + f):
                             contact[f] = post.get('contact_' + f)
                     if contact:
+                        contact['parent_id'] = group_reg.id
                         group_reg.contact_partner_id.write(contact)
                         values['contact'] = group_reg.contact_partner_id
                     if post.get('group_scout_org_id', False):
@@ -124,11 +125,12 @@ class PortalGroupReg(CustomerPortal):
                         group_reg.treasurer_partner_id = group_reg.contact_partner_id
                     else:    
                         treasurer = {}
-                        for f in ['name', 'street', 'street2', 'zip', 'city', 'country_id','mobile']:
+                        for f in ['name', 'street', 'street2', 'zip', 'city', 'country_id', 'email', 'mobile']:
                             if post.get('treasurer_' + f):
                                 treasurer[f] = post.get('treasurer_' + f)
                         if treasurer:
                             if not group_reg.treasurer_partner_id:
+                                treasurer['parent_id'] = group_reg.id
                                 group_reg.treasurer_partner_id = request.env['res.partner'].sudo().create(treasurer)
                             else:
                                 group_reg.treasurer_partner_id.write(treasure)
@@ -177,8 +179,61 @@ class PortalGroupReg(CustomerPortal):
                 if group_reg:
                     for c in group_reg.prereg_ids:
                         c.value = post.get('cell_%s_%s' % (c.age_group_id.id, c.period_id.id), False)
+                    group_reg.action_pre_reg()
                                            
-        return request.render("campos_group_reg.thank_you", {})                                   
+        return request.render("campos_group_reg.thank_you", {})                  
+    
+    @http.route(['/my/pre_reg'], type='http', auth="public", website=True)
+    def portal_my_pre_reg(self, **post):
+        _logger.info('MY Prereg')
+        partner = request.env.user.partner_id
+        _logger.info('My Partner: %s', partner)
+        if partner.parent_id.scoutgroup:
+            if request.httprequest.method == 'POST':
+                group_reg_id = post.get('group_reg_id')
+                if group_reg_id:
+                    group_reg = request.env['campos.group.reg'].sudo().search([('id', '=', group_reg_id)])
+                    if group_reg:
+                        for c in group_reg.prereg_ids:
+                            c.value = post.get('cell_%s_%s' % (c.age_group_id.id, c.period_id.id), False)
+                if request.website:
+                    request.website.add_status_message(_('Pre registration figures has been updated.'))
+                return request.redirect('/my')
+            
+            group_reg = request.env['campos.group.reg'].sudo().search([('partner_id', '=', partner.parent_id.id)])
+            _logger.info('My group: %s', group_reg)
+            values = {}
+            values['group_reg'] = group_reg
+                    
+            periods = request.env['campos.camp.period'].sudo().search([])
+            agegroups = request.env['campos.age.group'].sudo().search([])
+            cell = {}
+            for ag in agegroups:
+                cell[ag.id] = {}
+                for p in periods:
+                    cell[ag.id][p.id] = 0
+            for c in group_reg.prereg_ids:
+                cell[c.age_group_id.id][c.period_id.id] = c.value
+            
+            
+            
+            values['periods'] = periods
+            values['agegroups'] = agegroups
+            values['cell'] = cell
+            
+            return request.render("campos_group_reg.group_pre_reg_edit", values)
+        return request.redirect('/my')
+    
+    @http.route(['/my/group_reg'], type='http', auth="public", website=True)
+    def portal_my_group_reg(self):
+        partner = request.env.user.partner_id
+        if partner.parent_id.scoutgroup:
+            group_reg = request.env['campos.group.reg'].sudo().search([('partner_id', '=', partner.parent_id.id)])
+            return request.redirect('/group_reg/%d/edit' % (group_reg.id))
+        return request.redirect('/my')    
+
+        
+                         
                               
     @http.route(['/my/ckr/submit/<int:ckr_id>/<access_token>/'], type='http', auth="public", methods=['POST'], website=True)
     def portal_my_ckr_submit(self, ckr_id, access_token, **kw):

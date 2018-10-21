@@ -1,0 +1,74 @@
+<?xml version="1.0" ?>
+<odoo>
+    <data noupdate="1">
+
+        <!-- Email template for contact signup -->
+        <record id="contact_welcome_mail" model="mail.template">
+            <field name="name">Mail to new Group Contact</field>
+            <field name="model_id" ref="base.model_res_partner"/>
+            <field name="email_from"></field>
+            <field name="partner_to">${object.id}</field>
+            <field name="subject">SSC 2019 Signup</field>
+            <field name="body_html">
+                <![CDATA[
+                    <p>
+    Dear ${object.name or ''},
+</p>
+<p>
+    You have been given access to SSC 2019
+</p>
+<p>
+    Your login account data is:
+</p>
+<ul>
+    <li>Username: ${object.email or ''}</li>
+    <li>Portal: <a href="${'portal_url' in ctx and ctx['portal_url'] or ''}">${'portal_url' in ctx and ctx['portal_url'] or ''}</a></li>
+    <li>Database: ${'dbname' in ctx and ctx['dbname'] or ''}</li>
+</ul>
+<p>
+    You can set or change your password via the following url:
+</p>
+<ul>
+    <li><a href="${object.signup_url}">${object.signup_url}</a></li>
+</ul>
+<p>
+                                    ]]>
+            </field>
+        </record>
+
+                <!-- Email template for treasurer signup -->
+        <record id="treasurer_welcome_mail" model="mail.template">
+            <field name="name">Mail to new Group Treasurer</field>
+            <field name="model_id" ref="base.model_res_partner"/>
+            <field name="email_from"></field>
+            <field name="partner_to">${object.id}</field>
+            <field name="subject">SSC 2019 Signup</field>
+            <field name="body_html">
+                <![CDATA[
+                    <p>
+    Dear ${object.name or ''},
+</p>
+<p>
+    You have been given access to SSC 2019
+</p>
+<p>
+    Your login account data is:
+</p>
+<ul>
+    <li>Username: ${object.email or ''}</li>
+    <li>Portal: <a href="${'portal_url' in ctx and ctx['portal_url'] or ''}">${'portal_url' in ctx and ctx['portal_url'] or ''}</a></li>
+    <li>Database: ${'dbname' in ctx and ctx['dbname'] or ''}</li>
+</ul>
+<p>
+    You can set or change your password via the following url:
+</p>
+<ul>
+    <li><a href="${object.signup_url}">${object.signup_url}</a></li>
+</ul>
+<p>
+                                    ]]>
+            </field>
+        </record>
+        
+</data>
+</odoo>

@@ -449,6 +449,55 @@
             </div>
         </t>
     </template>
+
+    <template id="group_pre_reg_edit">
+        <t t-call="website.layout">
+            <t t-set="additional_title">Pre Registration</t>
+
+            <div id="wrap" class="container">
+                <h1 class="text-center">
+                    Scout Troop Pre - Registration
+                </h1>
+                <h2>Expected participants for <span t-esc="group_reg.name"/></h2>
+                
+                <div class="row">
+                    <section id="forms">
+                        <form action="" t-attf-action="/my/pre_reg" method="post">
+                            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
+                            <input type="hidden" name="group_reg_id" t-att-value="group_reg.id" />
+                         <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th> </th>
+                                    <th t-foreach="agegroups" t-as="col_label"><span t-field="col_label.name" /></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr t-foreach="periods" t-as="row_label">
+                                    <th><span t-field="row_label.name" /></th>
+                                    <td t-foreach="agegroups" t-as="col_label">
+                                        <input type="integer" t-att-name="'%s_%s_%s' % ('cell', col_label.id, row_label.id)" t-att-value='cell[col_label.id][row_label.id]' />
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                                                    <div class="clearfix" />
+
+                            <div class="form-group">
+                                <div class="col-md-offset-3 col-sm-offset-4 col-sm-8 col-md-7">
+                                    <button type="submit"
+                                        class="btn btn-default btn-primary mb32 ">Submit
+                                    </button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </t>
+    </template>
+
     
     
 
@@ -478,4 +527,13 @@
             </div>
         </t>
     </template>
-</odoo>        
+
+    <template id="my_group_link" name="Link to frontend Group" inherit_id="portal.frontend_layout">
+        <xpath expr="//li[@id='o_logout']" position="before">
+            <li><a href="/my/group_reg" role="menuitem">Our Scout Troop</a></li>
+            <li><a href="/my/pre_reg" role="menuitem">Our Pre-Registration</a></li>
+        </xpath>
+    </template>
+    
+</odoo>
+   

@@ -7,16 +7,16 @@ msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2018-10-12 14:43+0200\n"
+"PO-Revision-Date: 2018-10-23 21:53+0000\n"
 "Last-Translator: Christian Eggert <christian@eggert.dk>\n"
-"Language-Team: Danish <https://example.com/projects/campos-11-0/campos-11-0-"
-"campos_group_reg/da/>\n"
+"Language-Team: Danish <https://example.com/projects/campos-11-0/"
+"campos-11-0-campos_group_reg/da/>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 1.8.7.1\n"
+"X-Generator: Weblate 3.2.1\n"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_active
@@ -125,7 +125,7 @@ msgstr "CampOS Forhåndstilmeldte alder og periode"
 #. module: campos_group_reg
 #: model:ir.model,name:campos_group_reg.model_campos_scout_org
 msgid "Campos Scout Org"
-msgstr ""
+msgstr "Spejder organisation/korps"
 
 #. module: campos_group_reg
 #: selection:campos.group.reg,state:0
@@ -222,42 +222,42 @@ msgstr "Kontakt"
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_wiz_contact_city
 msgid "Contact City"
-msgstr ""
+msgstr "Kontakpersons by"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_wiz_contact_country_id
 msgid "Contact Country"
-msgstr ""
+msgstr "Kontaktpersons Land"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_wiz_contact_email
 msgid "Contact Email"
-msgstr ""
+msgstr "Kontaktpersons E-mail"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_wiz_contact_mobile
 msgid "Contact Mobile"
-msgstr ""
+msgstr "Kontaktpersons mobil"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_wiz_contact_name
 msgid "Contact Name"
-msgstr ""
+msgstr "Kontaktpersons navn"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_wiz_contact_street
 msgid "Contact Street"
-msgstr ""
+msgstr "Kontaktpersons Gade"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_wiz_contact_street2
 msgid "Contact Street2"
-msgstr ""
+msgstr "Kontaktpersons gade 2"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_wiz_contact_zip
 msgid "Contact Zip"
-msgstr ""
+msgstr "Kontaktpersons postnr."
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_child_ids
@@ -268,7 +268,7 @@ msgstr "Kontakter"
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_email_exist
 #: model:ir.ui.view,arch_db:campos_group_reg.thank_you
 msgid "Continue"
-msgstr ""
+msgstr "Fortsæt"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,help:campos_group_reg.field_campos_group_reg_message_bounce
@@ -295,7 +295,7 @@ msgstr "Land"
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_2
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_3
 msgid "Country..."
-msgstr ""
+msgstr "Land..."
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_age_group_create_uid
@@ -340,7 +340,7 @@ msgstr "Til dato"
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_2
 msgid "Details for"
-msgstr ""
+msgstr "Detaljer for"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_age_group_display_name
@@ -371,7 +371,7 @@ msgstr "E-mail"
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_email_exist
 msgid "Email already registered!"
-msgstr ""
+msgstr "Din E-mail eksistere i forvejen"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_employee
@@ -381,7 +381,7 @@ msgstr "Ansat"
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.group_pre_reg
 msgid "Expected participants for"
-msgstr ""
+msgstr "Forventet deltagerantal for"
 
 #. module: campos_group_reg
 #: selection:campos.group.reg,state:0
@@ -489,7 +489,7 @@ msgstr "Intern reference"
 #: code:addons/campos_group_reg/controllers/portal.py:198
 #, python-format
 msgid "Invalid birth date"
-msgstr ""
+msgstr "Ugyldig fødselsdato"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_is_company
@@ -595,7 +595,7 @@ msgstr "Navn"
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_2
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_3
 msgid "Next"
-msgstr ""
+msgstr "Næste"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_comment
@@ -610,7 +610,7 @@ msgstr "mails nej-tak"
 #. module: campos_group_reg
 #: selection:campos.scout.org,worldorg:0
 msgid "Other"
-msgstr ""
+msgstr "Andre"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_parent_name
@@ -630,7 +630,7 @@ msgstr "Telefon"
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_email_exist
 msgid "Please login to update your registrations."
-msgstr ""
+msgstr "Log på for at ændre din registrering."
 
 #. module: campos_group_reg
 #: selection:campos.group.reg,state:0
@@ -649,7 +649,7 @@ msgstr "Forhånds registrering"
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.thank_you
 msgid "Pre registration completed"
-msgstr ""
+msgstr "Forhåndsregistrering gennemført"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_prereg_ids
@@ -665,7 +665,7 @@ msgstr "Oversigt forhånds registrering"
 #. module: campos_group_reg
 #: selection:campos.group.reg,state:0
 msgid "Registred"
-msgstr ""
+msgstr "Registreret"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_parent_id
@@ -681,29 +681,29 @@ msgstr "Sælger"
 #: model:ir.ui.menu,name:campos_group_reg.campos_scout_org_menu
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_2
 msgid "Scout Organization"
-msgstr ""
+msgstr "Korps"
 
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_2
 msgid "Scout Organization..."
-msgstr ""
+msgstr "Korps..."
 
 #. module: campos_group_reg
 #: model:ir.actions.act_window,name:campos_group_reg.campos_scout_org_act_window
 msgid "Scout Organizations"
-msgstr ""
+msgstr "Korps"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_scoutgroup
 #: model:ir.model.fields,field_description:campos_group_reg.field_res_partner_scoutgroup
 #: model:ir.model.fields,field_description:campos_group_reg.field_res_users_scoutgroup
 msgid "Scout Troop"
-msgstr ""
+msgstr "Spejdergruppe"
 
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_1
 msgid "Scout Troop Name"
-msgstr ""
+msgstr "Gruppenavn"
 
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_1
@@ -711,12 +711,12 @@ msgstr ""
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_3
 #: model:ir.ui.view,arch_db:campos_group_reg.group_pre_reg
 msgid "Scout Troop Pre - Registration"
-msgstr ""
+msgstr "Forhåndsregistrering for grupper"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_scout_org_id
 msgid "Scout organization"
-msgstr ""
+msgstr "Korps"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_self
@@ -726,7 +726,7 @@ msgstr ""
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_scout_org_sex
 msgid "Sex"
-msgstr ""
+msgstr "Køn"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_partner_share
@@ -794,7 +794,7 @@ msgstr "Vejnavn"
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_2
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_3
 msgid "Street 2"
-msgstr ""
+msgstr "Gade 2"
 
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.campos_group_reg_form_view
@@ -817,7 +817,7 @@ msgstr "vejnavn 2"
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.group_pre_reg
 msgid "Submit"
-msgstr ""
+msgstr "Indsend"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_vat
@@ -841,7 +841,7 @@ msgstr ""
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.thank_you
 msgid "Thank you"
-msgstr ""
+msgstr "Tak"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,help:campos_group_reg.field_campos_group_reg_user_id
@@ -897,48 +897,48 @@ msgstr "Kasserer"
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_wiz_treasurer_city
 msgid "Treasurer City"
-msgstr ""
+msgstr "Kasserer By"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_wiz_treasurer_country_id
 msgid "Treasurer Country"
-msgstr ""
+msgstr "Kasserer Land"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_wiz_treasurer_email
 msgid "Treasurer Email"
-msgstr ""
+msgstr "Kasserer e-mail"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_wiz_treasurer_mobile
 msgid "Treasurer Mobile"
-msgstr ""
+msgstr "Kasserer mobil"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_wiz_treasurer_name
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_3
 msgid "Treasurer Name"
-msgstr ""
+msgstr "Kasserer navn"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_wiz_treasurer_street
 msgid "Treasurer Street"
-msgstr ""
+msgstr "kasserer Gade"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_wiz_treasurer_street2
 msgid "Treasurer Street2"
-msgstr ""
+msgstr "Kasserer gade 2"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_wiz_treasurer_zip
 msgid "Treasurer Zip"
-msgstr ""
+msgstr "Kasserer postnr"
 
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.campos_group_reg_form_view
 msgid "Troop Name"
-msgstr ""
+msgstr "Gruppe navn"
 
 #. module: campos_group_reg
 #: selection:campos.group.reg,state:0
@@ -948,7 +948,7 @@ msgstr "Ikke bekræftet"
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_3
 msgid "Use Me as Treasurer contact"
-msgstr ""
+msgstr "Brug mig som kasserer"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,help:campos_group_reg.field_campos_group_reg_type
@@ -997,38 +997,38 @@ msgstr "Website of Partner or Company"
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_scout_org_worldorg
 msgid "World Organization"
-msgstr ""
+msgstr "Verdens organisation"
 
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_1
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_3
 msgid "Your Email"
-msgstr ""
+msgstr "Din E-mail"
 
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_1
 msgid "Your Name"
-msgstr ""
+msgstr "Dit navn"
 
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_3
 msgid "Your Scout Troops Treasurer"
-msgstr ""
+msgstr "Din gruppes kasserer"
 
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.thank_you
 msgid "Your answers have been saved."
-msgstr ""
+msgstr "Dit svar er blevet gemt."
 
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_2
 msgid "Your contact details ("
-msgstr ""
+msgstr "Dine kontakt detaljer ("
 
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_email_exist
 msgid "Your email address"
-msgstr ""
+msgstr "Din e-mail"
 
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.campos_group_reg_form_view
@@ -1058,17 +1058,17 @@ msgstr ""
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_email_exist
 msgid "is already registered in the system."
-msgstr ""
+msgstr "Du er allerede registreret i Systemet"
 
 #. module: campos_group_reg
 #: model:res.groups,comment:campos_group_reg.group_campos_group_reg_manager
 msgid "the user will have full access to Group regs."
-msgstr ""
+msgstr "Brugeren vil have fuld adgang til grupperegistrerng"
 
 #. module: campos_group_reg
 #: model:res.groups,comment:campos_group_reg.group_campos_group_reg_user
 msgid "the user will have read only access to groups."
-msgstr ""
+msgstr "Brugeren har kun læseadgang til grupper."
 
 #~ msgid "Confirmed"
 #~ msgstr "Bekræftet"

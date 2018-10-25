@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
+<!-- 
+    <template id="assets_frontend" name="Website assets" inherit_id="website.assets_frontend">
+    <xpath expr="." position="inside">
+        
+        <script type="text/javascript" src="/campos_group_reg/static/src/js/campos_group_reg.js"></script>
+    </xpath>
+</template>
+ -->    
+
 	<template id="group_add_1">
 		<t t-call="website.layout">
 			<t t-set="additional_title">Pre Registration</t>
@@ -284,7 +293,7 @@
                                     <label class="control-label" for="same_as_contact">Use Me as Treasurer contact</label>
                                 </div>
                                 <div class="col-md-7 col-sm-8">
-                                    <input type="checkbox" name="same_as_contact" value="reuse"/>
+                                    <input type="checkbox" id="same_as_contact" name="same_as_contact" value="reuse"/>
                                 </div>
                             </div>
                             <div class="clearfix" />
@@ -349,7 +358,7 @@
                                 <label class="control-label" for="treasurer_country_id">Country</label>
                             </div>
                             <div class="col-md-7 col-sm-8">
-                            <select name="contact_country_id" class="form-control" required="required">
+                            <select name="treasurer_country_id" class="form-control" id="treasurer_country_id">
                                 <option value="">Country...</option>
                                 <t t-foreach="countries or []" t-as="country">
                                     <option t-if="country.id == treasurer.get('country_id')" selected="selected" t-att-value="country.id">
@@ -370,7 +379,7 @@
                                 </div>
                                 <div class="col-md-7 col-sm-8">
                                     <input type="text" id="treasurer_mobile" name="treasurer_mobile"
-                                        class="form-control" t-att-value="treasurer.get('mobile')" required="1" />
+                                        class="form-control" t-att-value="treasurer.get('mobile')" />
                                 </div>
                             </div>
                             
@@ -381,7 +390,7 @@
                                     <label class="control-label" for="treasurer_email">Your Email</label>
                                 </div>
                                 <div class="col-md-7 col-sm-8">
-                                    <input type="email" name="treasurer_email" class="form-control" t-att-value="treasurer.get('email')" required="required" />
+                                    <input type="email" id="treasurer_email" name="treasurer_email" class="form-control" t-att-value="treasurer.get('email')" />
                                 </div>
                             </div>
                             

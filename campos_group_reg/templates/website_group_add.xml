@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-<!-- 
-    <template id="assets_frontend" name="Website assets" inherit_id="website.assets_frontend">
-    <xpath expr="." position="inside">
-        
-        <script type="text/javascript" src="/campos_group_reg/static/src/js/campos_group_reg.js"></script>
-    </xpath>
-</template>
- -->    
+<!-- Skip JS check for now 
+    <template id="assets_frontend" name="CampOS Website assets" inherit_id="website.assets_frontend">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/campos_group_reg/static/src/js/campos_group_reg.js"/>
+        </xpath>
+    </template>
+  -->
 
 	<template id="group_add_1">
 		<t t-call="website.layout">
@@ -288,7 +287,7 @@
                             <input type="hidden" name="group_reg_id" t-att-value="group_reg.id" />
                             
                             <div
-                                class="form-group form-field">
+                                class="form-group form-field o_website_form_required_custom">
                                 <div class="col-md-3 col-sm-4 text-right">
                                     <label class="control-label" for="same_as_contact">Use Me as Treasurer contact</label>
                                 </div>
@@ -298,7 +297,7 @@
                             </div>
                             <div class="clearfix" />
                             <div
-                                class="form-group form-field">
+                                class="form-group form-field o_website_form_required_custom">
                                 <div class="col-md-3 col-sm-4 text-right">
                                     <label class="control-label" for="treasurer_name">Treasurer Name</label>
                                 </div>
@@ -309,7 +308,7 @@
                             </div>
                             
                             <div
-                                class="form-group form-field">
+                                class="form-group form-field o_website_form_required_custom">
                                 <div class="col-md-3 col-sm-4 text-right">
                                     <label class="control-label" for="treasurer_street">Street</label>
                                 </div>
@@ -319,7 +318,7 @@
                                 </div>
                             </div>
                             <div
-                                class="form-group form-field">
+                                class="form-group form-field o_website_form_required_custom">
                                 <div class="col-md-3 col-sm-4 text-right">
                                     <label class="control-label" for="treasurer_street2">Street 2</label>
                                 </div>
@@ -330,7 +329,7 @@
                             </div>
                             
                             <div
-                                class="form-group form-field ">
+                                class="form-group form-field o_website_form_required_custom">
                                 <div class="col-md-3 col-sm-4 text-right">
                                     <label class="control-label" for="treasurer_zip">Zip</label>
                                 </div>
@@ -341,7 +340,7 @@
                             </div>
                             
                             <div
-                                class="form-group form-field">
+                                class="form-group form-field o_website_form_required_custom">
                                 <div class="col-md-3 col-sm-4 text-right">
                                     <label class="control-label" for="treasurer_city">City</label>
                                 </div>

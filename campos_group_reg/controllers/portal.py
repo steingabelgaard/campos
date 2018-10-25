@@ -125,15 +125,25 @@ class PortalGroupReg(CustomerPortal):
                         group_reg.treasurer_partner_id = group_reg.contact_partner_id
                     else:    
                         treasurer = {}
+                        tres_vals = {}
                         for f in ['name', 'street', 'street2', 'zip', 'city', 'country_id', 'email', 'mobile']:
                             if post.get('treasurer_' + f):
                                 treasurer[f] = post.get('treasurer_' + f)
+                                tres_vals[f] = treasurer[f] 
                         if treasurer:
                             if not group_reg.treasurer_partner_id:
                                 treasurer['parent_id'] = group_reg.partner_id.id
                                 group_reg.treasurer_partner_id = request.env['res.partner'].sudo().create(treasurer)
                             else:
-                                group_reg.treasurer_partner_id.write(treasure)
+                                group_reg.treasurer_partner_id.write(treasurer)
+                            for f in ['name', 'street', 'zip', 'city', 'country_id', 'email', 'mobile']:
+                                if not post.get('treasurer_' + f):
+                                    request.website.add_status_message(_('Missing required field: %s') % f, type_='danger')
+                                    values['treasurer'] = tres_vals
+                                    values['group_reg'] = group_reg
+                                    return request.render("campos_group_reg.group_add_3", values)
+                                    
+                                    
                                 
                     if post.get('group_scout_org_id', False):
                         group_reg.scout_org_id = post.get('group_scout_org_id', False)     

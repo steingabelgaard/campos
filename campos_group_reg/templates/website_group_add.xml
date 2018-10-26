@@ -425,6 +425,7 @@
                         <form action="" t-attf-action="/group-reg/pre-reg" method="post">
                             <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
                             <input type="hidden" name="group_reg_id" t-att-value="group_reg.id" />
+                         <!-- Periods down (rows), age is columns 
                          <table class="table table-hover">
 				            <thead>
 				                <tr>
@@ -441,6 +442,25 @@
 				                </tr>
 				            </tbody>
 				        </table>
+				         -->
+				        <!-- Age down (rows), period is columns  -->
+                         <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th> </th>
+                                    <th t-foreach="periods" t-as="col_label"><span t-field="col_label.name" /></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr t-foreach="agegroups" t-as="row_label">
+                                    <th><span t-field="row_label.name" /></th>
+                                    <td t-foreach="periods" t-as="col_label">
+                                        <input type="integer" t-att-name="'%s_%s_%s' % ('cell', row_label.id, col_label.id)" t-att-value='cell[row_label.id][col_label.id]' />
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+				        
 				                                    <div class="clearfix" />
 
                             <div class="form-group">
@@ -473,6 +493,7 @@
                         <form action="" t-attf-action="/my/pre_reg" method="post">
                             <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
                             <input type="hidden" name="group_reg_id" t-att-value="group_reg.id" />
+                         <!-- Periods down (rows), age is columns 
                          <table class="table table-hover">
                             <thead>
                                 <tr>
@@ -485,6 +506,24 @@
                                     <th><span t-field="row_label.name" /></th>
                                     <td t-foreach="agegroups" t-as="col_label">
                                         <input type="integer" t-att-name="'%s_%s_%s' % ('cell', col_label.id, row_label.id)" t-att-value='cell[col_label.id][row_label.id]' />
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                         -->
+                        <!-- Age down (rows), period is columns  -->
+                         <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th> </th>
+                                    <th t-foreach="periods" t-as="col_label"><span t-field="col_label.name" /></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr t-foreach="agegroups" t-as="row_label">
+                                    <th><span t-field="row_label.name" /></th>
+                                    <td t-foreach="periods" t-as="col_label">
+                                        <input type="integer" t-att-name="'%s_%s_%s' % ('cell', row_label.id, col_label.id)" t-att-value='cell[row_label.id][col_label.id]' />
                                     </td>
                                 </tr>
                             </tbody>

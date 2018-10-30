@@ -7,16 +7,48 @@ msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2018-10-23 21:53+0000\n"
+"PO-Revision-Date: 2018-10-30 22:26+0100\n"
 "Last-Translator: Christian Eggert <christian@eggert.dk>\n"
-"Language-Team: Danish <https://example.com/projects/campos-11-0/"
-"campos-11-0-campos_group_reg/da/>\n"
+"Language-Team: Danish <https://example.com/projects/campos-11-0/campos-11-0-"
+"campos_group_reg/da/>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.2.1\n"
+"X-Generator: Poedit 1.8.7.1\n"
+
+#. module: campos_group_reg
+#: model:mail.template,body_html:campos_group_reg.contact_welcome_mail
+#: model:mail.template,body_html:campos_group_reg.treasurer_welcome_mail
+msgid ""
+"\n"
+"                \n"
+"                    <p>\n"
+"    Dear ${object.name or ''},\n"
+"</p>\n"
+"<p>\n"
+"    You have been given access to SSC 2019\n"
+"</p>\n"
+"<p>\n"
+"    Your login account data is:\n"
+"</p>\n"
+"<ul>\n"
+"    <li>Username: ${object.email or ''}</li>\n"
+"    <li>Portal: <a href=\"${'portal_url' in ctx and ctx['portal_url'] or "
+"''}\">${'portal_url' in ctx and ctx['portal_url'] or ''}</a></li>\n"
+"    <li>Database: ${'dbname' in ctx and ctx['dbname'] or ''}</li>\n"
+"</ul>\n"
+"<p>\n"
+"    You can set or change your password via the following url:\n"
+"</p>\n"
+"<ul>\n"
+"    <li><a href=\"${object.signup_url}\">${object.signup_url}</a></li>\n"
+"</ul>\n"
+"<p>\n"
+"                                    \n"
+"            "
+msgstr ""
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_active
@@ -79,7 +111,7 @@ msgid "Bounce"
 msgstr "Spring"
 
 #. module: campos_group_reg
-#: code:addons/campos_group_reg/controllers/portal.py:205
+#: code:addons/campos_group_reg/controllers/portal.py:270
 #, python-format
 msgid "CPR must be 4 digits"
 msgstr ""
@@ -380,6 +412,7 @@ msgstr "Ansat"
 
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.group_pre_reg
+#: model:ir.ui.view,arch_db:campos_group_reg.group_pre_reg_edit
 msgid "Expected participants for"
 msgstr "Forventet deltagerantal for"
 
@@ -486,7 +519,7 @@ msgid "Internal Reference"
 msgstr "Intern reference"
 
 #. module: campos_group_reg
-#: code:addons/campos_group_reg/controllers/portal.py:198
+#: code:addons/campos_group_reg/controllers/portal.py:263
 #, python-format
 msgid "Invalid birth date"
 msgstr "Ugyldig fødselsdato"
@@ -563,6 +596,12 @@ msgstr ""
 "pixel."
 
 #. module: campos_group_reg
+#: code:addons/campos_group_reg/controllers/portal.py:141
+#, python-format
+msgid "Missing required field: %s"
+msgstr ""
+
+#. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_contact_mobile
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_mobile
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_treasurer_mobile
@@ -613,6 +652,16 @@ msgid "Other"
 msgstr "Andre"
 
 #. module: campos_group_reg
+#: model:ir.ui.view,arch_db:campos_group_reg.my_group_link
+msgid "Our Pre-Registration"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.ui.view,arch_db:campos_group_reg.my_group_link
+msgid "Our Scout Troop"
+msgstr ""
+
+#. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_parent_name
 msgid "Parent name"
 msgstr "Forældre navn"
@@ -643,6 +692,7 @@ msgstr "Forhånds registrering"
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_2
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_3
 #: model:ir.ui.view,arch_db:campos_group_reg.group_pre_reg
+#: model:ir.ui.view,arch_db:campos_group_reg.group_pre_reg_edit
 msgid "Pre Registration"
 msgstr "Forhånds registrering"
 
@@ -650,6 +700,12 @@ msgstr "Forhånds registrering"
 #: model:ir.ui.view,arch_db:campos_group_reg.thank_you
 msgid "Pre registration completed"
 msgstr "Forhåndsregistrering gennemført"
+
+#. module: campos_group_reg
+#: code:addons/campos_group_reg/controllers/portal.py:210
+#, python-format
+msgid "Pre registration figures has been updated."
+msgstr ""
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_prereg_ids
@@ -671,6 +727,12 @@ msgstr "Registreret"
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_parent_id
 msgid "Related Company"
 msgstr "Relateret virksomhed"
+
+#. module: campos_group_reg
+#: model:mail.template,subject:campos_group_reg.contact_welcome_mail
+#: model:mail.template,subject:campos_group_reg.treasurer_welcome_mail
+msgid "SSC 2019 Signup"
+msgstr ""
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_user_id
@@ -710,8 +772,15 @@ msgstr "Gruppenavn"
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_2
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_3
 #: model:ir.ui.view,arch_db:campos_group_reg.group_pre_reg
+#: model:ir.ui.view,arch_db:campos_group_reg.group_pre_reg_edit
 msgid "Scout Troop Pre - Registration"
 msgstr "Forhåndsregistrering for grupper"
+
+#. module: campos_group_reg
+#: code:addons/campos_group_reg/models/cms_form_campos_group_reg.py:85
+#, python-format
+msgid "Scout Troop updated."
+msgstr ""
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_scout_org_id
@@ -816,6 +885,7 @@ msgstr "vejnavn 2"
 
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.group_pre_reg
+#: model:ir.ui.view,arch_db:campos_group_reg.group_pre_reg_edit
 msgid "Submit"
 msgstr "Indsend"
 

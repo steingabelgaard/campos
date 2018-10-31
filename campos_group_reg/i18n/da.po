@@ -7,16 +7,16 @@ msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2018-10-30 22:26+0100\n"
+"PO-Revision-Date: 2018-10-30 23:25+0000\n"
 "Last-Translator: Christian Eggert <christian@eggert.dk>\n"
-"Language-Team: Danish <https://example.com/projects/campos-11-0/campos-11-0-"
-"campos_group_reg/da/>\n"
+"Language-Team: Danish <https://example.com/projects/campos-11-0/"
+"campos-11-0-campos_group_reg/da/>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 1.8.7.1\n"
+"X-Generator: Weblate 3.2.1\n"
 
 #. module: campos_group_reg
 #: model:mail.template,body_html:campos_group_reg.contact_welcome_mail
@@ -654,12 +654,12 @@ msgstr "Andre"
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.my_group_link
 msgid "Our Pre-Registration"
-msgstr ""
+msgstr "Vores forhåndstilmelding"
 
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.my_group_link
 msgid "Our Scout Troop"
-msgstr ""
+msgstr "Gruppens oplysninger"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_parent_name
@@ -706,6 +706,8 @@ msgstr "Forhåndsregistrering gennemført"
 #, python-format
 msgid "Pre registration figures has been updated."
 msgstr ""
+"Din forhånds registrering er blevet opdateret (der kommer inden mail om "
+"dette)"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_prereg_ids
@@ -780,7 +782,7 @@ msgstr "Forhåndsregistrering for grupper"
 #: code:addons/campos_group_reg/models/cms_form_campos_group_reg.py:85
 #, python-format
 msgid "Scout Troop updated."
-msgstr ""
+msgstr "Din spejdergruppe er blevet opdateret."
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_scout_org_id

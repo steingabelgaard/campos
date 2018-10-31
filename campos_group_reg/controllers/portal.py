@@ -49,18 +49,24 @@ class PortalGroupReg(CustomerPortal):
             
             group_reg = None
             country_id = False
+            lang = 'da_DK'
             if not error:    
                 if post.get('group_country_id', False):
                     country_id =  int(post.get('group_country_id', False))
+                    if country_id != country_da_id:
+                        lang = 'en_US'
                 contact = partner_sudo.create({'name': post.get('contact_name'),
                                                'email': post.get('contact_email'),
                                                'country_id': country_id,
+                                               'lang': lang,
+                                               'type': 'other',
                                                })
                 
                 group = partner_sudo.create({'name': post.get('group_name'),
                                              'scoutgroup': True,
                                              'country_id': country_id,
                                              'is_company': True,
+                                             'lang': lang,
                                              })
                 group_reg = request.env['campos.group.reg'].sudo().create({'partner_id': group.id,
                                                                            'contact_partner_id': contact.id})
@@ -132,6 +138,11 @@ class PortalGroupReg(CustomerPortal):
                                 tres_vals[f] = treasurer[f] 
                         if treasurer:
                             if not group_reg.treasurer_partner_id:
+                                lang = 'da_DK'
+                                if treasurer['country_id'] != country_da_id:
+                                    lang = 'en_US'
+                                treasurer['lang'] = lang
+                                treasurer['type'] = 'invoice'
                                 treasurer['parent_id'] = group_reg.partner_id.id
                                 group_reg.treasurer_partner_id = request.env['res.partner'].sudo().create(treasurer)
                             else:

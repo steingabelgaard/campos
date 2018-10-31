@@ -5,3 +5,4 @@ from . import campos_prereg_age_period
 from . import cms_form_campos_group_reg
 from . import res_partner
 from . import campos_scout_org
+from . import account_form

@@ -16,6 +16,7 @@
         'partner_municipality',
         'web_widget_x2many_2d_matrix',
         'cms_form',
+        'cms_account_form',
     ],
     'data': [
         

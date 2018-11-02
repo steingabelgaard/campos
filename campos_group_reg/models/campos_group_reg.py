@@ -133,6 +133,10 @@ class CamposGroupReg(models.Model):
     def action_pre_reg(self):
         self.ensure_one()
         self.signup_contacts()
+        # Administration notifications:
+        template = self.env.ref('campos_group_reg.new_group_pre_reg_mail')
+        if template:
+            template.send_mail(self.id)
         self.state = 'prereg'
     
         

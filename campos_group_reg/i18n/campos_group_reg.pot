@@ -104,7 +104,7 @@ msgid "Bounce"
 msgstr ""
 
 #. module: campos_group_reg
-#: code:addons/campos_group_reg/controllers/portal.py:270
+#: code:addons/campos_group_reg/controllers/portal.py:281
 #, python-format
 msgid "CPR must be 4 digits"
 msgstr ""
@@ -495,7 +495,7 @@ msgid "Internal Reference"
 msgstr ""
 
 #. module: campos_group_reg
-#: code:addons/campos_group_reg/controllers/portal.py:263
+#: code:addons/campos_group_reg/controllers/portal.py:274
 #, python-format
 msgid "Invalid birth date"
 msgstr ""
@@ -567,7 +567,7 @@ msgid "Medium-sized image of this contact. It is automatically resized as a 128x
 msgstr ""
 
 #. module: campos_group_reg
-#: code:addons/campos_group_reg/controllers/portal.py:141
+#: code:addons/campos_group_reg/controllers/portal.py:152
 #, python-format
 msgid "Missing required field: %s"
 msgstr ""
@@ -673,7 +673,7 @@ msgid "Pre registration completed"
 msgstr ""
 
 #. module: campos_group_reg
-#: code:addons/campos_group_reg/controllers/portal.py:210
+#: code:addons/campos_group_reg/controllers/portal.py:221
 #, python-format
 msgid "Pre registration figures has been updated."
 msgstr ""
@@ -1065,6 +1065,11 @@ msgstr ""
 #. module: campos_group_reg
 #: model:ir.model,name:campos_group_reg.model_cms_form_campos_group_reg
 msgid "cms.form.campos.group.reg"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model,name:campos_group_reg.model_cms_form_my_account
+msgid "cms.form.my.account"
 msgstr ""
 
 #. module: campos_group_reg

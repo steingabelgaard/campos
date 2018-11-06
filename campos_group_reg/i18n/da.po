@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2018-10-30 23:25+0000\n"
+"PO-Revision-Date: 2018-11-06 19:03+0000\n"
 "Last-Translator: Christian Eggert <christian@eggert.dk>\n"
 "Language-Team: Danish <https://example.com/projects/campos-11-0/"
 "campos-11-0-campos_group_reg/da/>\n"
@@ -599,7 +599,7 @@ msgstr ""
 #: code:addons/campos_group_reg/controllers/portal.py:141
 #, python-format
 msgid "Missing required field: %s"
-msgstr ""
+msgstr "Krævet felt mangler: %s"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_contact_mobile
@@ -734,7 +734,7 @@ msgstr "Relateret virksomhed"
 #: model:mail.template,subject:campos_group_reg.contact_welcome_mail
 #: model:mail.template,subject:campos_group_reg.treasurer_welcome_mail
 msgid "SSC 2019 Signup"
-msgstr ""
+msgstr "SSC 2019 Login"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_user_id

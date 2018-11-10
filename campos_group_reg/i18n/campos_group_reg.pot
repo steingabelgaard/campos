@@ -601,6 +601,11 @@ msgid "Name"
 msgstr ""
 
 #. module: campos_group_reg
+#: model:mail.template,subject:campos_group_reg.new_group_pre_reg_mail
+msgid "New SSC 2019 Pre-registration: ${object.name or ''}"
+msgstr ""
+
+#. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_1
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_2
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_3

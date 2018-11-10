@@ -9,7 +9,7 @@
         <field name="arch" type="xml">
             <form>
                 <header>
-                    <field name="state" widget="statusbar"/>
+                    <field name="state" widget="statusbar" clickable="1"/>
                 </header>
                 <sheet>
                     <div class="oe_button_box" name="button_box">
@@ -130,6 +130,8 @@
                 <field name="city" />
                 <field name="country_id" />
                 <field name="municipality_id" />
+                <field name="state"/>
+                <filter string="Archived" name="inactive" domain="[('active','=',False)]"/>
                 <group string="Group By">
                     <filter name="group_municipality" string="Municipality"
                         context="{'group_by': 'municipality_id'}" />
@@ -149,6 +151,7 @@
                 <field name="name" />
                 <field name="city" />
                 <field name="country_id" />
+                <field name="state"/>
             </tree>
         </field>
     </record>

@@ -44,11 +44,11 @@ class CamposGroupReg(models.Model):
 
     state = fields.Selection([
         ('draft', 'Unconfirmed'),
-        ('cancel', 'Cancelled'),
         ('reg', 'Registred'),
         ('prereg', 'Pre Registered'),
         ('finalreg', 'Final Registration'),
-        ('done', 'Attended')
+        ('done', 'Attended'),
+        ('cancel', 'Cancelled'),
         ], string='State', default='draft')
 
     # Contact
@@ -123,8 +123,35 @@ class CamposGroupReg(models.Model):
                  'parent_id': group_partner.id})
             vals['treasurer_partner_id'] = treasurer_partner.id
         _logger.info('BEFORE CReate')
-        return super(CamposGroupReg, self).create(vals)
+        res = super(CamposGroupReg, self).create(vals)
+        if 'state' in vals:
+            res._state_action(vals['state'])
+        return res
     
+    @api.multi
+    def write(self, vals):
+        ret = super(CamposGroupReg, self).write(vals)
+        if 'state' in vals:
+            self._state_action(vals['state'])
+        return ret
+    
+    @api.multi    
+    def _state_action(self, new_state):
+        method = getattr(self, '_state_action_%s' % new_state, False)
+        if method:
+            method()
+            
+    @api.multi
+    def _state_action_cancel(self):        
+        partners = self.mapped('partner_id') + self.mapped('contact_partner_id') + self.mapped('treasurer_partner_id')
+        _logger.info('PARTNERS %s:', partners )
+        if partners:
+            users = self.env['res.users'].search([('partner_id', 'in', partners.ids)])
+            for user in users:
+                user.login += '-' + str(user.id) # Make disabled ogin uniq
+                user.active = False
+            partners.write({'active': False})
+         
     def action_registrered(self):
         self.ensure_one()
         # TODO Send mails

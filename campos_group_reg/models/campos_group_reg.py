@@ -124,8 +124,7 @@ class CamposGroupReg(models.Model):
             vals['treasurer_partner_id'] = treasurer_partner.id
         _logger.info('BEFORE CReate')
         res = super(CamposGroupReg, self).create(vals)
-        if 'state' in vals:
-            res._state_action(vals['state'])
+        res._state_action(res.state)
         return res
     
     @api.multi
@@ -137,6 +136,7 @@ class CamposGroupReg(models.Model):
     
     @api.multi    
     def _state_action(self, new_state):
+        _logger.info('STATE ACTION: %s', new_state)
         method = getattr(self, '_state_action_%s' % new_state, False)
         if method:
             method()
@@ -151,6 +151,19 @@ class CamposGroupReg(models.Model):
                 user.login += '-' + str(user.id) # Make disabled ogin uniq
                 user.active = False
             partners.write({'active': False})
+            
+    @api.multi
+    def _state_action_draft(self):
+        _logger.info('STATE ACTION DRAFT %s', self)
+        for grp in self:
+            if not grp.contact_partner_id.user_ids:
+                grp.contact_partner_id.signup_and_mail('campos_group_reg.contact_welcome_mail') 
+            # Administration notifications:
+            template = self.env.ref('campos_group_reg.new_group_pre_reg_mail')
+            _logger.info("ADMMAIL %s %d", template, grp.id)
+            if template:
+                template.send_mail(grp.id)
+        
          
     def action_registrered(self):
         self.ensure_one()
@@ -160,10 +173,6 @@ class CamposGroupReg(models.Model):
     def action_pre_reg(self):
         self.ensure_one()
         self.signup_contacts()
-        # Administration notifications:
-        template = self.env.ref('campos_group_reg.new_group_pre_reg_mail')
-        if template:
-            template.send_mail(self.id)
         self.state = 'prereg'
     
         

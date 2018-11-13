@@ -83,7 +83,7 @@
         <field name="name">Pre-Registration Overview</field>
         <field name="res_model">campos.prereg.age.period</field>
         <field name="view_mode">pivot,tree,form</field>
-        <field name="domain">[]</field>
+        <field name="domain">[('group_reg_id.state', 'not in', ['cancel'])]</field>
         <field name="context">{}</field>
     </record>
 

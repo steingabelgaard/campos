@@ -567,7 +567,7 @@
             <div id="wrap">
                 <div class="container">
                     <h4>Email already registered!</h4>
-                    <p>Your email address <span t-value="email"/> is already registered in the system.</p>
+                    <p>Your email address <span t-esc="email"/> is already registered in the system.</p>
                     <p>Please login to update your registrations.</p>
                     <a href="/web/login" class="btn btn-default btn-primary mb32">Continue</a>
                 </div>

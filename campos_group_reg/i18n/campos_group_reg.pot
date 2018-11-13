@@ -84,6 +84,11 @@ msgid "Age To"
 msgstr ""
 
 #. module: campos_group_reg
+#: model:ir.ui.view,arch_db:campos_group_reg.campos_group_reg_search_view
+msgid "Archived"
+msgstr ""
+
+#. module: campos_group_reg
 #: selection:campos.group.reg,state:0
 msgid "Attended"
 msgstr ""

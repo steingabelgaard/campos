@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2018-11-13 22:03+0000\n"
+"PO-Revision-Date: 2018-11-14 20:03+0000\n"
 "Last-Translator: Christian Eggert <christian@eggert.dk>\n"
 "Language-Team: Danish <https://example.com/projects/campos-11-0/"
 "campos-11-0-campos_group_reg/da/>\n"
@@ -634,7 +634,7 @@ msgstr "Navn"
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_2
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_3
 msgid "Next"
-msgstr "Næste"
+msgstr "Fortsæt"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_comment
@@ -649,7 +649,7 @@ msgstr "mails nej-tak"
 #. module: campos_group_reg
 #: selection:campos.scout.org,worldorg:0
 msgid "Other"
-msgstr "Andre"
+msgstr "Andet"
 
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.my_group_link
@@ -859,7 +859,7 @@ msgstr "Status"
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_2
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_3
 msgid "Street"
-msgstr "Vejnavn"
+msgstr "Gade"
 
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_2
@@ -1075,7 +1075,7 @@ msgstr "Verdens organisation"
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_1
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_3
 msgid "Your Email"
-msgstr "Din E-mail"
+msgstr "Din Email"
 
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_1
@@ -1115,7 +1115,7 @@ msgstr "Postnr."
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_2
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_3
 msgid "Zip"
-msgstr "Postnummer"
+msgstr "Postnr."
 
 #. module: campos_group_reg
 #: model:ir.model,name:campos_group_reg.model_campos_group_reg_wiz

@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2018-11-06 19:03+0000\n"
+"PO-Revision-Date: 2018-11-13 22:03+0000\n"
 "Last-Translator: Christian Eggert <christian@eggert.dk>\n"
 "Language-Team: Danish <https://example.com/projects/campos-11-0/"
 "campos-11-0-campos_group_reg/da/>\n"
@@ -679,7 +679,7 @@ msgstr "Telefon"
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_email_exist
 msgid "Please login to update your registrations."
-msgstr "Log på for at ændre din registrering."
+msgstr "Log på for at ændre din registrering. Eller bed om et nyt password."
 
 #. module: campos_group_reg
 #: selection:campos.group.reg,state:0
@@ -1130,7 +1130,7 @@ msgstr ""
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_email_exist
 msgid "is already registered in the system."
-msgstr "Du er allerede registreret i Systemet"
+msgstr "er allerede registreret i Systemet"
 
 #. module: campos_group_reg
 #: model:res.groups,comment:campos_group_reg.group_campos_group_reg_manager

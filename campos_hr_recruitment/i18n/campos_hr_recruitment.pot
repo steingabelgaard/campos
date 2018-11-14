@@ -1,0 +1,135 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* campos_hr_recruitment
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: campos_hr_recruitment
+#: model:ir.ui.view,arch_db:campos_hr_recruitment.apply
+msgid "<b>Below you can upload relevant documents.<br/></b>"
+msgstr ""
+
+#. module: campos_hr_recruitment
+#: model:ir.ui.view,arch_db:campos_hr_recruitment.apply
+msgid "Application"
+msgstr ""
+
+#. module: campos_hr_recruitment
+#: model:ir.ui.view,arch_db:campos_hr_recruitment.apply
+msgid "Apply Job"
+msgstr ""
+
+#. module: campos_hr_recruitment
+#: model:ir.ui.view,arch_db:campos_hr_recruitment.apply
+msgid "Birthdate"
+msgstr ""
+
+#. module: campos_hr_recruitment
+#: model:ir.ui.view,arch_db:campos_hr_recruitment.apply
+msgid "City"
+msgstr ""
+
+#. module: campos_hr_recruitment
+#: model:ir.ui.view,arch_db:campos_hr_recruitment.apply
+msgid "Country"
+msgstr ""
+
+#. module: campos_hr_recruitment
+#: model:ir.ui.view,arch_db:campos_hr_recruitment.apply
+msgid "Country..."
+msgstr ""
+
+#. module: campos_hr_recruitment
+#: model:ir.ui.view,arch_db:campos_hr_recruitment.apply
+msgid "Female"
+msgstr ""
+
+#. module: campos_hr_recruitment
+#: model:ir.ui.view,arch_db:campos_hr_recruitment.apply
+msgid "Gender"
+msgstr ""
+
+#. module: campos_hr_recruitment
+#: model:ir.ui.view,arch_db:campos_hr_recruitment.apply
+msgid "Job Application Form"
+msgstr ""
+
+#. module: campos_hr_recruitment
+#: model:ir.ui.view,arch_db:campos_hr_recruitment.apply
+msgid "Male"
+msgstr ""
+
+#. module: campos_hr_recruitment
+#: model:ir.ui.view,arch_db:campos_hr_recruitment.apply
+msgid "Next"
+msgstr ""
+
+#. module: campos_hr_recruitment
+#: model:ir.ui.view,arch_db:campos_hr_recruitment.apply
+msgid "Other"
+msgstr ""
+
+#. module: campos_hr_recruitment
+#: model:ir.ui.view,arch_db:campos_hr_recruitment.apply
+msgid "Other relevant Document"
+msgstr ""
+
+#. module: campos_hr_recruitment
+#: model:ir.ui.view,arch_db:campos_hr_recruitment.apply
+msgid "Resume"
+msgstr ""
+
+#. module: campos_hr_recruitment
+#: model:ir.ui.view,arch_db:campos_hr_recruitment.apply
+msgid "Select gender..."
+msgstr ""
+
+#. module: campos_hr_recruitment
+#: model:ir.ui.view,arch_db:campos_hr_recruitment.apply
+msgid "Short Introduction"
+msgstr ""
+
+#. module: campos_hr_recruitment
+#: model:ir.ui.view,arch_db:campos_hr_recruitment.apply
+msgid "Street"
+msgstr ""
+
+#. module: campos_hr_recruitment
+#: model:ir.ui.view,arch_db:campos_hr_recruitment.apply
+msgid "Street 2"
+msgstr ""
+
+#. module: campos_hr_recruitment
+#: model:ir.ui.view,arch_db:campos_hr_recruitment.apply
+msgid "Submit"
+msgstr ""
+
+#. module: campos_hr_recruitment
+#: model:ir.ui.view,arch_db:campos_hr_recruitment.apply
+msgid "Your Email"
+msgstr ""
+
+#. module: campos_hr_recruitment
+#: model:ir.ui.view,arch_db:campos_hr_recruitment.apply
+msgid "Your Name"
+msgstr ""
+
+#. module: campos_hr_recruitment
+#: model:ir.ui.view,arch_db:campos_hr_recruitment.apply
+msgid "Your Phone Number"
+msgstr ""
+
+#. module: campos_hr_recruitment
+#: model:ir.ui.view,arch_db:campos_hr_recruitment.apply
+msgid "Zip"
+msgstr ""
+

@@ -209,6 +209,11 @@ msgid "Commercial Entity"
 msgstr ""
 
 #. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_commercial_partner_country_id
+msgid "Commercial Entity's Country"
+msgstr ""
+
+#. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_company_id
 msgid "Company"
 msgstr ""
@@ -302,7 +307,6 @@ msgid "Counter of the number of bounced emails for this contact"
 msgstr ""
 
 #. module: campos_group_reg
-#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_commercial_partner_country_id
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_contact_country_id
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_country_id
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_treasurer_country_id

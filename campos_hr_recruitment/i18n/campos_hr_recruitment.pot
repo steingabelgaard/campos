@@ -120,12 +120,12 @@ msgstr ""
 
 #. module: campos_hr_recruitment
 #: model:ir.ui.view,arch_db:campos_hr_recruitment.apply
-msgid "Your Name"
+msgid "Your Mobile Phone Number"
 msgstr ""
 
 #. module: campos_hr_recruitment
 #: model:ir.ui.view,arch_db:campos_hr_recruitment.apply
-msgid "Your Phone Number"
+msgid "Your Name"
 msgstr ""
 
 #. module: campos_hr_recruitment

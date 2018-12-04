@@ -156,7 +156,7 @@ class CamposGroupReg(models.Model):
     def _state_action_draft(self):
         _logger.info('STATE ACTION DRAFT %s', self)
         for grp in self:
-            if not grp.contact_partner_id.user_ids:
+            if grp.contact_partner_id and not grp.contact_partner_id.user_ids:
                 grp.contact_partner_id.signup_and_mail('campos_group_reg.contact_welcome_mail') 
             # Administration notifications:
             template = self.env.ref('campos_group_reg.new_group_pre_reg_mail')

@@ -47,6 +47,7 @@
                         <page name="contact" string="Contact">
                             <group>
                                 <group>
+                                    <field name="contact_partner_id"/>
                                     <field name="contact_name"/>
                                     <label for="contact_street" string="Address" />
                                     <div class="o_address_format">
@@ -73,6 +74,7 @@
                         <page name="treasurer" string="Treasurer">
                             <group>
                                 <group>
+                                    <field name="treasurer_partner_id"/>
                                     <field name="treasurer_name"/>
                                     <label for="treasurer_street" string="Address" />
                                     <div class="o_address_format">

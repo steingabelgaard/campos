@@ -55,19 +55,21 @@ class PortalGroupReg(CustomerPortal):
                     country_id =  int(post.get('group_country_id', False))
                     if country_id != country_da_id:
                         lang = 'en_US'
-                contact = partner_sudo.create({'name': post.get('contact_name'),
-                                               'email': post.get('contact_email'),
-                                               'country_id': country_id,
-                                               'lang': lang,
-                                               'type': 'other',
-                                               })
-                
                 group = partner_sudo.create({'name': post.get('group_name'),
                                              'scoutgroup': True,
                                              'country_id': country_id,
                                              'is_company': True,
                                              'lang': lang,
                                              })
+
+                contact = partner_sudo.create({'name': post.get('contact_name'),
+                                               'email': post.get('contact_email'),
+                                               'country_id': country_id,
+                                               'lang': lang,
+                                               'type': 'other',
+                                               'parent_id': group.id,
+                                               })
+                
                 group_reg = request.env['campos.group.reg'].sudo().create({'partner_id': group.id,
                                                                            'contact_partner_id': contact.id})
                 _logger.info('GROUP REG: %s', group_reg)

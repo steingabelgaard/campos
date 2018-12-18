@@ -204,7 +204,7 @@ class PortalGroupReg(CustomerPortal):
                                            
         return request.render("campos_group_reg.thank_you", {})                  
     
-    @http.route(['/my/pre_reg'], type='http', auth="public", website=True)
+    @http.route(['/my/pre_reg'], type='http', auth="user", website=True)
     def portal_my_pre_reg(self, **post):
         _logger.info('MY Prereg')
         partner = request.env.user.partner_id
@@ -245,7 +245,7 @@ class PortalGroupReg(CustomerPortal):
             return request.render("campos_group_reg.group_pre_reg_edit", values)
         return request.redirect('/my')
     
-    @http.route(['/my/group_reg'], type='http', auth="public", website=True)
+    @http.route(['/my/group_reg'], type='http', auth="user", website=True)
     def portal_my_group_reg(self):
         partner = request.env.user.partner_id
         if partner.parent_id.scoutgroup:

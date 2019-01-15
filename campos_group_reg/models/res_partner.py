@@ -14,6 +14,7 @@ class ResPartner(models.Model):
     _inherit = 'res.partner'
     
     scoutgroup = fields.Boolean('Scout Troop')
+    participant = fields.Boolean('Participant')
 
     def ensure_portal_user(self):
         '''

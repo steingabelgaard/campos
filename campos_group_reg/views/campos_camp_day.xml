@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2019 Stein & Gabelgaard ApS
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+
+<odoo>
+
+    <record model="ir.ui.view" id="campos_camp_day_form_view">
+        <field name="name">campos.camp.day.form (in campos_group_reg)</field>
+        <field name="model">campos.camp.day</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <!-- TODO -->
+                </header>
+                <sheet>
+                    <!-- TODO -->
+                    <group>
+                        <field name="campday"/>
+                    </group>
+                </sheet>
+                <div class="oe_chatter"></div>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="campos_camp_day_search_view">
+        <field name="name">campos.camp.day.search (in campos_group_reg)</field>
+        <field name="model">campos.camp.day</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="campday"/>
+            </search>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="campos_camp_day_tree_view">
+        <field name="name">campos.camp.day.tree (in campos_group_reg)</field>
+        <field name="model">campos.camp.day</field>
+        <field name="arch" type="xml">
+            <tree>
+                <!-- TODO -->
+                <field name="campday"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="campos_camp_day_act_window">
+        <field name="name">Campos Camp Day</field> <!-- TODO -->
+        <field name="res_model">campos.camp.day</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[]</field>
+        <field name="context">{}</field>
+    </record>
+
+    <record model="ir.ui.menu" id="campos_camp_day_menu">
+        <field name="name">Campos Camp Day</field>
+        <field name="parent_id" ref="campos_group_reg.campos_config_menu"/>
+        <field name="action" ref="campos_camp_day_act_window"/>
+        <field name="sequence" eval="16"/> <!-- TODO -->
+    </record>
+
+</odoo>

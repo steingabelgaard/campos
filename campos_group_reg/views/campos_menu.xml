@@ -1,0 +1,18 @@
+<odoo>
+	<!-- Top menu item -->
+    <menuitem id="campos_main_menu" name="CampOS"
+        web_icon="campos_group_reg,static/description/icon.png" sequence="60" />
+        
+    <record model="ir.ui.menu" id="campos_report_menu">
+        <field name="name">Reports</field>
+        <field name="parent_id" ref="campos_group_reg.campos_main_menu" />
+        <field name="sequence" eval="50" />
+    </record>
+        
+    <record model="ir.ui.menu" id="campos_config_menu">
+        <field name="name">Configuration</field>
+        <field name="parent_id" ref="campos_group_reg.campos_main_menu" />
+        <field name="sequence" eval="100" />
+    </record>
+    
+</odoo>

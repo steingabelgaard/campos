@@ -22,6 +22,9 @@
         
         #'views/res_partner.xml',
         #'wizards/campos_group_reg_wiz.xml',
+        'views/campos_menu.xml',
+        'security/campos_participant.xml',
+        'views/campos_participant.xml',
         'security/campos_group_reg.xml',
         'views/campos_group_reg.xml',
         'security/campos_prereg_age_period.xml',
@@ -35,7 +38,11 @@
         'data/campos.scout.org.csv',
         'templates/website_group_add.xml',
         'data/mail_templates.xml',
-
+        #'security/campos_participant_day.xml',
+        #'views/campos_participant_day.xml',
+        'security/campos_camp_day.xml',
+        'views/campos_camp_day.xml',
+        
     ],
     'demo': [
         'demo/campos_prereg_age_period.xml',

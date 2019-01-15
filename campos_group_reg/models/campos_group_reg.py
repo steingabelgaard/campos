@@ -49,7 +49,7 @@ class CamposGroupReg(models.Model):
         ('finalreg', 'Final Registration'),
         ('done', 'Attended'),
         ('cancel', 'Cancelled'),
-        ], string='State', default='draft')
+        ], string='State', default='draft', track_visibility='onchange')
 
     # Contact
 
@@ -80,6 +80,17 @@ class CamposGroupReg(models.Model):
                                  'Pre registrtations',
                                  default=_default_prereg_ids)
     scout_org_id = fields.Many2one('campos.scout.org', 'Scout organization')
+    
+    # Final registration
+    cars = fields.Integer('# of cars', track_visibility='onchange')
+    busses = fields.Integer('# of busses', track_visibility='onchange')
+    large_tents = fields.Integer('# of large tents (>50 sqm)')
+    large_constructions = fields.Text('Large construction')
+    
+    ckr_ok = fields.Boolean('CKR confirmed', track_visibility='onchange')
+    
+    participant_ids = fields.One2many('campos.participant', 'group_reg_id', 'Participants')
+    participants_confirmed = fields.Integer('Participants', help="Confirmed participants", compute='_compute_participants')
     
     @api.model
     def create(self, vals):
@@ -184,4 +195,26 @@ class CamposGroupReg(models.Model):
             if not grp.treasurer_partner_id.user_ids:
                 grp.treasurer_partner_id.signup_and_mail('campos_group_reg.treasurer_welcome_mail') 
                 
-                
+    @api.multi
+    @api.depends('participant_ids.state')
+    def _compute_participants(self):
+        """ Determine reserved, available, reserved but unconfirmed and used seats. """
+        # initialize fields to 0
+        for group_reg in self:
+            group_reg.participants_confirmed =  0
+        # aggregate registrations by group_reg and by state
+        if self.ids:
+            state_field = {
+                #'draft': 'participants_unconfirmed',
+                'confirmed': 'participants_confirmed',
+                #'done': 'seats_used',
+            }
+            query = """ SELECT group_reg_id, state, count(group_reg_id)
+                        FROM campos_participant
+                        WHERE group_reg_id IN %s AND state IN ('confirmed')
+                        GROUP BY group_reg_id, state
+                    """
+            self._cr.execute(query, (tuple(self.ids),))
+            for group_reg_id, state, num in self._cr.fetchall():
+                group_reg = self.browse(group_reg_id)
+                group_reg[state_field[state]] += num

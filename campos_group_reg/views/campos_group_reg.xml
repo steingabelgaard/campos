@@ -13,6 +13,13 @@
                 </header>
                 <sheet>
                     <div class="oe_button_box" name="button_box">
+                    	 <button name="%(campos_group_reg.campos_group_participant_act_window)d"
+                                    type="action"
+                                    class="oe_stat_button"
+                                    icon="fa-users"
+                                    help="Register with this event">
+                                <field name="participants_confirmed" widget="statinfo" string="Participants"/>
+                            </button>
                         <!-- <button name="toggle_active" type="object" class="oe_stat_button" 
                             icon="fa-archive"> <field name="active" widget="boolean_button" options="{&quot;terminology&quot;: 
                             &quot;archive&quot;}"/> </button> -->
@@ -110,6 +117,16 @@
                                 </tree>
                             </field>
                         </page>
+                        <page name="finalreg" string="Final Registration">
+                        	<group>
+                        		<field name="cars"/>
+                        		<field name="busses"/>
+                        		<field name="large_tents"/>
+                        		<field name="large_constructions"/>
+                        		<field name="ckr_ok"/>
+                        	</group>
+                        
+                        </page>
 
                     </notebook>
                 </sheet>
@@ -167,9 +184,7 @@
         <field name="context">{}</field>
     </record>
 
-    <!-- Top menu item -->
-    <menuitem id="campos_main_menu" name="CampOS"
-        web_icon="campos_group_reg,static/description/icon.png" sequence="60" />
+    
 
     <record model="ir.ui.menu" id="campos_group_reg_menu">
         <field name="name">Group Registration</field>
@@ -178,10 +193,5 @@
         <field name="sequence" eval="16" /> <!-- TODO -->
     </record>
 
-    <record model="ir.ui.menu" id="campos_config_menu">
-        <field name="name">Configuration</field>
-        <field name="parent_id" ref="campos_group_reg.campos_main_menu" /> <!-- TODO -->
-        <field name="sequence" eval="100" />
-    </record>
-
+    
 </odoo>

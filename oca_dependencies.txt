@@ -1,3 +1,5 @@
 web
 website-cms
 odoo-misc https://{GITHUB_USER}:{GITHUB_TOKEN}@bitbucket.org/steingabelgaard/odoo-misc
+bank-statement-import https://github.com/steingabelgaard/bank-statement-import.git
+partner-contact https://github.com/steingabelgaard/partner-contact.git

@@ -17,6 +17,8 @@
         'web_widget_x2many_2d_matrix',
         'cms_form',
         'cms_account_form',
+        'partner_contact_birthdate',
+        'partner_contact_gender',
     ],
     'data': [
         

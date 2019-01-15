@@ -84,11 +84,13 @@ class CamposGroupReg(models.Model):
     # Final registration
     cars = fields.Integer('# of cars', track_visibility='onchange')
     busses = fields.Integer('# of busses', track_visibility='onchange')
+    trailers = fields.Integer('# of trailers', track_visibility='onchange')
     large_tents = fields.Integer('# of large tents (>50 sqm)')
     large_constructions = fields.Text('Large construction')
     
     ckr_ok = fields.Boolean('CKR confirmed', track_visibility='onchange')
-    
+    ckr_by = fields.Many2one('res.users', 'CKR confirmed by')
+    ckr_date = fields.Date('CKR confirmed date')
     participant_ids = fields.One2many('campos.participant', 'group_reg_id', 'Participants')
     participants_confirmed = fields.Integer('Participants', help="Confirmed participants", compute='_compute_participants')
     

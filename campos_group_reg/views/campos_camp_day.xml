@@ -37,9 +37,13 @@
         <field name="name">campos.camp.day.tree (in campos_group_reg)</field>
         <field name="model">campos.camp.day</field>
         <field name="arch" type="xml">
-            <tree>
+            <tree editable="bottom">
                 <!-- TODO -->
                 <field name="campday"/>
+                <field name="arrival_day"/>
+                <field name="depature_day"/>
+                <field name="valid_dk"/>
+                <field name="valid_non_dk"/>
             </tree>
         </field>
     </record>
@@ -47,7 +51,7 @@
     <record model="ir.actions.act_window" id="campos_camp_day_act_window">
         <field name="name">Campos Camp Day</field> <!-- TODO -->
         <field name="res_model">campos.camp.day</field>
-        <field name="view_mode">tree,form</field>
+        <field name="view_mode">tree</field>
         <field name="domain">[]</field>
         <field name="context">{}</field>
     </record>

@@ -7,16 +7,16 @@ msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2018-11-14 20:03+0000\n"
+"PO-Revision-Date: 2019-01-16 11:09+0100\n"
 "Last-Translator: Christian Eggert <christian@eggert.dk>\n"
-"Language-Team: Danish <https://example.com/projects/campos-11-0/"
-"campos-11-0-campos_group_reg/da/>\n"
+"Language-Team: Danish <https://example.com/projects/campos-11-0/campos-11-0-"
+"campos_group_reg/da/>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.2.1\n"
+"X-Generator: Poedit 2.0.6\n"
 
 #. module: campos_group_reg
 #: model:mail.template,body_html:campos_group_reg.contact_welcome_mail
@@ -51,17 +51,40 @@ msgid ""
 msgstr ""
 
 #. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_busses
+msgid "# of busses"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_cars
+msgid "# of cars"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_large_tents
+msgid "# of large tents (>50 sqm)"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_trailers
+msgid "# of trailers"
+msgstr ""
+
+#. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_active
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_active
 msgid "Active"
 msgstr "Aktiv"
 
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.campos_group_reg_form_view
+#: model:ir.ui.view,arch_db:campos_group_reg.campos_participant_form_view
 msgid "Address"
 msgstr "Adresse"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_type
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_type
 msgid "Address Type"
 msgstr "Adressetype"
 
@@ -91,29 +114,90 @@ msgid "Age To"
 msgstr "Til alder"
 
 #. module: campos_group_reg
+#: model:ir.ui.view,arch_db:campos_group_reg.campos_group_reg_search_view
+msgid "Archived"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_day_arrival_day
+msgid "Arrival day"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_day_valid_dk
+msgid "Arrival/Departure valid for DK Groups"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_day_valid_non_dk
+msgid "Arrival/Departure valid for foreign  Groups"
+msgstr ""
+
+#. module: campos_group_reg
 #: selection:campos.group.reg,state:0
 msgid "Attended"
 msgstr "Fremmødt"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_bank_ids
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_bank_ids
 msgid "Banks"
 msgstr "Banker"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_barcode
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_barcode
 msgid "Barcode"
 msgstr "Stregkode"
 
 #. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_birthdate_date
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_birthdate_date
+msgid "Birthdate"
+msgstr ""
+
+#. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_message_bounce
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_message_bounce
 msgid "Bounce"
 msgstr "Spring"
 
 #. module: campos_group_reg
-#: code:addons/campos_group_reg/controllers/portal.py:270
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_ckr_ok
+#, fuzzy
+#| msgid "Confirmed"
+msgid "CKR confirmed"
+msgstr "Bekræftet"
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_ckr_by
+#, fuzzy
+#| msgid "Confirmed"
+msgid "CKR confirmed by"
+msgstr "Bekræftet"
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_ckr_date
+#, fuzzy
+#| msgid "Confirmed"
+msgid "CKR confirmed date"
+msgstr "Bekræftet"
+
+#. module: campos_group_reg
+#: code:addons/campos_group_reg/controllers/portal.py:283
 #, python-format
 msgid "CPR must be 4 digits"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_day_campday
+msgid "Camp Day"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_camp_day_ids
+#: model:ir.ui.view,arch_db:campos_group_reg.campos_participant_form_view
+msgid "Camp Days"
 msgstr ""
 
 #. module: campos_group_reg
@@ -134,9 +218,23 @@ msgid "CampOS"
 msgstr "CampOS"
 
 #. module: campos_group_reg
+#: model:ir.model,name:campos_group_reg.model_campos_participant
+msgid "CampOS Participant"
+msgstr ""
+
+#. module: campos_group_reg
 #: model:ir.model,name:campos_group_reg.model_campos_age_group
 msgid "Campos Age Group"
 msgstr "CampOS aldersgruppe"
+
+#. module: campos_group_reg
+#: model:ir.actions.act_window,name:campos_group_reg.campos_camp_day_act_window
+#: model:ir.model,name:campos_group_reg.model_campos_camp_day
+#: model:ir.ui.menu,name:campos_group_reg.campos_camp_day_menu
+#, fuzzy
+#| msgid "Campos Camp Period"
+msgid "Campos Camp Day"
+msgstr "CampOS Lejrperiode"
 
 #. module: campos_group_reg
 #: model:ir.model,name:campos_group_reg.model_campos_camp_period
@@ -150,6 +248,12 @@ msgid "Campos Group Reg"
 msgstr "CampOS Grupperegistering"
 
 #. module: campos_group_reg
+#: model:ir.actions.act_window,name:campos_group_reg.campos_group_participant_act_window
+#: model:ir.actions.act_window,name:campos_group_reg.campos_participant_act_window
+msgid "Campos Participant"
+msgstr ""
+
+#. module: campos_group_reg
 #: model:ir.model,name:campos_group_reg.model_campos_prereg_age_period
 msgid "Campos Prereg Age Period"
 msgstr "CampOS Forhåndstilmeldte alder og periode"
@@ -160,27 +264,31 @@ msgid "Campos Scout Org"
 msgstr "Spejder organisation/korps"
 
 #. module: campos_group_reg
-#: selection:campos.group.reg,state:0
+#: selection:campos.group.reg,state:0 selection:campos.participant,state:0
 msgid "Cancelled"
 msgstr "Annulleret"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_channel_ids
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_channel_ids
 msgid "Channels"
 msgstr "Kanaler"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,help:campos_group_reg.field_campos_group_reg_is_company
+#: model:ir.model.fields,help:campos_group_reg.field_campos_participant_is_company
 msgid "Check if the contact is a company, otherwise it is a person"
 msgstr "Kontroller, om kontakten er en virksomhed, ellers er det en person,"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,help:campos_group_reg.field_campos_group_reg_customer
+#: model:ir.model.fields,help:campos_group_reg.field_campos_participant_customer
 msgid "Check this box if this contact is a customer."
 msgstr "Markér denne boks hvis kontakten er en kunde."
 
 #. module: campos_group_reg
 #: model:ir.model.fields,help:campos_group_reg.field_campos_group_reg_supplier
+#: model:ir.model.fields,help:campos_group_reg.field_campos_participant_supplier
 msgid ""
 "Check this box if this contact is a vendor. If it's not checked, purchase "
 "people will not see it when encoding a purchase order."
@@ -190,6 +298,7 @@ msgstr ""
 
 #. module: campos_group_reg
 #: model:ir.model.fields,help:campos_group_reg.field_campos_group_reg_employee
+#: model:ir.model.fields,help:campos_group_reg.field_campos_participant_employee
 msgid "Check this box if this contact is an Employee."
 msgstr "Afkryds denne boks hvis kontakten er en medarbejder."
 
@@ -198,7 +307,9 @@ msgstr "Afkryds denne boks hvis kontakten er en medarbejder."
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_contact_city
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_treasurer_city
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_wiz_city
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_city
 #: model:ir.ui.view,arch_db:campos_group_reg.campos_group_reg_form_view
+#: model:ir.ui.view,arch_db:campos_group_reg.campos_participant_form_view
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_2
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_3
 msgid "City"
@@ -206,36 +317,51 @@ msgstr "By"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_color
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_color
 msgid "Color Index"
 msgstr "Farve index"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_commercial_partner_id
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_commercial_partner_id
 msgid "Commercial Entity"
 msgstr "Kommerciel enhed"
 
 #. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_commercial_partner_country_id
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_commercial_partner_country_id
+#, fuzzy
+#| msgid "Commercial Entity"
+msgid "Commercial Entity's Country"
+msgstr "Kommerciel enhed"
+
+#. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_company_id
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_company_id
 msgid "Company"
 msgstr "Virksomhed"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_company_name
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_company_name
 msgid "Company Name"
 msgstr "Virksomhed"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_commercial_company_name
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_commercial_company_name
 msgid "Company Name Entity"
 msgstr ""
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_company_type
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_company_type
 msgid "Company Type"
 msgstr ""
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_contact_address
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_contact_address
 msgid "Complete Address"
 msgstr "Fulde adresse"
 
@@ -243,6 +369,18 @@ msgstr "Fulde adresse"
 #: model:ir.ui.menu,name:campos_group_reg.campos_config_menu
 msgid "Configuration"
 msgstr "Konfiguration"
+
+#. module: campos_group_reg
+#: selection:campos.participant,state:0
+msgid "Confirmed"
+msgstr "Bekræftet"
+
+#. module: campos_group_reg
+#: model:ir.model.fields,help:campos_group_reg.field_campos_group_reg_participants_confirmed
+#, fuzzy
+#| msgid "Expected participants for"
+msgid "Confirmed participants"
+msgstr "Forventet deltagerantal for"
 
 #. module: campos_group_reg
 #: model:ir.model,name:campos_group_reg.model_res_partner
@@ -293,6 +431,7 @@ msgstr "Kontaktpersons postnr."
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_child_ids
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_child_ids
 msgid "Contacts"
 msgstr "Kontakter"
 
@@ -304,18 +443,20 @@ msgstr "Fortsæt"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,help:campos_group_reg.field_campos_group_reg_message_bounce
+#: model:ir.model.fields,help:campos_group_reg.field_campos_participant_message_bounce
 msgid "Counter of the number of bounced emails for this contact"
 msgstr "Antal bounced emails for denne kontakt"
 
 #. module: campos_group_reg
-#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_commercial_partner_country_id
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_contact_country_id
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_country_id
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_treasurer_country_id
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_wiz_country_id
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_country_id
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_scout_org_country_id
 #: model:ir.ui.view,arch_db:campos_group_reg.campos_group_reg_form_view
 #: model:ir.ui.view,arch_db:campos_group_reg.campos_group_reg_search_view
+#: model:ir.ui.view,arch_db:campos_group_reg.campos_participant_form_view
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_1
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_2
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_3
@@ -331,9 +472,11 @@ msgstr "Land..."
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_age_group_create_uid
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_day_create_uid
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_period_create_uid
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_create_uid
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_wiz_create_uid
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_create_uid
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_prereg_age_period_create_uid
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_scout_org_create_uid
 msgid "Created by"
@@ -341,9 +484,11 @@ msgstr "Oprettet af"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_age_group_create_date
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_day_create_date
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_period_create_date
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_create_date
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_wiz_create_date
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_create_date
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_prereg_age_period_create_date
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_scout_org_create_date
 msgid "Created on"
@@ -351,11 +496,13 @@ msgstr "Oprettet den"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_credit_limit
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_credit_limit
 msgid "Credit Limit"
 msgstr "Kreditgrænse"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_date
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_date
 msgid "Date"
 msgstr "Dato"
 
@@ -370,15 +517,22 @@ msgid "Date To"
 msgstr "Til dato"
 
 #. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_day_depature_day
+msgid "Depature day"
+msgstr ""
+
+#. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_2
 msgid "Details for"
 msgstr "Detaljer for"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_age_group_display_name
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_day_display_name
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_period_display_name
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_display_name
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_wiz_display_name
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_display_name
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_prereg_age_period_display_name
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_scout_org_display_name
 #: model:ir.model.fields,field_description:campos_group_reg.field_cms_form_campos_group_reg_display_name
@@ -386,7 +540,13 @@ msgid "Display Name"
 msgstr "Navn"
 
 #. module: campos_group_reg
+#: selection:campos.participant,state:0
+msgid "Draft"
+msgstr ""
+
+#. module: campos_group_reg
 #: model:ir.model.fields,help:campos_group_reg.field_campos_group_reg_partner_share
+#: model:ir.model.fields,help:campos_group_reg.field_campos_participant_partner_share
 msgid ""
 "Either customer (no user), either shared user. Indicated the current partner "
 "is a customer without access or with a limited access created for sharing "
@@ -397,6 +557,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_contact_email
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_email
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_treasurer_email
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_email
 msgid "Email"
 msgstr "E-mail"
 
@@ -407,6 +568,7 @@ msgstr "Din E-mail eksistere i forvejen"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_employee
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_employee
 msgid "Employee"
 msgstr "Ansat"
 
@@ -418,21 +580,31 @@ msgstr "Forventet deltagerantal for"
 
 #. module: campos_group_reg
 #: selection:campos.group.reg,state:0
+#: model:ir.ui.view,arch_db:campos_group_reg.campos_group_reg_form_view
 msgid "Final Registration"
 msgstr "Endelig tilmelding"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,help:campos_group_reg.field_campos_group_reg_email_formatted
+#: model:ir.model.fields,help:campos_group_reg.field_campos_participant_email_formatted
 msgid "Format email address \"Name <email@domain>\""
 msgstr "Format for  email adresse \"Navn <email@domain>\""
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_email_formatted
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_email_formatted
 msgid "Formatted Email"
 msgstr "Formatteret email"
 
 #. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_gender
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_gender
+msgid "Gender"
+msgstr ""
+
+#. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_partner_id
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_group_reg_id
 msgid "Group"
 msgstr "Gruppe"
 
@@ -469,9 +641,11 @@ msgstr "Grupper"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_age_group_id
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_day_id
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_period_id
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_id
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_wiz_id
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_id
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_prereg_age_period_id
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_scout_org_id
 #: model:ir.model.fields,field_description:campos_group_reg.field_cms_form_campos_group_reg_id
@@ -480,11 +654,13 @@ msgstr "Id"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_im_status
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_im_status
 msgid "IM Status"
 msgstr ""
 
 #. module: campos_group_reg
 #: model:ir.model.fields,help:campos_group_reg.field_campos_group_reg_opt_out
+#: model:ir.model.fields,help:campos_group_reg.field_campos_participant_opt_out
 msgid ""
 "If opt-out is checked, this contact has refused to receive emails for mass "
 "mailing and marketing campaign. Filter 'Available for Mass Mailing' allows "
@@ -496,6 +672,7 @@ msgstr ""
 
 #. module: campos_group_reg
 #: model:ir.model.fields,help:campos_group_reg.field_campos_group_reg_lang
+#: model:ir.model.fields,help:campos_group_reg.field_campos_participant_lang
 msgid ""
 "If the selected language is loaded in the system, all documents related to "
 "this contact will be printed in this language. If not, it will be English."
@@ -505,55 +682,70 @@ msgstr ""
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_image
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_image
 msgid "Image"
 msgstr "Billede"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_industry_id
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_industry_id
 msgid "Industry"
 msgstr ""
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_ref
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_ref
 msgid "Internal Reference"
 msgstr "Intern reference"
 
 #. module: campos_group_reg
-#: code:addons/campos_group_reg/controllers/portal.py:263
+#: code:addons/campos_group_reg/controllers/portal.py:276
 #, python-format
 msgid "Invalid birth date"
 msgstr "Ugyldig fødselsdato"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_is_company
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_is_company
 msgid "Is a Company"
 msgstr "Er en virksomhed"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_customer
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_customer
 msgid "Is a Customer"
 msgstr "Kunde"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_supplier
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_supplier
 msgid "Is a Vendor"
 msgstr "Er en leverandør"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_function
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_function
 msgid "Job Position"
 msgstr "Stilling"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_lang
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_lang
 msgid "Language"
 msgstr "Sprog"
 
 #. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_large_constructions
+msgid "Large construction"
+msgstr ""
+
+#. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_age_group___last_update
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_day___last_update
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_period___last_update
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg___last_update
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_wiz___last_update
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant___last_update
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_prereg_age_period___last_update
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_scout_org___last_update
 #: model:ir.model.fields,field_description:campos_group_reg.field_cms_form_campos_group_reg___last_update
@@ -562,9 +754,11 @@ msgstr "Senest opdateret den"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_age_group_write_uid
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_day_write_uid
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_period_write_uid
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_wiz_write_uid
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_write_uid
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_write_uid
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_prereg_age_period_write_uid
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_scout_org_write_uid
 msgid "Last Updated by"
@@ -572,9 +766,11 @@ msgstr "Senest opdateret af"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_age_group_write_date
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_day_write_date
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_period_write_date
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_wiz_write_date
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_write_date
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_write_date
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_prereg_age_period_write_date
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_scout_org_write_date
 msgid "Last Updated on"
@@ -582,11 +778,13 @@ msgstr "Senest opdateret den"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_image_medium
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_image_medium
 msgid "Medium-sized image"
 msgstr "Mellem størrelse billede"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,help:campos_group_reg.field_campos_group_reg_image_medium
+#: model:ir.model.fields,help:campos_group_reg.field_campos_participant_image_medium
 msgid ""
 "Medium-sized image of this contact. It is automatically resized as a "
 "128x128px image, with aspect ratio preserved. Use this field in form views "
@@ -596,7 +794,12 @@ msgstr ""
 "pixel."
 
 #. module: campos_group_reg
-#: code:addons/campos_group_reg/controllers/portal.py:141
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_partner_id
+msgid "Member"
+msgstr ""
+
+#. module: campos_group_reg
+#: code:addons/campos_group_reg/controllers/portal.py:154
 #, python-format
 msgid "Missing required field: %s"
 msgstr "Krævet felt mangler: %s"
@@ -605,6 +808,7 @@ msgstr "Krævet felt mangler: %s"
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_contact_mobile
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_mobile
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_treasurer_mobile
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_mobile
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_2
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_3
 msgid "Mobile"
@@ -613,6 +817,7 @@ msgstr "Mobil"
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_municipality_id
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_wiz_municipality_id
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_municipality_id
 #: model:ir.ui.view,arch_db:campos_group_reg.campos_group_reg_search_view
 msgid "Municipality"
 msgstr "Kommune"
@@ -624,10 +829,16 @@ msgstr "Kommune"
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_name
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_treasurer_name
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_wiz_name
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_name
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_prereg_age_period_name
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_scout_org_name
 msgid "Name"
 msgstr "Navn"
+
+#. module: campos_group_reg
+#: model:mail.template,subject:campos_group_reg.new_group_pre_reg_mail
+msgid "New SSC 2019 Pre-registration: ${object.name or ''}"
+msgstr ""
 
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_1
@@ -638,11 +849,13 @@ msgstr "Fortsæt"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_comment
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_comment
 msgid "Notes"
 msgstr "Noter"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_opt_out
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_opt_out
 msgid "Opt-Out"
 msgstr "mails nej-tak"
 
@@ -663,8 +876,30 @@ msgstr "Gruppens oplysninger"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_parent_name
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_parent_name
 msgid "Parent name"
 msgstr "Forældre navn"
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_participant
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_participant
+#: model:ir.model.fields,field_description:campos_group_reg.field_res_partner_participant
+#: model:ir.model.fields,field_description:campos_group_reg.field_res_users_participant
+msgid "Participant"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.ui.view,arch_db:campos_group_reg.campos_participant_form_view
+msgid "Participant Name"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_participant_ids
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_participants_confirmed
+#: model:ir.ui.menu,name:campos_group_reg.campos_participant_menu
+#: model:ir.ui.view,arch_db:campos_group_reg.campos_group_reg_form_view
+msgid "Participants"
+msgstr ""
 
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.campos_prereg_age_period_search_view
@@ -673,6 +908,7 @@ msgstr "Periode"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_phone
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_phone
 msgid "Phone"
 msgstr "Telefon"
 
@@ -702,7 +938,7 @@ msgid "Pre registration completed"
 msgstr "Forhåndsregistrering gennemført"
 
 #. module: campos_group_reg
-#: code:addons/campos_group_reg/controllers/portal.py:210
+#: code:addons/campos_group_reg/controllers/portal.py:223
 #, python-format
 msgid "Pre registration figures has been updated."
 msgstr ""
@@ -721,14 +957,25 @@ msgid "Pre-Registration Overview"
 msgstr "Oversigt forhånds registrering"
 
 #. module: campos_group_reg
+#: model:ir.ui.view,arch_db:campos_group_reg.campos_group_reg_form_view
+msgid "Register with this event"
+msgstr ""
+
+#. module: campos_group_reg
 #: selection:campos.group.reg,state:0
 msgid "Registred"
 msgstr "Registreret"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_parent_id
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_parent_id
 msgid "Related Company"
 msgstr "Relateret virksomhed"
+
+#. module: campos_group_reg
+#: model:ir.ui.menu,name:campos_group_reg.campos_report_menu
+msgid "Reports"
+msgstr ""
 
 #. module: campos_group_reg
 #: model:mail.template,subject:campos_group_reg.contact_welcome_mail
@@ -738,6 +985,7 @@ msgstr "SSC 2019 Login"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_user_id
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_user_id
 msgid "Salesperson"
 msgstr "Sælger"
 
@@ -759,6 +1007,7 @@ msgstr "Korps"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_scoutgroup
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_scoutgroup
 #: model:ir.model.fields,field_description:campos_group_reg.field_res_partner_scoutgroup
 #: model:ir.model.fields,field_description:campos_group_reg.field_res_users_scoutgroup
 msgid "Scout Troop"
@@ -791,6 +1040,7 @@ msgstr "Korps"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_self
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_self
 msgid "Self"
 msgstr ""
 
@@ -801,41 +1051,49 @@ msgstr "Køn"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_partner_share
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_partner_share
 msgid "Share Partner"
 msgstr ""
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_signup_expiration
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_signup_expiration
 msgid "Signup Expiration"
 msgstr "Signup Expiration"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_signup_token
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_signup_token
 msgid "Signup Token"
 msgstr "Signup Token"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_signup_type
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_signup_type
 msgid "Signup Token Type"
 msgstr "Signup Token Type"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_signup_valid
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_signup_valid
 msgid "Signup Token is Valid"
 msgstr "Signup Token is Valid"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_signup_url
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_signup_url
 msgid "Signup URL"
 msgstr "Signup URL"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_image_small
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_image_small
 msgid "Small-sized image"
 msgstr "Lille billede"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,help:campos_group_reg.field_campos_group_reg_image_small
+#: model:ir.model.fields,help:campos_group_reg.field_campos_participant_image_small
 msgid ""
 "Small-sized image of this contact. It is automatically resized as a 64x64px "
 "image, with aspect ratio preserved. Use this field anywhere a small image is "
@@ -848,6 +1106,8 @@ msgstr ""
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_state
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_state_id
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_state
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_state_id
 msgid "State"
 msgstr "Status"
 
@@ -856,6 +1116,7 @@ msgstr "Status"
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_street
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_treasurer_street
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_wiz_street
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_street
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_2
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_3
 msgid "Street"
@@ -869,11 +1130,13 @@ msgstr "Gade 2"
 
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.campos_group_reg_form_view
+#: model:ir.ui.view,arch_db:campos_group_reg.campos_participant_form_view
 msgid "Street 2..."
 msgstr "Vejnavn 2..."
 
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.campos_group_reg_form_view
+#: model:ir.ui.view,arch_db:campos_group_reg.campos_participant_form_view
 msgid "Street..."
 msgstr "Vej..."
 
@@ -882,6 +1145,7 @@ msgstr "Vej..."
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_street2
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_treasurer_street2
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_wiz_street2
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_street2
 msgid "Street2"
 msgstr "vejnavn 2"
 
@@ -893,16 +1157,19 @@ msgstr "Indsend"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_vat
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_vat
 msgid "TIN"
 msgstr "CVR"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_category_id
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_category_id
 msgid "Tags"
 msgstr "Tags"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,help:campos_group_reg.field_campos_group_reg_vat
+#: model:ir.model.fields,help:campos_group_reg.field_campos_participant_vat
 msgid ""
 "Tax Identification Number. Fill it if the company is subjected to taxes. "
 "Used by the some of the legal statements."
@@ -917,6 +1184,7 @@ msgstr "Tak"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,help:campos_group_reg.field_campos_group_reg_user_id
+#: model:ir.model.fields,help:campos_group_reg.field_campos_participant_user_id
 msgid ""
 "The internal user that is in charge of communicating with this contact if "
 "any."
@@ -925,6 +1193,7 @@ msgstr ""
 
 #. module: campos_group_reg
 #: model:ir.model.fields,help:campos_group_reg.field_campos_group_reg_tz
+#: model:ir.model.fields,help:campos_group_reg.field_campos_participant_tz
 msgid ""
 "The partner's timezone, used to output proper date and time values inside "
 "printed reports. It is important to set a value for this field. You should "
@@ -938,6 +1207,7 @@ msgstr ""
 
 #. module: campos_group_reg
 #: model:ir.model.fields,help:campos_group_reg.field_campos_group_reg_image
+#: model:ir.model.fields,help:campos_group_reg.field_campos_participant_image
 msgid ""
 "This field holds the image used as avatar for this contact, limited to "
 "1024x1024px"
@@ -947,16 +1217,19 @@ msgstr ""
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_tz
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_tz
 msgid "Timezone"
 msgstr "Tidszone"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_tz_offset
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_tz_offset
 msgid "Timezone offset"
 msgstr "Timezone offset"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_title
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_title
 msgid "Title"
 msgstr "Titel"
 
@@ -1024,6 +1297,7 @@ msgstr "Brug mig som kasserer"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,help:campos_group_reg.field_campos_group_reg_type
+#: model:ir.model.fields,help:campos_group_reg.field_campos_participant_type
 msgid ""
 "Used to select automatically the right address according to the context in "
 "sales and purchases documents."
@@ -1033,6 +1307,7 @@ msgstr ""
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_user_ids
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_user_ids
 msgid "Users"
 msgstr "Brugere"
 
@@ -1058,11 +1333,13 @@ msgstr ""
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_website
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_website
 msgid "Website"
 msgstr "Hjemmeside"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,help:campos_group_reg.field_campos_group_reg_website
+#: model:ir.model.fields,help:campos_group_reg.field_campos_participant_website
 msgid "Website of Partner or Company"
 msgstr "Website of Partner or Company"
 
@@ -1104,6 +1381,7 @@ msgstr "Din e-mail"
 
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.campos_group_reg_form_view
+#: model:ir.ui.view,arch_db:campos_group_reg.campos_participant_form_view
 msgid "ZIP"
 msgstr "Postnr."
 
@@ -1112,6 +1390,7 @@ msgstr "Postnr."
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_treasurer_zip
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_wiz_zip
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_zip
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_zip
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_2
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_3
 msgid "Zip"
@@ -1128,6 +1407,11 @@ msgid "cms.form.campos.group.reg"
 msgstr ""
 
 #. module: campos_group_reg
+#: model:ir.model,name:campos_group_reg.model_cms_form_my_account
+msgid "cms.form.my.account"
+msgstr ""
+
+#. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_email_exist
 msgid "is already registered in the system."
 msgstr "er allerede registreret i Systemet"
@@ -1141,6 +1425,3 @@ msgstr "Brugeren vil have fuld adgang til grupperegistrerng"
 #: model:res.groups,comment:campos_group_reg.group_campos_group_reg_user
 msgid "the user will have read only access to groups."
 msgstr "Brugeren har kun læseadgang til grupper."
-
-#~ msgid "Confirmed"
-#~ msgstr "Bekræftet"

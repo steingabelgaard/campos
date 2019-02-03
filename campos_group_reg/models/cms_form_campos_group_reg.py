@@ -6,7 +6,7 @@ class cmsGroupRegForm(models.AbstractModel):
 
     _name = 'cms.form.campos.group.reg'
     _inherit = 'cms.form'
-    _form_model = 'campos.group.reg.wiz'
+    _form_model = 'campos.group.reg'
     _form_model_fields = ('name', 'street', 'street2', 'zip', 'city',
                           'country_id',
                           'contact_name', 'contact_street',

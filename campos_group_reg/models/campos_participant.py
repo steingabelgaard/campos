@@ -21,3 +21,27 @@ class CamposParticipant(models.Model):
                               ], default='draft', string='State', track_visibility='onchange')
     
     camp_day_ids = fields.Many2many('campos.camp.day', string='Camp Days')
+    
+    arrival_date_id = fields.Many2one('campos.camp.day', 'Arrival date', domain=[('arrival_day', '=', True)], track_visibility='onchange')
+    depature_date_id = fields.Many2one('campos.camp.day', 'Depature date', domain=[('depature_day', '=', True)], track_visibility='onchange')
+    
+    
+    def _update_camp_days(self):
+        days = self.env['campos.camp.day'].search([('campday', '>=', self.arrival_date_id.campday), ('campday', '<=', self.depature_date_id.campday)])
+        if days:
+            self.camp_day_ids = days
+                                                    
+    @api.model
+    def create(self, vals):
+        res = super(CamposParticipant, self).create(vals)
+        if 'arrival_date_id' in vals and 'depature_day_id' in vals:
+            self._update_camp_days()
+        return res
+    
+    @api.multi
+    def write(self, vals):
+        res = super(CamposParticipant, self).write(vals)
+        if 'arrival_date_id' in vals or 'depature_day_id' in vals:
+            for par in self:
+                par._update_camp_days()
+        return res

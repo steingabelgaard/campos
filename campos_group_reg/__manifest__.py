@@ -44,6 +44,7 @@
         #'views/campos_participant_day.xml',
         'security/campos_camp_day.xml',
         'views/campos_camp_day.xml',
+        'templates/website_participant.xml',
         
     ],
     'demo': [

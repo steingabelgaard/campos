@@ -89,7 +89,7 @@ class CamposGroupReg(models.Model):
     large_constructions = fields.Text('Large construction')
     
     ckr_ok = fields.Boolean('CKR confirmed', track_visibility='onchange')
-    ckr_by = fields.Many2one('res.users', 'CKR confirmed by')
+    ckr_by_id = fields.Many2one('res.users', 'CKR confirmed by')
     ckr_date = fields.Date('CKR confirmed date')
     participant_ids = fields.One2many('campos.participant', 'group_reg_id', 'Participants')
     participants_confirmed = fields.Integer('Participants', help="Confirmed participants", compute='_compute_participants')
@@ -142,6 +142,9 @@ class CamposGroupReg(models.Model):
     
     @api.multi
     def write(self, vals):
+        if 'ckr_ok' in vals and vals['ckr_ok']:
+            vals['ckr_by_id'] = self.env.user.id
+            vals['ckr_date'] = fields.Datetime.now()
         ret = super(CamposGroupReg, self).write(vals)
         if 'state' in vals:
             self._state_action(vals['state'])

@@ -124,7 +124,7 @@
                         		<field name="large_tents"/>
                         		<field name="large_constructions"/>
                         		<field name="ckr_ok"/>
-                        		<field name="ckr_by" readonly="1"/>
+                        		<field name="ckr_by_id" readonly="1"/>
                         		<field name="ckr_date" readonly="1"/>
                         	</group>
                         

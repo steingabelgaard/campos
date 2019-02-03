@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2019 Stein & Gabelgaard ApS
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+
+<odoo>
+
+
+    <record model="ir.ui.view" id="campos_participant_day_search_view">
+        <field name="name">campos.participant.day.search (in campos_group_reg)</field>
+        <field name="model">campos.participant.day</field>
+        <field name="arch" type="xml">
+            <search>
+                <!-- TODO -->
+            </search>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="campos_participant_day_tree_view">
+        <field name="name">campos.participant.day.tree (in campos_group_reg)</field>
+        <field name="model">campos.participant.day</field>
+        <field name="arch" type="xml">
+            <tree>
+                <!-- TODO -->
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="campos_participant_day_act_window">
+        <field name="name">Campos Participant Day</field> <!-- TODO -->
+        <field name="res_model">campos.participant.day</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[]</field>
+        <field name="context">{}</field>
+    </record>
+
+    <record model="ir.ui.menu" id="campos_participant_day_menu">
+        <field name="name">Campos Participant Day</field>
+        <field name="parent_id" ref="campos_report_menu"/>
+        <field name="action" ref="campos_participant_day_act_window"/>
+        <field name="sequence" eval="16"/>
+    </record>
+
+</odoo>

@@ -21,7 +21,8 @@ class cmsGroupRegForm(models.AbstractModel):
                           'treasurer_city',
                           'treasurer_country_id',
                           'treasurer_mobile',
-                          'treasurer_email')
+                          'treasurer_email',
+                          'cars','busses','trailers','large_tents','large_constructions','ckr_ok')
     _form_required_fields = ('name',)
     _form_fields_order = ('name', 'street', 'street2', 'zip', 'city',
                           'country_id',
@@ -32,7 +33,8 @@ class cmsGroupRegForm(models.AbstractModel):
                           'treasurer_name', 'treasurer_street',
                           'treasurer_street2', 'treasurer_zip',
                           'treasurer_city', 'treasurer_country_id',
-                          'treasurer_mobile', 'treasurer_email')
+                          'treasurer_mobile', 'treasurer_email',
+                          'cars','busses','trailers','large_tents','large_constructions','ckr_ok')
 
     _form_fieldsets = [
         {
@@ -73,6 +75,13 @@ class cmsGroupRegForm(models.AbstractModel):
                 'treasurer_country_id',
                 'treasurer_mobile',
                 'treasurer_email',
+            ],
+        },
+        {
+            'id': 'final_reg',
+            'title': 'Final Registration',
+            'fields': [
+                'cars','busses','trailers','large_tents','large_constructions','ckr_ok'
             ],
         },
     ]

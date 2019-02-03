@@ -12,6 +12,7 @@ class CamposCampDay(models.Model):
     _order = 'campday'
 
     campday = fields.Date('Camp Day')
+    name = fields.Date(related='campday')  # For CMS Form support
     arrival_day = fields.Boolean('Arrival day')
     depature_day = fields.Boolean('Depature day')
     valid_dk = fields.Boolean('Arrival/Departure valid for DK Groups')

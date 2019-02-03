@@ -70,6 +70,11 @@ msgid "Active"
 msgstr ""
 
 #. module: campos_group_reg
+#: model:ir.ui.view,arch_db:campos_group_reg.participant_search_results
+msgid "Add new participant"
+msgstr ""
+
+#. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.campos_group_reg_form_view
 #: model:ir.ui.view,arch_db:campos_group_reg.campos_participant_form_view
 msgid "Address"
@@ -109,6 +114,11 @@ msgstr ""
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.campos_group_reg_search_view
 msgid "Archived"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_arrival_date_id
+msgid "Arrival date"
 msgstr ""
 
 #. module: campos_group_reg
@@ -161,7 +171,7 @@ msgid "CKR confirmed"
 msgstr ""
 
 #. module: campos_group_reg
-#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_ckr_by
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_ckr_by_id
 msgid "CKR confirmed by"
 msgstr ""
 
@@ -178,6 +188,7 @@ msgstr ""
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_day_campday
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_day_name
 msgid "Camp Day"
 msgstr ""
 
@@ -495,6 +506,11 @@ msgid "Date To"
 msgstr ""
 
 #. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_depature_date_id
+msgid "Depature date"
+msgstr ""
+
+#. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_day_depature_day
 msgid "Depature day"
 msgstr ""
@@ -514,6 +530,8 @@ msgstr ""
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_prereg_age_period_display_name
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_scout_org_display_name
 #: model:ir.model.fields,field_description:campos_group_reg.field_cms_form_campos_group_reg_display_name
+#: model:ir.model.fields,field_description:campos_group_reg.field_cms_form_campos_participant_display_name
+#: model:ir.model.fields,field_description:campos_group_reg.field_cms_search_campos_participant_display_name
 msgid "Display Name"
 msgstr ""
 
@@ -624,6 +642,8 @@ msgstr ""
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_prereg_age_period_id
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_scout_org_id
 #: model:ir.model.fields,field_description:campos_group_reg.field_cms_form_campos_group_reg_id
+#: model:ir.model.fields,field_description:campos_group_reg.field_cms_form_campos_participant_id
+#: model:ir.model.fields,field_description:campos_group_reg.field_cms_search_campos_participant_id
 msgid "ID"
 msgstr ""
 
@@ -714,6 +734,8 @@ msgstr ""
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_prereg_age_period___last_update
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_scout_org___last_update
 #: model:ir.model.fields,field_description:campos_group_reg.field_cms_form_campos_group_reg___last_update
+#: model:ir.model.fields,field_description:campos_group_reg.field_cms_form_campos_participant___last_update
+#: model:ir.model.fields,field_description:campos_group_reg.field_cms_search_campos_participant___last_update
 msgid "Last Modified on"
 msgstr ""
 
@@ -826,6 +848,11 @@ msgstr ""
 
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.my_group_link
+msgid "Our Participants"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.ui.view,arch_db:campos_group_reg.my_group_link
 msgid "Our Pre-Registration"
 msgstr ""
 
@@ -851,6 +878,18 @@ msgstr ""
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.campos_participant_form_view
 msgid "Participant Name"
+msgstr ""
+
+#. module: campos_group_reg
+#: code:addons/campos_group_reg/models/cms_form_campos_participant.py:30
+#, python-format
+msgid "Participant added."
+msgstr ""
+
+#. module: campos_group_reg
+#: code:addons/campos_group_reg/models/cms_form_campos_participant.py:25
+#, python-format
+msgid "Participant updated."
 msgstr ""
 
 #. module: campos_group_reg
@@ -986,7 +1025,7 @@ msgid "Scout Troop Pre - Registration"
 msgstr ""
 
 #. module: campos_group_reg
-#: code:addons/campos_group_reg/models/cms_form_campos_group_reg.py:85
+#: code:addons/campos_group_reg/models/cms_form_campos_group_reg.py:94
 #, python-format
 msgid "Scout Troop updated."
 msgstr ""
@@ -994,6 +1033,11 @@ msgstr ""
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_scout_org_id
 msgid "Scout organization"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.ui.view,arch_db:campos_group_reg.participant_search_form_buttons
+msgid "Search"
 msgstr ""
 
 #. module: campos_group_reg
@@ -1336,8 +1380,18 @@ msgid "cms.form.campos.group.reg"
 msgstr ""
 
 #. module: campos_group_reg
+#: model:ir.model,name:campos_group_reg.model_cms_form_campos_participant
+msgid "cms.form.campos.participant"
+msgstr ""
+
+#. module: campos_group_reg
 #: model:ir.model,name:campos_group_reg.model_cms_form_my_account
 msgid "cms.form.my.account"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model,name:campos_group_reg.model_cms_search_campos_participant
+msgid "cms.search.campos.participant"
 msgstr ""
 
 #. module: campos_group_reg

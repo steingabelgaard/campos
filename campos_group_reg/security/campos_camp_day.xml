@@ -15,6 +15,17 @@
         <field name="perm_unlink" eval="0"/>
     </record>
     
+    <record model="ir.model.access" id="campos_camp_day_access_portal">
+        <field name="name">campos.camp.day access name</field>
+        <field name="model_id" ref="model_campos_camp_day"/>
+        <!-- TODO review and adapt -->
+        <field name="group_id" ref="base.group_portal"/>
+        <field name="perm_read" eval="1"/>
+        <field name="perm_create" eval="0"/>
+        <field name="perm_write" eval="0"/>
+        <field name="perm_unlink" eval="0"/>
+    </record>
+    
     <record model="ir.model.access" id="campos_camp_day_access_mgr">
         <field name="name">campos.camp.day access mgr</field>
         <field name="model_id" ref="model_campos_camp_day"/>

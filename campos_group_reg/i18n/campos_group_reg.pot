@@ -262,7 +262,7 @@ msgstr ""
 #. module: campos_group_reg
 #: selection:campos.group.reg,state:0
 #: selection:campos.participant,state:0
-#: selection:cms.form.campos.participant,participan_state:0
+#: selection:cms.form.campos.participant,participant_state:0
 msgid "Cancelled"
 msgstr ""
 
@@ -902,7 +902,7 @@ msgid "Participants"
 msgstr ""
 
 #. module: campos_group_reg
-#: selection:cms.form.campos.participant,participan_state:0
+#: selection:cms.form.campos.participant,participant_state:0
 msgid "Participate"
 msgstr ""
 
@@ -1110,7 +1110,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_state_id
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_state
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_state_id
-#: model:ir.model.fields,field_description:campos_group_reg.field_cms_form_campos_participant_participan_state
+#: model:ir.model.fields,field_description:campos_group_reg.field_cms_form_campos_participant_participant_state
 msgid "State"
 msgstr ""
 

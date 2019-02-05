@@ -11,7 +11,7 @@ class cmsParticipantForm(models.AbstractModel):
                            'country_id',
                            'gender', 'birthdate_date',
                            'arrival_date_id',
-                           'depature_date_id',
+                           'depature_date_id', 'participant_state',
                            )
     _form_required_fields = ('name', 'gender', 'birthdate_date',
                           'arrival_date_id',
@@ -19,15 +19,15 @@ class cmsParticipantForm(models.AbstractModel):
     _form_fields_order = ('name', 'street', 'street2', 'zip', 'city',
                           'country_id', 'gender', 'birthdate_date',
                           'arrival_date_id',
-                          'depature_date_id',
+                          'depature_date_id', 'participant_state',
                           )
     
-    participan_state = fields.Selection([('confirmed', 'Participate'),
+    participant_state = fields.Selection([('confirmed', 'Participate'),
                                           ('cancelled', 'Cancelled')], string="State", default='confirmed')
 
     def form_after_create_or_update(self, values, extra_values):
-        if extra_values.get('notify_partner'):
-            values['state'] = extra_values.get('notify_partner') 
+        if extra_values.get('participant_state'):
+            values['state'] = extra_values.get('participant_state') 
     
     def form_load_defaults(self, main_object=None, request_values=None):
         defaults = super(cmsParticipantForm, self).form_load_defaults(

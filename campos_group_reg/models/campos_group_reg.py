@@ -142,7 +142,7 @@ class CamposGroupReg(models.Model):
     
     @api.multi
     def write(self, vals):
-        if 'ckr_ok' in vals and vals['ckr_ok']:
+        if 'ckr_ok' in vals and vals['ckr_ok'] and not self.ckr_ok:
             vals['ckr_by_id'] = self.env.user.id
             vals['ckr_date'] = fields.Datetime.now()
         ret = super(CamposGroupReg, self).write(vals)

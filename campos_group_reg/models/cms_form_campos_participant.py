@@ -7,15 +7,26 @@ class cmsParticipantForm(models.AbstractModel):
     _name = 'cms.form.campos.participant'
     _inherit = 'cms.form'
     _form_model = 'campos.participant'
-    _form_model_fields = ('name', 'street', 'street2', 'zip', 'city',
-                          'country_id',
-                          'gender', 'birthdate_date',
+#     _form_model_fields = ('name', 'street', 'street2', 'zip', 'city',
+#                           'country_id',
+#                           'gender', 'birthdate_date',
+#                           'arrival_date_id',
+#                           'depature_date_id',
+#                           )
+    _form_required_fields = ('name', 'gender', 'birthdate_date',
+                          'arrival_date_id',
+                          'depature_date_id',)
+    _form_fields_order = ('name', 'street', 'street2', 'zip', 'city',
+                          'country_id', 'gender', 'birthdate_date',
                           'arrival_date_id',
                           'depature_date_id',
                           )
-    _form_required_fields = ('name',)
-    _form_fields_order = ('name', 'street', 'street2', 'zip', 'city',
-                          'country_id', 'gender', 'birthdate_date',
+    
+    @property 
+    def _form_fieldsets(self):
+        return ('name', 'street', 'street2', 'zip', 'city',
+                          'country_id',
+                          'gender', 'birthdate_date',
                           'arrival_date_id',
                           'depature_date_id',
                           )

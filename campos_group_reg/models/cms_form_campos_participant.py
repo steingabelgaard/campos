@@ -1,4 +1,4 @@
-from odoo import models, _
+from odoo import models, fields, _
 
 
 class cmsParticipantForm(models.AbstractModel):
@@ -22,6 +22,19 @@ class cmsParticipantForm(models.AbstractModel):
                           'depature_date_id',
                           )
     
+    participan_state = fields.Selection([('confirmed', 'Participate'),
+                                          ('cancelled', 'Cancelled')], string="State", default='confirmed')
+
+    def form_after_create_or_update(self, values, extra_values):
+        if extra_values.get('notify_partner'):
+            values['state'] = extra_values.get('notify_partner') 
+    
+    def form_load_defaults(self, main_object=None, request_values=None):
+        defaults = super(cmsParticipantForm, self).form_load_defaults(
+            main_object=main_object, request_values=request_values
+        )
+        defaults['birthdate_date'] = False
+        return defaults
     
     @property
     def form_msg_success_updated(self):

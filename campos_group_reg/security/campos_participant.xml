@@ -4,7 +4,7 @@
 
 <odoo>
 
-    <record model="ir.model.access" id="campos_participant_access_name"> <!-- TODO acl id -->
+    <record model="ir.model.access" id="campos_participant_access_user"> <!-- TODO acl id -->
         <field name="name">campos.participant access user</field> <!-- TODO acl name -->
         <field name="model_id" ref="model_campos_participant"/>
         <!-- TODO review and adapt -->
@@ -15,7 +15,7 @@
         <field name="perm_unlink" eval="0"/>
     </record>
     
-    <record model="ir.model.access" id="campos_participant_access_name"> <!-- TODO acl id -->
+    <record model="ir.model.access" id="campos_participant_access_mgr"> <!-- TODO acl id -->
         <field name="name">campos.participant access portal</field> <!-- TODO acl name -->
         <field name="model_id" ref="model_campos_participant"/>
         <!-- TODO review and adapt -->

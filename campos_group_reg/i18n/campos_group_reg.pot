@@ -881,13 +881,13 @@ msgid "Participant Name"
 msgstr ""
 
 #. module: campos_group_reg
-#: code:addons/campos_group_reg/models/cms_form_campos_participant.py:41
+#: code:addons/campos_group_reg/models/cms_form_campos_participant.py:33
 #, python-format
 msgid "Participant added."
 msgstr ""
 
 #. module: campos_group_reg
-#: code:addons/campos_group_reg/models/cms_form_campos_participant.py:36
+#: code:addons/campos_group_reg/models/cms_form_campos_participant.py:28
 #, python-format
 msgid "Participant updated."
 msgstr ""

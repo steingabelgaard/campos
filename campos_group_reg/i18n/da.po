@@ -7,16 +7,16 @@ msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2019-02-03 16:01+0100\n"
+"PO-Revision-Date: 2019-02-04 22:48+0000\n"
 "Last-Translator: Christian Eggert <christian@eggert.dk>\n"
-"Language-Team: Danish <https://example.com/projects/campos-11-0/campos-11-0-"
-"campos_group_reg/da/>\n"
+"Language-Team: Danish <https://example.com/projects/campos-11-0/"
+"campos-11-0-campos_group_reg/da/>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Weblate 3.4\n"
 
 #. module: campos_group_reg
 #: model:mail.template,body_html:campos_group_reg.contact_welcome_mail
@@ -58,17 +58,17 @@ msgstr ""
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_cars
 msgid "# of cars"
-msgstr ""
+msgstr "# Antal biler"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_large_tents
 msgid "# of large tents (>50 sqm)"
-msgstr ""
+msgstr "# Af store telte (>50 kvm.)"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_trailers
 msgid "# of trailers"
-msgstr ""
+msgstr "# af tailere"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_active
@@ -136,12 +136,12 @@ msgstr "Ankomstdag"
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_day_valid_dk
 msgid "Arrival/Departure valid for DK Groups"
-msgstr ""
+msgstr "Ankomst/afrejse valide for danske grupper"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_day_valid_non_dk
 msgid "Arrival/Departure valid for foreign  Groups"
-msgstr ""
+msgstr "Ankomst/afrejse valide for udenlandaske grupper"
 
 #. module: campos_group_reg
 #: selection:campos.group.reg,state:0
@@ -164,7 +164,7 @@ msgstr "Stregkode"
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_birthdate_date
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_birthdate_date
 msgid "Birthdate"
-msgstr ""
+msgstr "Fødselsdato"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_message_bounce
@@ -197,13 +197,13 @@ msgstr ""
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_day_campday
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_day_name
 msgid "Camp Day"
-msgstr ""
+msgstr "Lejrdage"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_camp_day_ids
 #: model:ir.ui.view,arch_db:campos_group_reg.campos_participant_form_view
 msgid "Camp Days"
-msgstr ""
+msgstr "Lejr dage"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_prereg_age_period_period_id
@@ -225,7 +225,7 @@ msgstr "CampOS"
 #. module: campos_group_reg
 #: model:ir.model,name:campos_group_reg.model_campos_participant
 msgid "CampOS Participant"
-msgstr ""
+msgstr "CampOS deltagere"
 
 #. module: campos_group_reg
 #: model:ir.model,name:campos_group_reg.model_campos_age_group
@@ -612,7 +612,7 @@ msgstr "Formatteret email"
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_gender
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_gender
 msgid "Gender"
-msgstr ""
+msgstr "Køn"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_partner_id
@@ -629,7 +629,7 @@ msgstr "Gruppér efter"
 #. module: campos_group_reg
 #: model:res.groups,name:campos_group_reg.group_campos_group_reg_manager
 msgid "Group Reg Manager"
-msgstr ""
+msgstr "Gruppe registrerings ansvarlig"
 
 #. module: campos_group_reg
 #: model:res.groups,name:campos_group_reg.group_campos_group_reg_user
@@ -751,7 +751,7 @@ msgstr "Sprog"
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_large_constructions
 msgid "Large construction"
-msgstr ""
+msgstr "Store konstruktioner (beskriv had det drejer sig om)"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_age_group___last_update
@@ -812,7 +812,7 @@ msgstr ""
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_partner_id
 msgid "Member"
-msgstr ""
+msgstr "Medlem"
 
 #. module: campos_group_reg
 #: code:addons/campos_group_reg/controllers/portal.py:154
@@ -907,24 +907,24 @@ msgstr "Forældre navn"
 #: model:ir.model.fields,field_description:campos_group_reg.field_res_partner_participant
 #: model:ir.model.fields,field_description:campos_group_reg.field_res_users_participant
 msgid "Participant"
-msgstr ""
+msgstr "Deltager"
 
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.campos_participant_form_view
 msgid "Participant Name"
-msgstr ""
+msgstr "Deltager navn"
 
 #. module: campos_group_reg
 #: code:addons/campos_group_reg/models/cms_form_campos_participant.py:30
 #, python-format
 msgid "Participant added."
-msgstr ""
+msgstr "Deltager tilføjet"
 
 #. module: campos_group_reg
 #: code:addons/campos_group_reg/models/cms_form_campos_participant.py:25
 #, python-format
 msgid "Participant updated."
-msgstr ""
+msgstr "Deltager opdateret"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_participant_ids
@@ -932,7 +932,7 @@ msgstr ""
 #: model:ir.ui.menu,name:campos_group_reg.campos_participant_menu
 #: model:ir.ui.view,arch_db:campos_group_reg.campos_group_reg_form_view
 msgid "Participants"
-msgstr ""
+msgstr "Deltagere"
 
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.campos_prereg_age_period_search_view
@@ -1008,7 +1008,7 @@ msgstr "Relateret virksomhed"
 #. module: campos_group_reg
 #: model:ir.ui.menu,name:campos_group_reg.campos_report_menu
 msgid "Reports"
-msgstr ""
+msgstr "Rapport"
 
 #. module: campos_group_reg
 #: model:mail.template,subject:campos_group_reg.contact_welcome_mail
@@ -1074,7 +1074,7 @@ msgstr "Korps"
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.participant_search_form_buttons
 msgid "Search"
-msgstr ""
+msgstr "Søg"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_self

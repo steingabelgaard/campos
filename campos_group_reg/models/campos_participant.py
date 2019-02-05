@@ -45,6 +45,7 @@ class CamposParticipant(models.Model):
             vals['group_reg_id'] = self._get_group_reg_id()
         vals['parent_id'] = self.env['campos.group.reg'].browse(vals['group_reg_id']).partner_id.id
         vals['participant'] = True
+        vals['type'] = 'other'
         _logger.info('CREATE: %s', vals)    
         res = super(CamposParticipant, self.sudo()).create(vals)
         if 'arrival_date_id' in vals and 'depature_day_id' in vals:

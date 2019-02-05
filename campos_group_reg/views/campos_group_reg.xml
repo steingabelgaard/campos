@@ -120,6 +120,7 @@
                         <page name="finalreg" string="Final Registration">
                         	<group>
                         		<field name="cars"/>
+                        		<field name="trailers"/>
                         		<field name="busses"/>
                         		<field name="large_tents"/>
                         		<field name="large_constructions"/>

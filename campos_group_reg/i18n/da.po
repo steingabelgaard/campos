@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2019-02-04 22:48+0000\n"
+"PO-Revision-Date: 2019-02-05 20:39+0000\n"
 "Last-Translator: Christian Eggert <christian@eggert.dk>\n"
 "Language-Team: Danish <https://example.com/projects/campos-11-0/"
 "campos-11-0-campos_group_reg/da/>\n"
@@ -53,7 +53,7 @@ msgstr ""
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_busses
 msgid "# of busses"
-msgstr ""
+msgstr "# Af busser"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_cars
@@ -68,7 +68,7 @@ msgstr "# Af store telte (>50 kvm.)"
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_trailers
 msgid "# of trailers"
-msgstr "# af tailere"
+msgstr "# Af trailere"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_active
@@ -751,7 +751,7 @@ msgstr "Sprog"
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_large_constructions
 msgid "Large construction"
-msgstr "Store konstruktioner (beskriv had det drejer sig om)"
+msgstr "Store konstruktioner (beskriv hvad det drejer sig om)"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_age_group___last_update

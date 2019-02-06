@@ -28,14 +28,7 @@ class cmsParticipantForm(models.AbstractModel):
     def form_after_create_or_update(self, values, extra_values):
         if extra_values.get('participant_state'):
             values['state'] = extra_values.get('participant_state') 
-    
-    def form_load_defaults(self, main_object=None, request_values=None):
-        defaults = super(cmsParticipantForm, self).form_load_defaults(
-            main_object=main_object, request_values=request_values
-        )
-        defaults['birthdate_date'] = False
-        return defaults
-    
+      
     @property
     def form_msg_success_updated(self):
         return _('Participant updated.')

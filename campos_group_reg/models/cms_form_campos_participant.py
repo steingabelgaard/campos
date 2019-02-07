@@ -25,7 +25,7 @@ class cmsParticipantForm(models.AbstractModel):
     participant_state = fields.Selection([('confirmed', 'Participate'),
                                           ('cancelled', 'Cancelled')], string="State", default='confirmed')
 
-    def form_after_create_or_update(self, values, extra_values):
+    def form_before_create_or_update(self, values, extra_values):
         if extra_values.get('participant_state'):
             values['state'] = extra_values.get('participant_state') 
       

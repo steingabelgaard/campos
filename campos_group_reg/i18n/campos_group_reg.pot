@@ -127,6 +127,11 @@ msgid "Arrival day"
 msgstr ""
 
 #. module: campos_group_reg
+#: model:ir.ui.view,arch_db:campos_group_reg.campos_group_reg_form_view
+msgid "Arrival/Departure"
+msgstr ""
+
+#. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_day_valid_dk
 msgid "Arrival/Departure valid for DK Groups"
 msgstr ""
@@ -550,6 +555,7 @@ msgstr ""
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_contact_email
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_email
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_security_email
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_treasurer_email
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_email
 msgid "Email"
@@ -564,6 +570,16 @@ msgstr ""
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_employee
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_employee
 msgid "Employee"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_arrival_date
+msgid "Expected arrival"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_departure_date
+msgid "Expected departure"
 msgstr ""
 
 #. module: campos_group_reg
@@ -790,6 +806,7 @@ msgstr ""
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_contact_mobile
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_mobile
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_security_mobile
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_treasurer_mobile
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_mobile
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_2
@@ -869,6 +886,7 @@ msgid "Parent name"
 msgstr ""
 
 #. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_contact_participant
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_participant
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_participant
 #: model:ir.model.fields,field_description:campos_group_reg.field_res_partner_participant
@@ -882,13 +900,13 @@ msgid "Participant Name"
 msgstr ""
 
 #. module: campos_group_reg
-#: code:addons/campos_group_reg/models/cms_form_campos_participant.py:39
+#: code:addons/campos_group_reg/models/cms_form_campos_participant.py:41
 #, python-format
 msgid "Participant added."
 msgstr ""
 
 #. module: campos_group_reg
-#: code:addons/campos_group_reg/models/cms_form_campos_participant.py:34
+#: code:addons/campos_group_reg/models/cms_form_campos_participant.py:36
 #, python-format
 msgid "Participant updated."
 msgstr ""
@@ -1031,7 +1049,7 @@ msgid "Scout Troop Pre - Registration"
 msgstr ""
 
 #. module: campos_group_reg
-#: code:addons/campos_group_reg/models/cms_form_campos_group_reg.py:94
+#: code:addons/campos_group_reg/models/cms_form_campos_group_reg.py:112
 #, python-format
 msgid "Scout Troop updated."
 msgstr ""
@@ -1044,6 +1062,16 @@ msgstr ""
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.participant_search_form_buttons
 msgid "Search"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_security_partner_id
+msgid "Security Contact"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.ui.view,arch_db:campos_group_reg.campos_group_reg_form_view
+msgid "Security contact"
 msgstr ""
 
 #. module: campos_group_reg
@@ -1215,6 +1243,11 @@ msgstr ""
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_title
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_title
 msgid "Title"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_transport_form
+msgid "Transportation form"
 msgstr ""
 
 #. module: campos_group_reg

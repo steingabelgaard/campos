@@ -75,6 +75,12 @@
                                     <field name="contact_email" />
                                     <field name="contact_mobile" />
                                 </group>
+                                <group string="Security contact">
+                                	<field name="partner_id" invisible="1"/>
+                                	<field name="security_partner_id" domain="[('parent_id', '=', partner_id)]"/>
+                                	<field name="security_email"/>
+                                	<field name="security_mobile"/>
+                                </group>
 
                             </group>
                         </page>
@@ -130,6 +136,13 @@
                         	</group>
                         
                         </page>
+                        <page name="transport" string="Arrival/Departure">
+                        	<group>
+                        		<field name="arrival_date" />
+    							<field name="departure_date" />
+    							<field name="transport_form" />
+                        	</group>
+                        </page>	
 
                     </notebook>
                 </sheet>

@@ -63,6 +63,7 @@ class CamposGroupReg(models.Model):
     contact_country_id = fields.Many2one(related='partner_id.country_id')
     contact_email = fields.Char(related='contact_partner_id.email')
     contact_mobile = fields.Char(related='contact_partner_id.mobile')
+    contact_participant = fields.Boolean(related='contact_partner_id.participant')
 
     treasurer_partner_id = fields.Many2one('res.partner', 'Treasurer')
 
@@ -74,6 +75,10 @@ class CamposGroupReg(models.Model):
     treasurer_country_id = fields.Many2one(related='partner_id.country_id')
     treasurer_email = fields.Char(related='treasurer_partner_id.email')
     treasurer_mobile = fields.Char(related='treasurer_partner_id.mobile')
+
+    security_partner_id = fields.Many2one('res.partner', 'Security Contact', domain=[('scoutgroup', '!=', True)])
+    security_email = fields.Char(related='security_partner_id.email')
+    security_mobile = fields.Char(related='security_partner_id.mobile')
 
     prereg_ids = fields.One2many('campos.prereg.age.period',
                                  'group_reg_id',
@@ -93,6 +98,10 @@ class CamposGroupReg(models.Model):
     ckr_date = fields.Date('CKR confirmed date')
     participant_ids = fields.One2many('campos.participant', 'group_reg_id', 'Participants')
     participants_confirmed = fields.Integer('Participants', help="Confirmed participants", compute='_compute_participants')
+    
+    arrival_date = fields.Datetime('Expected arrival')
+    departure_date = fields.Datetime('Expected departure')
+    transport_form = fields.Text('Transportation form')
     
     @api.model
     def create(self, vals):

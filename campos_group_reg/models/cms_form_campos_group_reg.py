@@ -14,6 +14,9 @@ class cmsGroupRegForm(models.AbstractModel):
                           'contact_city',
                           'contact_country_id', 'contact_mobile',
                           'contact_email',
+                          'security_partner_id',
+                          'security_mobile',
+                          'security_email',
                           'treasurer_name',
                           'treasurer_street',
                           'treasurer_street2',
@@ -22,19 +25,24 @@ class cmsGroupRegForm(models.AbstractModel):
                           'treasurer_country_id',
                           'treasurer_mobile',
                           'treasurer_email',
-                          'cars','busses','trailers','large_tents','large_constructions','ckr_ok')
-    _form_required_fields = ('name',)
+                          'cars','busses','trailers','large_tents','large_constructions','ckr_ok',
+                          'arrival_date', 'departure_date', 'transport_form')
+    _form_required_fields = ('name', 'arrival_date', 'departure_date', 'transport_form','cars','busses','trailers')
     _form_fields_order = ('name', 'street', 'street2', 'zip', 'city',
                           'country_id',
                           'contact_name', 'contact_street',
                           'contact_street2', 'contact_zip',
                           'contact_city', 'contact_country_id',
                           'contact_mobile', 'contact_email',
+                          'security_partner_id',
+                          'security_mobile',
+                          'security_email',
                           'treasurer_name', 'treasurer_street',
                           'treasurer_street2', 'treasurer_zip',
                           'treasurer_city', 'treasurer_country_id',
                           'treasurer_mobile', 'treasurer_email',
-                          'cars','busses','trailers','large_tents','large_constructions','ckr_ok')
+                          'cars','busses','trailers','large_tents','large_constructions','ckr_ok',
+                          'arrival_date', 'departure_date', 'transport_form')
 
     _form_fieldsets = [
         {
@@ -61,6 +69,9 @@ class cmsGroupRegForm(models.AbstractModel):
                 'contact_country_id',
                 'contact_mobile',
                 'contact_email',
+                'security_partner_id',
+                'security_mobile',
+                'security_email',
             ],
         },
         {
@@ -82,6 +93,13 @@ class cmsGroupRegForm(models.AbstractModel):
             'title': 'Final Registration',
             'fields': [
                 'cars','busses','trailers','large_tents','large_constructions','ckr_ok'
+            ],
+        },
+        {
+            'id': 'transport',
+            'title': 'Arrival / Departure',
+            'fields': [
+                'arrival_date', 'departure_date', 'transport_form',
             ],
         },
     ]

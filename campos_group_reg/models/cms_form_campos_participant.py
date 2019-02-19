@@ -9,7 +9,7 @@ class cmsParticipantForm(models.AbstractModel):
     _form_model = 'campos.participant'
     _form_model_fields = ('name',
                           #  'street', 'street2', 'zip', 'city',
-                           'country_id',
+                          # 'country_id',
                            'gender', 'birthdate_date',
                            'arrival_date_id',
                            'depature_date_id', 'participant_state',
@@ -19,7 +19,8 @@ class cmsParticipantForm(models.AbstractModel):
                           'depature_date_id',)
     _form_fields_order = ('name', 
                           #'street', 'street2', 'zip', 'city',
-                          'country_id', 'gender', 'birthdate_date',
+                          #'country_id', 
+                          'gender', 'birthdate_date',
                           'arrival_date_id',
                           'depature_date_id', 'participant_state',
                           )

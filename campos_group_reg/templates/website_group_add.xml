@@ -561,6 +561,21 @@
 		</t>
 	</template>
 	
+	<template id="thank_you_login">
+		<t t-call="website.layout">
+			<t t-set="additional_title">Pre registration completed</t>
+			<div id="wrap">
+				<div class="container">
+					<h4>Thank you</h4>
+					<p>Your answers have been saved.</p>
+					<p>And an email with login information has benne sent to yuo.</p>
+					<p>Please login to fullfil yoour registration.</p>
+					<a href="/" class="btn btn-default btn-primary mb32">Continue</a>
+				</div>
+			</div>
+		</t>
+	</template>
+	
 	<template id="group_add_email_exist">
         <t t-call="website.layout">
             <t t-set="additional_title">Email already registered!</t>

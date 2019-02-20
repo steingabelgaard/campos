@@ -165,8 +165,13 @@ class PortalGroupReg(CustomerPortal):
                     if not group_reg.treasurer_partner_id:
                         values['treasurer'] = {'country_id': group_reg.country_id.id}
                         return request.render("campos_group_reg.group_add_3", values)
-                    
+
                     group_reg.action_registrered()
+                    
+                    # This line is added to skip pre-registration
+                    
+                    return request.render("campos_group_reg.thank_you_login", {})
+                
                     group_reg.write({'prereg_ids': group_reg._default_prereg_ids()})    
                     values['group_reg'] = group_reg
                     
@@ -191,7 +196,6 @@ class PortalGroupReg(CustomerPortal):
         return request.render("campos_group_reg.group_add_1", values)
     
     @http.route(['/group-reg/pre-reg'], type='http', auth="public", website=True)
-    
     def portal_group_reg_pre_reg(self, **post):
         _logger.info("pre-reg")
         

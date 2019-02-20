@@ -26,11 +26,12 @@ class cmsGroupRegForm(models.AbstractModel):
                           'treasurer_mobile',
                           'treasurer_email',
                           'cars','busses','trailers','large_tents','large_constructions','ckr_ok',
-                          #'arrival_date', 'departure_date', 
+                          'arrival_date', 'departure_date', 
                           'transport_form')
     _form_required_fields = ( 'name', #'arrival_date', 'departure_date', 
                              #'transport_form',
-                             'cars','busses','trailers')
+                             #'cars','busses','trailers'
+                             )
     _form_fields_order = ('name', 'street', 'street2', 'zip', 'city',
                           'country_id',
                           'contact_name', 'contact_street',
@@ -45,7 +46,7 @@ class cmsGroupRegForm(models.AbstractModel):
                           'treasurer_city', 'treasurer_country_id',
                           'treasurer_mobile', 'treasurer_email',
                           'cars','busses','trailers','large_tents','large_constructions','ckr_ok',
-                          #'arrival_date', 'departure_date', 
+                          'arrival_date', 'departure_date', 
                           'transport_form'
                           )
 

@@ -7,16 +7,16 @@ msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2019-02-26 20:49+0000\n"
+"PO-Revision-Date: 2019-02-26 22:03+0100\n"
 "Last-Translator: Christian Eggert <christian@eggert.dk>\n"
-"Language-Team: Danish <https://example.com/projects/campos-11-0/"
-"campos-11-0-campos_group_reg/da/>\n"
+"Language-Team: Danish <https://example.com/projects/campos-11-0/campos-11-0-"
+"campos_group_reg/da/>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.4\n"
+"X-Generator: Poedit 2.0.6\n"
 
 #. module: campos_group_reg
 #: model:mail.template,body_html:campos_group_reg.contact_welcome_mail
@@ -127,6 +127,13 @@ msgstr ""
 #: model:ir.ui.view,arch_db:campos_group_reg.campos_group_reg_search_view
 msgid "Archived"
 msgstr ""
+
+#. module: campos_group_reg
+#: code:addons/campos_group_reg/models/cms_form_campos_group_reg.py:109
+#, fuzzy, python-format
+#| msgid "Arrival date"
+msgid "Arrival / Departure"
+msgstr "Ankomstdato"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_arrival_date_id
@@ -616,8 +623,10 @@ msgid "Expected participants for"
 msgstr "Forventet deltagerantal for"
 
 #. module: campos_group_reg
+#: code:addons/campos_group_reg/models/cms_form_campos_group_reg.py:102
 #: selection:campos.group.reg,state:0
 #: model:ir.ui.view,arch_db:campos_group_reg.campos_group_reg_form_view
+#, python-format
 msgid "Final Registration"
 msgstr "Endelig tilmelding"
 
@@ -1119,7 +1128,7 @@ msgid "Scout Troop Pre - Registration"
 msgstr "Forhåndsregistrering for grupper"
 
 #. module: campos_group_reg
-#: code:addons/campos_group_reg/models/cms_form_campos_group_reg.py:118
+#: code:addons/campos_group_reg/models/cms_form_campos_group_reg.py:121
 #, python-format
 msgid "Scout Troop updated."
 msgstr "Din spejdergruppe er blevet opdateret."
@@ -1349,8 +1358,10 @@ msgid "Transportation form"
 msgstr "Transport form"
 
 #. module: campos_group_reg
+#: code:addons/campos_group_reg/models/cms_form_campos_group_reg.py:88
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_treasurer_partner_id
 #: model:ir.ui.view,arch_db:campos_group_reg.campos_group_reg_form_view
+#, python-format
 msgid "Treasurer"
 msgstr "Kasserer"
 

@@ -122,12 +122,6 @@ msgid "Archived"
 msgstr ""
 
 #. module: campos_group_reg
-#: code:addons/campos_group_reg/models/cms_form_campos_group_reg.py:109
-#, python-format
-msgid "Arrival / Departure"
-msgstr ""
-
-#. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_arrival_date_id
 msgid "Arrival date"
 msgstr ""

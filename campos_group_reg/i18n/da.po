@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2019-02-26 20:55+0100\n"
+"PO-Revision-Date: 2019-02-26 20:59+0100\n"
 "Last-Translator: Christian Eggert <christian@eggert.dk>\n"
 "Language-Team: Danish <https://example.com/projects/campos-11-0/campos-11-0-"
 "campos_group_reg/da/>\n"
@@ -746,6 +746,22 @@ msgstr "Intern reference"
 #, python-format
 msgid "Invalid birth date"
 msgstr "Ugyldig fødselsdato"
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_is_dk
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_is_dk
+#: model:ir.model.fields,field_description:campos_group_reg.field_res_partner_is_dk
+#: model:ir.model.fields,field_description:campos_group_reg.field_res_users_is_dk
+msgid "Is DK"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_is_non_dk
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_is_non_dk
+#: model:ir.model.fields,field_description:campos_group_reg.field_res_partner_is_non_dk
+#: model:ir.model.fields,field_description:campos_group_reg.field_res_users_is_non_dk
+msgid "Is Non DK"
+msgstr ""
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_is_company

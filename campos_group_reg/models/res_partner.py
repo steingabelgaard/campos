@@ -15,6 +15,21 @@ class ResPartner(models.Model):
     
     scoutgroup = fields.Boolean('Scout Troop')
     participant = fields.Boolean('Participant')
+    is_dk = fields.Boolean('Is DK', compute='_compute_dk', store=True)
+    is_non_dk = fields.Boolean('Is Non DK', compute='_compute_dk', store=True)
+
+    @api.multi
+    @api.depends('country_id')
+    def _compute_dk(self):
+        dk_id = self.env.ref('base.dk')
+        for partner in self:
+            if partner.country_id == dk_id:
+                partner.update({'is_dk': True,
+                                'is_non_dk': False})
+            else:
+                partner.update({'is_dk': False,
+                                'is_non_dk': True})
+
 
     def ensure_portal_user(self):
         '''

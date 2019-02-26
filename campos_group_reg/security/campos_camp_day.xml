@@ -37,4 +37,12 @@
         <field name="perm_unlink" eval="1"/>
     </record>
 
+	<record id="campos_group_reg_portal_rule" model="ir.rule">
+        <field name="name">CampOS Group Reg Portal rule</field>
+        <field name="model_id" ref="model_campos_camp_day"/>
+        <field name="groups" eval="[(4, ref('base.group_portal'))]"/>
+        <field name="domain_force">['|', '&amp;',('valid_dk', '=', user.partner_id.is_dk), ('valid_dk', '=', True),
+        '&amp;',('valid_non_dk', '=', user.partner_id.is_non_dk), ('valid_non_dk', '=', True)]</field>
+    </record>
+	
 </odoo>

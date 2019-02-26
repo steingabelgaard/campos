@@ -104,13 +104,13 @@ class cmsGroupRegForm(models.AbstractModel):
                     'cars','busses','trailers','large_tents','large_constructions','ckr_ok'
                 ],
             },
-            {
-                'id': 'transport',
-                'title': _('Arrival / Departure'),
-                'fields': [
-                    'arrival_date', 'departure_date', 'transport_form',
-                ],
-            },
+#             {
+#                 'id': 'transport',
+#                 'title': _('Arrival / Departure'),
+#                 'fields': [
+#                     'arrival_date', 'departure_date', 'transport_form',
+#                 ],
+#             },
         ]
 
     _form_fieldsets_display = 'tabs'

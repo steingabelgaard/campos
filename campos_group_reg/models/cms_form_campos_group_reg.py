@@ -26,7 +26,8 @@ class cmsGroupRegForm(models.AbstractModel):
                           'treasurer_mobile',
                           'treasurer_email',
                           'cars','busses','trailers','large_tents','large_constructions','ckr_ok',
-                          'arrival_date', 'departure_date', 
+                          'arrival_date1_id', 'arrival_time1', 'arrival_date2_id', 'arrival_time2', 'arrival_date3_id', 'arrival_time3', 
+                          'departure_date1_id', 'departure_time1', 'departure_date2_id', 'departure_time2', 'departure_date3_id', 'departure_time3', 
                           'transport_form')
     _form_required_fields = ( 'name', #'arrival_date', 'departure_date', 
                              #'transport_form',
@@ -46,7 +47,8 @@ class cmsGroupRegForm(models.AbstractModel):
                           'treasurer_city', 'treasurer_country_id',
                           'treasurer_mobile', 'treasurer_email',
                           'cars','busses','trailers','large_tents','large_constructions','ckr_ok',
-                          'arrival_date', 'departure_date', 
+                          'arrival_date1_id', 'arrival_time1', 'arrival_date2_id', 'arrival_time2', 'arrival_date3_id', 'arrival_time3', 
+                          'departure_date1_id', 'departure_time1', 'departure_date2_id', 'departure_time2', 'departure_date3_id', 'departure_time3', 
                           'transport_form'
                           )
 
@@ -104,13 +106,15 @@ class cmsGroupRegForm(models.AbstractModel):
                     'cars','busses','trailers','large_tents','large_constructions','ckr_ok'
                 ],
             },
-#             {
-#                 'id': 'transport',
-#                 'title': _('Arrival / Departure'),
-#                 'fields': [
-#                     'arrival_date', 'departure_date', 'transport_form',
-#                 ],
-#             },
+            {
+                'id': 'transport',
+                'title': _('Arrival / Departure'),
+                'fields': [
+                    'arrival_date1_id', 'arrival_time1', 'arrival_date2_id', 'arrival_time2', 'arrival_date3_id', 'arrival_time3', 
+                    'departure_date1_id', 'departure_time1', 'departure_date2_id', 'departure_time2', 'departure_date3_id', 'departure_time3', 
+                    'transport_form',
+                ],
+            },
         ]
 
     _form_fieldsets_display = 'tabs'

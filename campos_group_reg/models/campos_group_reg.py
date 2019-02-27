@@ -16,6 +16,13 @@ class CamposGroupReg(models.Model):
     _inherits = {'res.partner': 'partner_id',
                  }
 
+    @api.model
+    def _get_time_selecetion(self):
+        l = []
+        for h in range(24):
+            l.append(('%02d00' % h, '%02d:00' % h))
+            l.append(('%02d30' % h, '%02d:30' % h))
+        return l
     def _default_prereg_ids(self):
         # your list of project should come from the context, some selection
         # in a previous wizard or wherever else
@@ -99,8 +106,20 @@ class CamposGroupReg(models.Model):
     participant_ids = fields.One2many('campos.participant', 'group_reg_id', 'Participants')
     participants_confirmed = fields.Integer('Participants', help="Confirmed participants", compute='_compute_participants')
     
-    arrival_date = fields.Datetime('Expected arrival')
-    departure_date = fields.Datetime('Expected departure')
+    
+    arrival_date1_id = fields.Many2one('campos.camp.day', 'Expected arrival (date) - 1', domain=[('arrival_day', '=', True)], track_visibility='onchange')
+    arrival_time1 = fields.Selection('_get_time_selecetion', string='Expected arrival (time) - 1', track_visibility='onchange')
+    arrival_date2_id = fields.Many2one('campos.camp.day', 'Expected arrival (date) - 2', domain=[('arrival_day', '=', True)], track_visibility='onchange')
+    arrival_time2 = fields.Selection('_get_time_selecetion', string='Expected arrival (time) - 2', track_visibility='onchange')
+    arrival_date3_id = fields.Many2one('campos.camp.day', 'Expected arrival (date) - 3', domain=[('arrival_day', '=', True)], track_visibility='onchange')
+    arrival_time3 = fields.Selection('_get_time_selecetion', string='Expected arrival (time) - 3', track_visibility='onchange')
+    
+    departure_date1_id = fields.Many2one('campos.camp.day', 'Expected departure (date) - 1', domain=[('depature_day', '=', True)], track_visibility='onchange')
+    departure_time1 = fields.Selection('_get_time_selecetion', string='Expected departure (time) - 1', track_visibility='onchange')
+    departure_date2_id = fields.Many2one('campos.camp.day', 'Expected departure (date) - 2', domain=[('depature_day', '=', True)], track_visibility='onchange')
+    departure_time2 = fields.Selection('_get_time_selecetion', string='Expected departure (time) - 2', track_visibility='onchange')
+    departure_date3_id = fields.Many2one('campos.camp.day', 'Expected departure (date) - 3', domain=[('depature_day', '=', True)], track_visibility='onchange')
+    departure_time3 = fields.Selection('_get_time_selecetion', string='Expected departure (time) - 3', track_visibility='onchange')
     transport_form = fields.Text('Transportation form')
     
     @api.model

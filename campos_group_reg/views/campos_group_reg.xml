@@ -137,10 +137,26 @@
                         
                         </page>
                         <page name="transport" string="Arrival/Departure">
-                        	<group>
-                        		<field name="arrival_date" />
-    							<field name="departure_date" />
-    							<field name="transport_form" />
+                        	<group cols="4">
+                        		<group>
+	                        		<field name="arrival_date1_id" />
+	                        		<field name="arrival_time1" />
+	                        		<field name="arrival_date2_id" />
+	                        		<field name="arrival_time2" />
+	                        		<field name="arrival_date2_id" />
+	                        		<field name="arrival_time2" />
+	                        		</group>
+    							<group>
+    								<field name="departure_date1_id" />
+    								<field name="departure_time1" />
+    								<field name="departure_date2_id" />
+    								<field name="departure_time2" />
+    								<field name="departure_date3_id" />
+    								<field name="departure_time3" />
+    							</group>
+    							<group  colspan="4">
+    								<field name="transport_form"/>
+    							</group>
                         	</group>
                         </page>	
 

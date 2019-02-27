@@ -122,7 +122,7 @@ msgid "Archived"
 msgstr ""
 
 #. module: campos_group_reg
-#: code:addons/campos_group_reg/models/cms_form_campos_group_reg.py:111
+#: code:addons/campos_group_reg/models/cms_form_campos_group_reg.py:168
 #, python-format
 msgid "Arrival / Departure"
 msgstr ""
@@ -197,7 +197,7 @@ msgid "CKR confirmed date"
 msgstr ""
 
 #. module: campos_group_reg
-#: code:addons/campos_group_reg/controllers/portal.py:287
+#: code:addons/campos_group_reg/controllers/portal.py:401
 #, python-format
 msgid "CPR must be 4 digits"
 msgstr ""
@@ -651,7 +651,7 @@ msgid "Expected participants for"
 msgstr ""
 
 #. module: campos_group_reg
-#: code:addons/campos_group_reg/models/cms_form_campos_group_reg.py:104
+#: code:addons/campos_group_reg/models/cms_form_campos_group_reg.py:156
 #: selection:campos.group.reg,state:0
 #: model:ir.ui.view,arch_db:campos_group_reg.campos_group_reg_form_view
 #, python-format
@@ -765,7 +765,7 @@ msgid "Internal Reference"
 msgstr ""
 
 #. module: campos_group_reg
-#: code:addons/campos_group_reg/controllers/portal.py:280
+#: code:addons/campos_group_reg/controllers/portal.py:394
 #, python-format
 msgid "Invalid birth date"
 msgstr ""
@@ -878,7 +878,7 @@ msgid "Member"
 msgstr ""
 
 #. module: campos_group_reg
-#: code:addons/campos_group_reg/controllers/portal.py:154
+#: code:addons/campos_group_reg/controllers/portal.py:222
 #, python-format
 msgid "Missing required field: %s"
 msgstr ""
@@ -980,13 +980,13 @@ msgid "Participant Name"
 msgstr ""
 
 #. module: campos_group_reg
-#: code:addons/campos_group_reg/models/cms_form_campos_participant.py:42
+#: code:addons/campos_group_reg/models/cms_form_campos_participant.py:55
 #, python-format
 msgid "Participant added."
 msgstr ""
 
 #. module: campos_group_reg
-#: code:addons/campos_group_reg/models/cms_form_campos_participant.py:37
+#: code:addons/campos_group_reg/models/cms_form_campos_participant.py:50
 #, python-format
 msgid "Participant updated."
 msgstr ""
@@ -1047,7 +1047,7 @@ msgid "Pre registration completed"
 msgstr ""
 
 #. module: campos_group_reg
-#: code:addons/campos_group_reg/controllers/portal.py:227
+#: code:addons/campos_group_reg/controllers/portal.py:329
 #, python-format
 msgid "Pre registration figures has been updated."
 msgstr ""
@@ -1135,7 +1135,7 @@ msgid "Scout Troop Pre - Registration"
 msgstr ""
 
 #. module: campos_group_reg
-#: code:addons/campos_group_reg/models/cms_form_campos_group_reg.py:125
+#: code:addons/campos_group_reg/models/cms_form_campos_group_reg.py:191
 #, python-format
 msgid "Scout Troop updated."
 msgstr ""
@@ -1338,7 +1338,7 @@ msgid "Transportation form"
 msgstr ""
 
 #. module: campos_group_reg
-#: code:addons/campos_group_reg/models/cms_form_campos_group_reg.py:90
+#: code:addons/campos_group_reg/models/cms_form_campos_group_reg.py:142
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_treasurer_partner_id
 #: model:ir.ui.view,arch_db:campos_group_reg.campos_group_reg_form_view
 #, python-format

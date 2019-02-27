@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2019-02-26 22:03+0100\n"
+"PO-Revision-Date: 2019-02-27 17:19+0100\n"
 "Last-Translator: Christian Eggert <christian@eggert.dk>\n"
 "Language-Team: Danish <https://example.com/projects/campos-11-0/campos-11-0-"
 "campos_group_reg/da/>\n"
@@ -129,7 +129,7 @@ msgid "Archived"
 msgstr ""
 
 #. module: campos_group_reg
-#: code:addons/campos_group_reg/models/cms_form_campos_group_reg.py:109
+#: code:addons/campos_group_reg/models/cms_form_campos_group_reg.py:111
 #, fuzzy, python-format
 #| msgid "Arrival date"
 msgid "Arrival / Departure"
@@ -607,13 +607,87 @@ msgid "Employee"
 msgstr "Ansat"
 
 #. module: campos_group_reg
-#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_arrival_date
-msgid "Expected arrival"
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_arrival_date1_id
+#, fuzzy
+#| msgid "Expected arrival"
+msgid "Expected arrival (date) - 1"
 msgstr "Forventet ankomst"
 
 #. module: campos_group_reg
-#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_departure_date
-msgid "Expected departure"
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_arrival_date2_id
+#, fuzzy
+#| msgid "Expected arrival"
+msgid "Expected arrival (date) - 2"
+msgstr "Forventet ankomst"
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_arrival_date3_id
+#, fuzzy
+#| msgid "Expected arrival"
+msgid "Expected arrival (date) - 3"
+msgstr "Forventet ankomst"
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_arrival_time1
+#, fuzzy
+#| msgid "Expected arrival"
+msgid "Expected arrival (time) - 1"
+msgstr "Forventet ankomst"
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_arrival_time2
+#, fuzzy
+#| msgid "Expected arrival"
+msgid "Expected arrival (time) - 2"
+msgstr "Forventet ankomst"
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_arrival_time3
+#, fuzzy
+#| msgid "Expected arrival"
+msgid "Expected arrival (time) - 3"
+msgstr "Forventet ankomst"
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_departure_date1_id
+#, fuzzy
+#| msgid "Expected departure"
+msgid "Expected departure (date) - 1"
+msgstr "Forventet afrejse"
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_departure_date2_id
+#, fuzzy
+#| msgid "Expected departure"
+msgid "Expected departure (date) - 2"
+msgstr "Forventet afrejse"
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_departure_date3_id
+#, fuzzy
+#| msgid "Expected departure"
+msgid "Expected departure (date) - 3"
+msgstr "Forventet afrejse"
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_departure_time1
+#, fuzzy
+#| msgid "Expected departure"
+msgid "Expected departure (time) - 1"
+msgstr "Forventet afrejse"
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_departure_time2
+#, fuzzy
+#| msgid "Expected departure"
+msgid "Expected departure (time) - 2"
+msgstr "Forventet afrejse"
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_departure_time3
+#, fuzzy
+#| msgid "Expected departure"
+msgid "Expected departure (time) - 3"
 msgstr "Forventet afrejse"
 
 #. module: campos_group_reg
@@ -623,7 +697,7 @@ msgid "Expected participants for"
 msgstr "Forventet deltagerantal for"
 
 #. module: campos_group_reg
-#: code:addons/campos_group_reg/models/cms_form_campos_group_reg.py:102
+#: code:addons/campos_group_reg/models/cms_form_campos_group_reg.py:104
 #: selection:campos.group.reg,state:0
 #: model:ir.ui.view,arch_db:campos_group_reg.campos_group_reg_form_view
 #, python-format
@@ -1128,7 +1202,7 @@ msgid "Scout Troop Pre - Registration"
 msgstr "Forhåndsregistrering for grupper"
 
 #. module: campos_group_reg
-#: code:addons/campos_group_reg/models/cms_form_campos_group_reg.py:121
+#: code:addons/campos_group_reg/models/cms_form_campos_group_reg.py:125
 #, python-format
 msgid "Scout Troop updated."
 msgstr "Din spejdergruppe er blevet opdateret."
@@ -1358,7 +1432,7 @@ msgid "Transportation form"
 msgstr "Transport form"
 
 #. module: campos_group_reg
-#: code:addons/campos_group_reg/models/cms_form_campos_group_reg.py:88
+#: code:addons/campos_group_reg/models/cms_form_campos_group_reg.py:90
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_treasurer_partner_id
 #: model:ir.ui.view,arch_db:campos_group_reg.campos_group_reg_form_view
 #, python-format

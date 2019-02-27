@@ -13,7 +13,12 @@ class CamposScoutOrg(models.Model):
     name = fields.Char('Name', size=128)
     country_id = fields.Many2one('res.country', 'Country')
     sex = fields.Char('Sex', size=128)
-    worldorg = fields.Selection([('wagggs', 'WAGGGS'),
-                                 ('wosm', 'WOSM'),
-                                 ('w/w', 'WAGGGS/WOSM'),
-                                 ('other', 'Other')], string='World Organization')
+    worldorg = fields.Selection(
+        [
+            ('wagggs', 'WAGGGS'),
+            ('wosm', 'WOSM'),
+            ('w/w', 'WAGGGS/WOSM'),
+            ('other', 'Other'),
+        ],
+        string='World Organization',
+    )

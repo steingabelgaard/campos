@@ -12,4 +12,3 @@ class CamposParticipantDay(models.Model):
     name = fields.Char()
     participant_id = fields.Many2one('campos.participant', 'Participant')
     day_id = fields.Many2one('campos.camp.day', 'Day')
-    

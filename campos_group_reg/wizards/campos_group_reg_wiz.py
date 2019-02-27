@@ -5,6 +5,7 @@
 from odoo import api, fields, models, _
 
 import logging
+
 _logger = logging.getLogger(__name__)
 
 
@@ -28,7 +29,7 @@ class CamposGroupRegWiz(models.TransientModel):
     contact_country_id = fields.Many2one('res.country')
     contact_email = fields.Char()
     contact_mobile = fields.Char()
-    
+
     treasurer_name = fields.Char()
     treasurer_street = fields.Char()
     treasurer_street2 = fields.Char()
@@ -38,12 +39,10 @@ class CamposGroupRegWiz(models.TransientModel):
     treasurer_email = fields.Char()
     treasurer_mobile = fields.Char()
 
-
     def form_after_create_or_update(self, values, extra_values):
         _logger.info('IN FORM AFTER', values)
         self.env['campos.group.reg'].sudo().create(values)
-        
-        
+
     @api.multi
     def doit(self):
         for wizard in self:

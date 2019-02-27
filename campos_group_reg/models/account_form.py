@@ -4,6 +4,7 @@
 
 from odoo import models
 
+
 class AccountForm(models.AbstractModel):
     """Partner account form."""
 
@@ -21,6 +22,11 @@ class AccountForm(models.AbstractModel):
     )
     _form_fields_order = _form_model_fields
     _form_required_fields = (
-        "name", "street", "zip", "city",
-        "country_id", "mobile", "email"
+        "name",
+        "street",
+        "zip",
+        "city",
+        "country_id",
+        "mobile",
+        "email",
     )

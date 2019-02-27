@@ -16,6 +16,6 @@ class CamposCampDay(models.Model):
     arrival_day = fields.Boolean('Arrival day')
     depature_day = fields.Boolean('Depature day')
     valid_dk = fields.Boolean('Arrival/Departure valid for DK Groups')
-    valid_non_dk = fields.Boolean('Arrival/Departure valid for foreign  Groups')
-    
-    
+    valid_non_dk = fields.Boolean(
+        'Arrival/Departure valid for foreign  Groups'
+    )

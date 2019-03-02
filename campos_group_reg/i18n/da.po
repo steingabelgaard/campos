@@ -7,16 +7,16 @@ msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2019-02-27 17:19+0100\n"
+"PO-Revision-Date: 2019-03-02 14:56+0000\n"
 "Last-Translator: Christian Eggert <christian@eggert.dk>\n"
-"Language-Team: Danish <https://example.com/projects/campos-11-0/campos-11-0-"
-"campos_group_reg/da/>\n"
+"Language-Team: Danish <https://example.com/projects/campos-11-0/"
+"campos-11-0-campos_group_reg/da/>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Weblate 3.4\n"
 
 #. module: campos_group_reg
 #: model:mail.template,body_html:campos_group_reg.contact_welcome_mail
@@ -121,7 +121,7 @@ msgstr "Til alder"
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.thank_you_login
 msgid "And an email with login information has benne sent to yuo."
-msgstr ""
+msgstr "En email med login informationer er sendt til dig"
 
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.campos_group_reg_search_view

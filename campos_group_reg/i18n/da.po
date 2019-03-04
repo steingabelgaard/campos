@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2019-03-03 20:56+0000\n"
+"PO-Revision-Date: 2019-03-04 11:56+0000\n"
 "Last-Translator: Christian Eggert <christian@eggert.dk>\n"
 "Language-Team: Danish <https://example.com/projects/campos-11-0/"
 "campos-11-0-campos_group_reg/da/>\n"
@@ -121,7 +121,7 @@ msgstr "Til alder"
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.thank_you_login
 msgid "And an email with login information has benne sent to yuo."
-msgstr "En email med login informationer er sendt til dig"
+msgstr "En email med login informationer er sendt til dig."
 
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.campos_group_reg_search_view
@@ -1079,7 +1079,7 @@ msgstr "Forhåndsregistrering gennemført"
 #, python-format
 msgid "Pre registration figures has been updated."
 msgstr ""
-"Din forhånds registrering er blevet opdateret (der kommer inden mail om "
+"Din forhånds registrering er blevet opdateret (der kommer ingen mail om "
 "dette)"
 
 #. module: campos_group_reg
@@ -1183,7 +1183,7 @@ msgstr "Søg"
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_security_partner_id
 msgid "Security Contact"
-msgstr "Sikkerheds Kontakt"
+msgstr "Kontakt til Beredskab (før og under lejren)"
 
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.campos_group_reg_form_view
@@ -1211,7 +1211,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_signup_expiration
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_signup_expiration
 msgid "Signup Expiration"
-msgstr "Signup Expiration"
+msgstr "Dit login er udløbet"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_signup_token
@@ -1586,12 +1586,12 @@ msgstr ""
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_email_exist
 msgid "is already registered in the system."
-msgstr "er allerede registreret i Systemet"
+msgstr "er allerede registreret i systemet"
 
 #. module: campos_group_reg
 #: model:res.groups,comment:campos_group_reg.group_campos_group_reg_manager
 msgid "the user will have full access to Group regs."
-msgstr "Brugeren vil have fuld adgang til grupperegistrerng"
+msgstr "Brugeren vil have fuld adgang til grupperegistrering"
 
 #. module: campos_group_reg
 #: model:res.groups,comment:campos_group_reg.group_campos_group_reg_user

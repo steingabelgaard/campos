@@ -7,16 +7,16 @@ msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2019-02-27 17:19+0100\n"
+"PO-Revision-Date: 2019-03-04 11:56+0000\n"
 "Last-Translator: Christian Eggert <christian@eggert.dk>\n"
-"Language-Team: Danish <https://example.com/projects/campos-11-0/campos-11-0-"
-"campos_group_reg/da/>\n"
+"Language-Team: Danish <https://example.com/projects/campos-11-0/"
+"campos-11-0-campos_group_reg/da/>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Weblate 3.4\n"
 
 #. module: campos_group_reg
 #: model:mail.template,body_html:campos_group_reg.contact_welcome_mail
@@ -121,19 +121,18 @@ msgstr "Til alder"
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.thank_you_login
 msgid "And an email with login information has benne sent to yuo."
-msgstr ""
+msgstr "En email med login informationer er sendt til dig."
 
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.campos_group_reg_search_view
 msgid "Archived"
-msgstr ""
+msgstr "Arkiveret"
 
 #. module: campos_group_reg
 #: code:addons/campos_group_reg/models/cms_form_campos_group_reg.py:111
-#, fuzzy, python-format
-#| msgid "Arrival date"
+#, python-format
 msgid "Arrival / Departure"
-msgstr "Ankomstdato"
+msgstr "Ankomst / Afrejse"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_arrival_date_id
@@ -147,10 +146,8 @@ msgstr "Ankomstdag"
 
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.campos_group_reg_form_view
-#, fuzzy
-#| msgid "Arrival date"
 msgid "Arrival/Departure"
-msgstr "Ankomstdato"
+msgstr "Ankomst/afrejse"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_day_valid_dk
@@ -255,10 +252,8 @@ msgstr "CampOS aldersgruppe"
 #: model:ir.actions.act_window,name:campos_group_reg.campos_camp_day_act_window
 #: model:ir.model,name:campos_group_reg.model_campos_camp_day
 #: model:ir.ui.menu,name:campos_group_reg.campos_camp_day_menu
-#, fuzzy
-#| msgid "Campos Camp Period"
 msgid "Campos Camp Day"
-msgstr "CampOS Lejrperiode"
+msgstr "CampOS Lejr dage"
 
 #. module: campos_group_reg
 #: model:ir.model,name:campos_group_reg.model_campos_camp_period
@@ -275,7 +270,7 @@ msgstr "CampOS Grupperegistering"
 #: model:ir.actions.act_window,name:campos_group_reg.campos_group_participant_act_window
 #: model:ir.actions.act_window,name:campos_group_reg.campos_participant_act_window
 msgid "Campos Participant"
-msgstr ""
+msgstr "Deltager"
 
 #. module: campos_group_reg
 #: model:ir.model,name:campos_group_reg.model_campos_prereg_age_period
@@ -355,8 +350,6 @@ msgstr "Kommerciel enhed"
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_commercial_partner_country_id
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_commercial_partner_country_id
-#, fuzzy
-#| msgid "Commercial Entity"
 msgid "Commercial Entity's Country"
 msgstr "Kommerciel enhed"
 
@@ -402,10 +395,8 @@ msgstr "Bekræftet"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,help:campos_group_reg.field_campos_group_reg_participants_confirmed
-#, fuzzy
-#| msgid "Expected participants for"
 msgid "Confirmed participants"
-msgstr "Forventet deltagerantal for"
+msgstr "Bekræftede deltagere"
 
 #. module: campos_group_reg
 #: model:ir.model,name:campos_group_reg.model_res_partner
@@ -608,87 +599,63 @@ msgstr "Ansat"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_arrival_date1_id
-#, fuzzy
-#| msgid "Expected arrival"
 msgid "Expected arrival (date) - 1"
-msgstr "Forventet ankomst"
+msgstr "Forventet ankomst (dato) 1"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_arrival_date2_id
-#, fuzzy
-#| msgid "Expected arrival"
 msgid "Expected arrival (date) - 2"
-msgstr "Forventet ankomst"
+msgstr "Forventet ankomst (dato) - 2"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_arrival_date3_id
-#, fuzzy
-#| msgid "Expected arrival"
 msgid "Expected arrival (date) - 3"
-msgstr "Forventet ankomst"
+msgstr "Forventet ankomst (dato) - 3"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_arrival_time1
-#, fuzzy
-#| msgid "Expected arrival"
 msgid "Expected arrival (time) - 1"
-msgstr "Forventet ankomst"
+msgstr "Forventet ankomst (Klokkeslæt) - 1"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_arrival_time2
-#, fuzzy
-#| msgid "Expected arrival"
 msgid "Expected arrival (time) - 2"
-msgstr "Forventet ankomst"
+msgstr "Forventet ankomst (klokkeslæt) - 2"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_arrival_time3
-#, fuzzy
-#| msgid "Expected arrival"
 msgid "Expected arrival (time) - 3"
-msgstr "Forventet ankomst"
+msgstr "Forventet ankomst (klokkeslæt) - 3"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_departure_date1_id
-#, fuzzy
-#| msgid "Expected departure"
 msgid "Expected departure (date) - 1"
-msgstr "Forventet afrejse"
+msgstr "Forventet afrejse (dato) - 1"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_departure_date2_id
-#, fuzzy
-#| msgid "Expected departure"
 msgid "Expected departure (date) - 2"
-msgstr "Forventet afrejse"
+msgstr "Forventet afrejse (dato) - 2"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_departure_date3_id
-#, fuzzy
-#| msgid "Expected departure"
 msgid "Expected departure (date) - 3"
-msgstr "Forventet afrejse"
+msgstr "Forventet afrejse (dato) - 3"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_departure_time1
-#, fuzzy
-#| msgid "Expected departure"
 msgid "Expected departure (time) - 1"
-msgstr "Forventet afrejse"
+msgstr "Forventet afrejse (klokkeslæt) - 1"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_departure_time2
-#, fuzzy
-#| msgid "Expected departure"
 msgid "Expected departure (time) - 2"
-msgstr "Forventet afrejse"
+msgstr "Forventet afrejse (klokkeslæt) - 2"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_departure_time3
-#, fuzzy
-#| msgid "Expected departure"
 msgid "Expected departure (time) - 3"
-msgstr "Forventet afrejse"
+msgstr "Forventet afrejse (Klokkeslæt) - 3"
 
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.group_pre_reg
@@ -832,7 +799,7 @@ msgstr "Ugyldig fødselsdato"
 #: model:ir.model.fields,field_description:campos_group_reg.field_res_partner_is_dk
 #: model:ir.model.fields,field_description:campos_group_reg.field_res_users_is_dk
 msgid "Is DK"
-msgstr ""
+msgstr "Er DK"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_is_non_dk
@@ -840,7 +807,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:campos_group_reg.field_res_partner_is_non_dk
 #: model:ir.model.fields,field_description:campos_group_reg.field_res_users_is_non_dk
 msgid "Is Non DK"
-msgstr ""
+msgstr "Er ikke DK"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_is_company
@@ -1062,8 +1029,6 @@ msgstr "Deltagere"
 
 #. module: campos_group_reg
 #: selection:cms.form.campos.participant,participant_state:0
-#, fuzzy
-#| msgid "Participant"
 msgid "Participate"
 msgstr "Deltager"
 
@@ -1080,10 +1045,8 @@ msgstr "Telefon"
 
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.thank_you_login
-#, fuzzy
-#| msgid "Please login to update your registrations."
 msgid "Please login to fullfil yoour registration."
-msgstr "Log på for at ændre din registrering. Eller bed om et nyt password."
+msgstr "Log på for at færdiggøre din registrering"
 
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_email_exist
@@ -1116,7 +1079,7 @@ msgstr "Forhåndsregistrering gennemført"
 #, python-format
 msgid "Pre registration figures has been updated."
 msgstr ""
-"Din forhånds registrering er blevet opdateret (der kommer inden mail om "
+"Din forhånds registrering er blevet opdateret (der kommer ingen mail om "
 "dette)"
 
 #. module: campos_group_reg
@@ -1219,15 +1182,13 @@ msgstr "Søg"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_security_partner_id
-#, fuzzy
-#| msgid "Contact"
 msgid "Security Contact"
-msgstr "Kontakt"
+msgstr "Kontakt til Beredskab (før og under lejren)"
 
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.campos_group_reg_form_view
 msgid "Security contact"
-msgstr ""
+msgstr "sikkerheds kontakt"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_self
@@ -1250,7 +1211,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_signup_expiration
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_signup_expiration
 msgid "Signup Expiration"
-msgstr "Signup Expiration"
+msgstr "Dit login er udløbet"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_signup_token
@@ -1519,17 +1480,17 @@ msgstr "Værdi"
 #. module: campos_group_reg
 #: selection:campos.scout.org,worldorg:0
 msgid "WAGGGS"
-msgstr ""
+msgstr "WAGGGS"
 
 #. module: campos_group_reg
 #: selection:campos.scout.org,worldorg:0
 msgid "WAGGGS/WOSM"
-msgstr ""
+msgstr "WAGGGS/WOSM"
 
 #. module: campos_group_reg
 #: selection:campos.scout.org,worldorg:0
 msgid "WOSM"
-msgstr ""
+msgstr "WOSM"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_website
@@ -1625,12 +1586,12 @@ msgstr ""
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.group_add_email_exist
 msgid "is already registered in the system."
-msgstr "er allerede registreret i Systemet"
+msgstr "er allerede registreret i systemet"
 
 #. module: campos_group_reg
 #: model:res.groups,comment:campos_group_reg.group_campos_group_reg_manager
 msgid "the user will have full access to Group regs."
-msgstr "Brugeren vil have fuld adgang til grupperegistrerng"
+msgstr "Brugeren vil have fuld adgang til grupperegistrering"
 
 #. module: campos_group_reg
 #: model:res.groups,comment:campos_group_reg.group_campos_group_reg_user

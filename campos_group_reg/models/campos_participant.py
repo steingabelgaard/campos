@@ -11,7 +11,7 @@ _logger = logging.getLogger(__name__)
 class CamposParticipant(models.Model):
 
     _name = 'campos.participant'
-    _description = 'CampOS Participant'
+    _description = 'Participant'
     _inherit = ['mail.thread', 'mail.activity.mixin', 'portal.mixin']
     __inherits = {'res.partner': 'partner_id'}
     _order = 'name'

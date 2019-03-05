@@ -110,7 +110,7 @@ class cmsGroupRegForm(models.AbstractModel):
         return [
             {
                 'id': 'group',
-                'title': 'Group',
+                'title': _('Group'),
                 'fields': [
                     'name',
                     'street',
@@ -122,7 +122,7 @@ class cmsGroupRegForm(models.AbstractModel):
             },
             {
                 'id': 'contact',
-                'title': 'Contact',
+                'title': _('Contact'),
                 'fields': [
                     'contact_name',
                     'contact_street',

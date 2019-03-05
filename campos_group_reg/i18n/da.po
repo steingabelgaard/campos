@@ -7,16 +7,16 @@ msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2019-03-05 16:27+0100\n"
+"PO-Revision-Date: 2019-03-05 17:56+0000\n"
 "Last-Translator: Christian Eggert <christian@eggert.dk>\n"
-"Language-Team: Danish <https://example.com/projects/campos-11-0/campos-11-0-"
-"campos_group_reg/da/>\n"
+"Language-Team: Danish <https://example.com/projects/campos-11-0/"
+"campos-11-0-campos_group_reg/da/>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Weblate 3.4\n"
 
 #. module: campos_group_reg
 #: model:mail.template,body_html:campos_group_reg.contact_welcome_mail
@@ -241,25 +241,25 @@ msgstr "CampOS"
 #. module: campos_group_reg
 #: model:ir.model,name:campos_group_reg.model_campos_age_group
 msgid "Campos Age Group"
-msgstr "CampOS aldersgruppe"
+msgstr "Aaldersgruppe"
 
 #. module: campos_group_reg
 #: model:ir.actions.act_window,name:campos_group_reg.campos_camp_day_act_window
 #: model:ir.model,name:campos_group_reg.model_campos_camp_day
 #: model:ir.ui.menu,name:campos_group_reg.campos_camp_day_menu
 msgid "Campos Camp Day"
-msgstr "CampOS Lejr dage"
+msgstr "Lejr dage"
 
 #. module: campos_group_reg
 #: model:ir.model,name:campos_group_reg.model_campos_camp_period
 msgid "Campos Camp Period"
-msgstr "CampOS Lejrperiode"
+msgstr "Lejrperiode"
 
 #. module: campos_group_reg
 #: model:ir.actions.act_window,name:campos_group_reg.campos_group_reg_act_window
 #: model:ir.model,name:campos_group_reg.model_campos_group_reg
 msgid "Campos Group Reg"
-msgstr "CampOS Grupperegistering"
+msgstr "Grupperegistering"
 
 #. module: campos_group_reg
 #: model:ir.actions.act_window,name:campos_group_reg.campos_group_participant_act_window

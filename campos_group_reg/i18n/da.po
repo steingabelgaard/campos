@@ -612,17 +612,17 @@ msgstr "Forventet ankomst (dato) - 3"
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_arrival_time1
 msgid "Expected arrival (time) - 1"
-msgstr "Forventet ankomst (Klokkeslæt) - 1"
+msgstr "Forventet ankomst (Klokkeslet) - 1"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_arrival_time2
 msgid "Expected arrival (time) - 2"
-msgstr "Forventet ankomst (klokkeslæt) - 2"
+msgstr "Forventet ankomst (klokkeslet) - 2"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_arrival_time3
 msgid "Expected arrival (time) - 3"
-msgstr "Forventet ankomst (klokkeslæt) - 3"
+msgstr "Forventet ankomst (klokkeslet) - 3"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_departure_date1_id
@@ -642,17 +642,17 @@ msgstr "Forventet afrejse (dato) - 3"
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_departure_time1
 msgid "Expected departure (time) - 1"
-msgstr "Forventet afrejse (klokkeslæt) - 1"
+msgstr "Forventet afrejse (klokkeslet) - 1"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_departure_time2
 msgid "Expected departure (time) - 2"
-msgstr "Forventet afrejse (klokkeslæt) - 2"
+msgstr "Forventet afrejse (klokkeslet) - 2"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_departure_time3
 msgid "Expected departure (time) - 3"
-msgstr "Forventet afrejse (Klokkeslæt) - 3"
+msgstr "Forventet afrejse (Klokkeslet) - 3"
 
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.group_pre_reg

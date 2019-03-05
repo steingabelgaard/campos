@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2019-03-05 14:03+0100\n"
+"PO-Revision-Date: 2019-03-05 16:27+0100\n"
 "Last-Translator: Christian Eggert <christian@eggert.dk>\n"
 "Language-Team: Danish <https://example.com/projects/campos-11-0/campos-11-0-"
 "campos_group_reg/da/>\n"
@@ -1188,7 +1188,7 @@ msgstr "Kontakt til Beredskab (før og under lejren)"
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.campos_group_reg_form_view
 msgid "Security contact"
-msgstr "sikkerheds kontakt"
+msgstr "Sikkerheds kontakt"
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_self

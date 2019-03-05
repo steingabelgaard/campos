@@ -7,16 +7,16 @@ msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2019-03-04 11:56+0000\n"
+"PO-Revision-Date: 2019-03-05 14:03+0100\n"
 "Last-Translator: Christian Eggert <christian@eggert.dk>\n"
-"Language-Team: Danish <https://example.com/projects/campos-11-0/"
-"campos-11-0-campos_group_reg/da/>\n"
+"Language-Team: Danish <https://example.com/projects/campos-11-0/campos-11-0-"
+"campos_group_reg/da/>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.4\n"
+"X-Generator: Poedit 2.0.6\n"
 
 #. module: campos_group_reg
 #: model:mail.template,body_html:campos_group_reg.contact_welcome_mail
@@ -129,7 +129,7 @@ msgid "Archived"
 msgstr "Arkiveret"
 
 #. module: campos_group_reg
-#: code:addons/campos_group_reg/models/cms_form_campos_group_reg.py:111
+#: code:addons/campos_group_reg/models/cms_form_campos_group_reg.py:168
 #, python-format
 msgid "Arrival / Departure"
 msgstr "Ankomst / Afrejse"
@@ -204,7 +204,7 @@ msgid "CKR confirmed date"
 msgstr "Børneattest bekræftet den"
 
 #. module: campos_group_reg
-#: code:addons/campos_group_reg/controllers/portal.py:287
+#: code:addons/campos_group_reg/controllers/portal.py:401
 #, python-format
 msgid "CPR must be 4 digits"
 msgstr ""
@@ -237,11 +237,6 @@ msgstr "Lejrperioder"
 #: model:ir.ui.menu,name:campos_group_reg.campos_main_menu
 msgid "CampOS"
 msgstr "CampOS"
-
-#. module: campos_group_reg
-#: model:ir.model,name:campos_group_reg.model_campos_participant
-msgid "CampOS Participant"
-msgstr "CampOS deltagere"
 
 #. module: campos_group_reg
 #: model:ir.model,name:campos_group_reg.model_campos_age_group
@@ -399,9 +394,11 @@ msgid "Confirmed participants"
 msgstr "Bekræftede deltagere"
 
 #. module: campos_group_reg
+#: code:addons/campos_group_reg/models/cms_form_campos_group_reg.py:125
 #: model:ir.model,name:campos_group_reg.model_res_partner
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_contact_partner_id
 #: model:ir.ui.view,arch_db:campos_group_reg.campos_group_reg_form_view
+#, python-format
 msgid "Contact"
 msgstr "Kontakt"
 
@@ -664,7 +661,7 @@ msgid "Expected participants for"
 msgstr "Forventet deltagerantal for"
 
 #. module: campos_group_reg
-#: code:addons/campos_group_reg/models/cms_form_campos_group_reg.py:104
+#: code:addons/campos_group_reg/models/cms_form_campos_group_reg.py:156
 #: selection:campos.group.reg,state:0
 #: model:ir.ui.view,arch_db:campos_group_reg.campos_group_reg_form_view
 #, python-format
@@ -690,8 +687,10 @@ msgid "Gender"
 msgstr "Køn"
 
 #. module: campos_group_reg
+#: code:addons/campos_group_reg/models/cms_form_campos_group_reg.py:113
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_partner_id
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_group_reg_id
+#, python-format
 msgid "Group"
 msgstr "Gruppe"
 
@@ -788,7 +787,7 @@ msgid "Internal Reference"
 msgstr "Intern reference"
 
 #. module: campos_group_reg
-#: code:addons/campos_group_reg/controllers/portal.py:280
+#: code:addons/campos_group_reg/controllers/portal.py:394
 #, python-format
 msgid "Invalid birth date"
 msgstr "Ugyldig fødselsdato"
@@ -906,7 +905,7 @@ msgid "Member"
 msgstr "Medlem"
 
 #. module: campos_group_reg
-#: code:addons/campos_group_reg/controllers/portal.py:154
+#: code:addons/campos_group_reg/controllers/portal.py:222
 #, python-format
 msgid "Missing required field: %s"
 msgstr "Krævet felt mangler: %s"
@@ -994,6 +993,7 @@ msgid "Parent name"
 msgstr "Forældre navn"
 
 #. module: campos_group_reg
+#: model:ir.model,name:campos_group_reg.model_campos_participant
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_contact_participant
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_participant
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_participant
@@ -1008,13 +1008,13 @@ msgid "Participant Name"
 msgstr "Deltager navn"
 
 #. module: campos_group_reg
-#: code:addons/campos_group_reg/models/cms_form_campos_participant.py:42
+#: code:addons/campos_group_reg/models/cms_form_campos_participant.py:55
 #, python-format
 msgid "Participant added."
 msgstr "Deltager tilføjet"
 
 #. module: campos_group_reg
-#: code:addons/campos_group_reg/models/cms_form_campos_participant.py:37
+#: code:addons/campos_group_reg/models/cms_form_campos_participant.py:50
 #, python-format
 msgid "Participant updated."
 msgstr "Deltager opdateret"
@@ -1075,7 +1075,7 @@ msgid "Pre registration completed"
 msgstr "Forhåndsregistrering gennemført"
 
 #. module: campos_group_reg
-#: code:addons/campos_group_reg/controllers/portal.py:227
+#: code:addons/campos_group_reg/controllers/portal.py:329
 #, python-format
 msgid "Pre registration figures has been updated."
 msgstr ""
@@ -1165,7 +1165,7 @@ msgid "Scout Troop Pre - Registration"
 msgstr "Forhåndsregistrering for grupper"
 
 #. module: campos_group_reg
-#: code:addons/campos_group_reg/models/cms_form_campos_group_reg.py:125
+#: code:addons/campos_group_reg/models/cms_form_campos_group_reg.py:191
 #, python-format
 msgid "Scout Troop updated."
 msgstr "Din spejdergruppe er blevet opdateret."
@@ -1393,7 +1393,7 @@ msgid "Transportation form"
 msgstr "Transport form"
 
 #. module: campos_group_reg
-#: code:addons/campos_group_reg/models/cms_form_campos_group_reg.py:90
+#: code:addons/campos_group_reg/models/cms_form_campos_group_reg.py:142
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_treasurer_partner_id
 #: model:ir.ui.view,arch_db:campos_group_reg.campos_group_reg_form_view
 #, python-format
@@ -1597,3 +1597,6 @@ msgstr "Brugeren vil have fuld adgang til grupperegistrering"
 #: model:res.groups,comment:campos_group_reg.group_campos_group_reg_user
 msgid "the user will have read only access to groups."
 msgstr "Brugeren har kun læseadgang til grupper."
+
+#~ msgid "CampOS Participant"
+#~ msgstr "CampOS deltagere"

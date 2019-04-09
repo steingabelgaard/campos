@@ -53,9 +53,9 @@
                      			</div>
                      		</group>
                      		<group>
-                     			<field name="arrival_date_id"/>
-                     			<field name="depature_date_id"/>
-                     			<button name="action_sync" type="object" strin="Sync"/>
+                     			<field name="arrival_date_id" domain="[]"/>
+                     			<field name="depature_date_id" domain="[]"/>
+                     			<button name="action_sync" type="object" string="Sync"/>
                      		</group>
                      	</group>
                      	</page>

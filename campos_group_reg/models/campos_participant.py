@@ -97,7 +97,7 @@ class CamposParticipant(models.Model):
         _logger.info('CREATE: %s', vals)
         res = super(CamposParticipant, self.sudo()).create(vals)
         if 'arrival_date_id' in vals and 'depature_day_id' in vals:
-            self._update_camp_days()
+            res._update_camp_days()
         return res
 
     @api.multi

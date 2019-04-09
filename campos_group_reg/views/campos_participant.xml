@@ -46,8 +46,17 @@
                      </group>
                      <notebook>
                      	<page name="camp_days" string="Camp Days">
-                     		<field name="camp_day_ids" widget="many2many_checkboxes" />
-                     	
+                     	<group>
+                     		<group>
+                     			<div>
+                     				<field name="camp_day_ids" widget="many2many_checkboxes" />
+                     			</div>
+                     		</group>
+                     		<group>
+                     			<field name="arrival_date_id"/>
+                     			<field name="depature_date_id"/>
+                     		</group>
+                     	</group>
                      	</page>
                      
                      </notebook>

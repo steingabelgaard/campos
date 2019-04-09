@@ -1297,6 +1297,11 @@ msgid "Submit"
 msgstr ""
 
 #. module: campos_group_reg
+#: model:ir.ui.view,arch_db:campos_group_reg.campos_participant_form_view
+msgid "Sync"
+msgstr ""
+
+#. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_vat
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_vat
 msgid "TIN"

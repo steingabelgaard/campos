@@ -74,7 +74,7 @@ class CamposParticipant(models.Model):
     )
 
     def _update_camp_days(self):
-        days = self.env['campos.camp.day'].search(
+        days = self.env['campos.camp.day'].sudo().search(
             [
                 ('campday', '>=', self.arrival_date_id.campday),
                 ('campday', '<=', self.depature_date_id.campday),

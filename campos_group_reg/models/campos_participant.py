@@ -73,6 +73,10 @@ class CamposParticipant(models.Model):
         track_visibility='onchange',
     )
 
+    @api.multi
+    def action_sync(self):
+        self._update_camp_days()
+        
     def _update_camp_days(self):
         days = self.env['campos.camp.day'].sudo().search(
             [

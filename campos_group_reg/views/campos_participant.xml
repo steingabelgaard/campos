@@ -49,12 +49,13 @@
                      	<group>
                      		<group>
                      			<div>
-                     				<field name="camp_day_ids" widget="many2many_checkboxes" />
+                     				<field name="camp_day_ids" widget="many2many_checkboxes" readonly="1"/>
                      			</div>
                      		</group>
                      		<group>
                      			<field name="arrival_date_id"/>
                      			<field name="depature_date_id"/>
+                     			<button name="action_sync" type="object" strin="Sync"/>
                      		</group>
                      	</group>
                      	</page>

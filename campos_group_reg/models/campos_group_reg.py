@@ -37,7 +37,7 @@ class CamposGroupReg(models.Model):
         ]
 
     partner_id = fields.Many2one(
-        'res.partner', 'Group', required=True, ondelete="cascade"
+        'res.partner', 'Group', required=True, ondelete="restrict"
     )
 
     name = fields.Char(related='partner_id.name', required=True)

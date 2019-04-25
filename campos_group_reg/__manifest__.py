@@ -21,6 +21,8 @@
         'partner_contact_gender',
     ],
     'data': [
+        'security/campos_accommodation_type.xml',
+        'views/campos_accommodation_type.xml',
         #'views/res_partner.xml',
         #'wizards/campos_group_reg_wiz.xml',
         'views/campos_menu.xml',

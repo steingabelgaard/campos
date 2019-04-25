@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2019 Stein & Gabelgaard ApS
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+
+<odoo>
+
+
+    <record model="ir.ui.view" id="campos_accommodation_type_search_view">
+        <field name="name">campos.accommodation.type.search (in campos_group_reg)</field>
+        <field name="model">campos.accommodation.type</field>
+        <field name="arch" type="xml">
+            <search>
+                     <field name="name"/>
+            </search>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="campos_accommodation_type_tree_view">
+        <field name="name">campos.accommodation.type.tree (in campos_group_reg)</field>
+        <field name="model">campos.accommodation.type</field>
+        <field name="arch" type="xml">
+            <tree editable="bottom">
+                <!-- TODO -->
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="campos_accommodation_type_act_window">
+        <field name="name">Campos Accommodation Type</field> <!-- TODO -->
+        <field name="res_model">campos.accommodation.type</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[]</field>
+        <field name="context">{}</field>
+    </record>
+
+    <record model="ir.ui.menu" id="campos_accommodation_type_menu">
+        <field name="name">Campos Accommodation Type</field>
+        <field name="parent_id" ref="campos_config_menu"/> <!-- TODO -->
+        <field name="action" ref="campos_accommodation_type_act_window"/>
+        <field name="sequence" eval="200"/> <!-- TODO -->
+    </record>
+
+</odoo>

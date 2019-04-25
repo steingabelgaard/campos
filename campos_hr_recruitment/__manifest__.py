@@ -10,7 +10,11 @@
     'license': 'AGPL-3',
     'author': 'Stein & Gabelgaard ApS',
     'website': 'www.steingabelgaard.dk',
-    'depends': ['website_hr_recruitment'],
-    'data': ['templates/recruitment_template.xml'],
+    'depends': [
+        'website_hr_recruitment',
+        'campos_group_reg',
+        ],
+    'data': [
+        'views/hr_employee.xml','templates/recruitment_template.xml'],
     'demo': [],
 }

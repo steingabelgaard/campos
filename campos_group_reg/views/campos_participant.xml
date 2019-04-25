@@ -41,6 +41,7 @@
                         </group>
                         <group>
                         	<field name="birthdate_date"/>
+                        	<field name="camp_age"/>
                         	<field name="gender"/>
                         </group>
                      </group>

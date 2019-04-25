@@ -2,6 +2,7 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
 from odoo import api, fields, models, _
+from dateutil.relativedelta import relativedelta
 
 import logging
 
@@ -72,6 +73,21 @@ class CamposParticipant(models.Model):
         domain=[('depature_day', '=', True)],
         track_visibility='onchange',
     )
+    
+    employee_id = fields.Many2one('hr.employee', 'Staff')
+    
+    first_meal = fields.Selection([('breakfast', 'Breakfast'),
+                                   ('lunch', 'Lunch'),
+                                   ('dinner', 'Dinner')], string='First meal on arrival date')
+    last_meal = fields.Selection([('breakfast', 'Breakfast'),
+                                  ('lunch', 'Lunch'),
+                                  ('dinner', 'Dinner')], string='Last meal on departure date')
+
+    camp_age = fields.Integer('Age (on camp)', compute='_compute_camp_age', store=True)
+    camp_age18plus = fields.Char('18+ (on camp)', compute='_compute_camp_age', store=True)
+    
+    scout_org_id = fields.Many2one('campos.scout.org', 'Scout organization')
+    accommodation_id = fields.Many2one('campos.accommodation.type', 'Accomodation')
 
     @api.multi
     def action_sync(self):
@@ -86,6 +102,18 @@ class CamposParticipant(models.Model):
         )
         if days:
             self.suspend_security().camp_day_ids = days
+            
+    @api.multi
+    @api.depends('birthdate_date')
+    def _compute_camp_age(self):
+        for part in self:
+            camp_age18plus = ''
+            camp_age = relativedelta(fields.Date.from_string(part.arrival_date_id.campday), fields.Date.from_string(part.birthdate_date)).years if part.birthdate_date and part.arrival_date_id else False
+            if camp_age > 18:
+                camp_age18plus = '18+'
+            part.update({'camp_age': camp_age,
+                         'camp_age18plus': camp_age18plus})
+
 
     @api.model
     def create(self, vals):

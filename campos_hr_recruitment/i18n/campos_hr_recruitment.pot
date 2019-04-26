@@ -14,8 +14,23 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: campos_hr_recruitment
+#: model:ir.model.fields,field_description:campos_hr_recruitment.field_hr_employee_camp_age18plus
+msgid "18+ (on camp)"
+msgstr ""
+
+#. module: campos_hr_recruitment
 #: model:ir.ui.view,arch_db:campos_hr_recruitment.apply
 msgid "<b>Below you can upload relevant documents.<br/></b>"
+msgstr ""
+
+#. module: campos_hr_recruitment
+#: model:ir.model.fields,field_description:campos_hr_recruitment.field_hr_employee_accommodation_id
+msgid "Accomodation"
+msgstr ""
+
+#. module: campos_hr_recruitment
+#: model:ir.model.fields,field_description:campos_hr_recruitment.field_hr_employee_camp_age
+msgid "Age (on camp)"
 msgstr ""
 
 #. module: campos_hr_recruitment
@@ -29,8 +44,28 @@ msgid "Apply Job"
 msgstr ""
 
 #. module: campos_hr_recruitment
+#: model:ir.model.fields,field_description:campos_hr_recruitment.field_hr_employee_arrival_date_id
+msgid "Arrival date"
+msgstr ""
+
+#. module: campos_hr_recruitment
 #: model:ir.ui.view,arch_db:campos_hr_recruitment.apply
 msgid "Birthdate"
+msgstr ""
+
+#. module: campos_hr_recruitment
+#: model:ir.ui.view,arch_db:campos_hr_recruitment.hr_employee_form_view
+msgid "Camp"
+msgstr ""
+
+#. module: campos_hr_recruitment
+#: model:ir.model.fields,field_description:campos_hr_recruitment.field_hr_employee_camp_day_ids
+msgid "Camp Days"
+msgstr ""
+
+#. module: campos_hr_recruitment
+#: model:ir.ui.view,arch_db:campos_hr_recruitment.hr_employee_search_view
+msgid "Camp Participant"
 msgstr ""
 
 #. module: campos_hr_recruitment
@@ -49,8 +84,23 @@ msgid "Country..."
 msgstr ""
 
 #. module: campos_hr_recruitment
+#: model:ir.model.fields,field_description:campos_hr_recruitment.field_hr_employee_depature_date_id
+msgid "Depature date"
+msgstr ""
+
+#. module: campos_hr_recruitment
+#: model:ir.model,name:campos_hr_recruitment.model_hr_employee
+msgid "Employee"
+msgstr ""
+
+#. module: campos_hr_recruitment
 #: model:ir.ui.view,arch_db:campos_hr_recruitment.apply
 msgid "Female"
+msgstr ""
+
+#. module: campos_hr_recruitment
+#: model:ir.model.fields,field_description:campos_hr_recruitment.field_hr_employee_first_meal
+msgid "First meal on arrival date"
 msgstr ""
 
 #. module: campos_hr_recruitment
@@ -61,6 +111,11 @@ msgstr ""
 #. module: campos_hr_recruitment
 #: model:ir.ui.view,arch_db:campos_hr_recruitment.apply
 msgid "Job Application Form"
+msgstr ""
+
+#. module: campos_hr_recruitment
+#: model:ir.model.fields,field_description:campos_hr_recruitment.field_hr_employee_last_meal
+msgid "Last meal on departure date"
 msgstr ""
 
 #. module: campos_hr_recruitment
@@ -84,8 +139,23 @@ msgid "Other relevant Document"
 msgstr ""
 
 #. module: campos_hr_recruitment
+#: model:ir.model.fields,field_description:campos_hr_recruitment.field_hr_employee_participate
+msgid "Participate in Camp"
+msgstr ""
+
+#. module: campos_hr_recruitment
+#: model:ir.model.fields,field_description:campos_hr_recruitment.field_hr_employee_participant_id
+msgid "Paticipant record"
+msgstr ""
+
+#. module: campos_hr_recruitment
 #: model:ir.ui.view,arch_db:campos_hr_recruitment.apply
 msgid "Resume"
+msgstr ""
+
+#. module: campos_hr_recruitment
+#: model:ir.model.fields,field_description:campos_hr_recruitment.field_hr_employee_scout_org_id
+msgid "Scout organization"
 msgstr ""
 
 #. module: campos_hr_recruitment

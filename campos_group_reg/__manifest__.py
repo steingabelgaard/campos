@@ -21,8 +21,6 @@
         'partner_contact_gender',
     ],
     'data': [
-        'security/campos_accommodation_type.xml',
-        'views/campos_accommodation_type.xml',
         #'views/res_partner.xml',
         #'wizards/campos_group_reg_wiz.xml',
         'views/campos_menu.xml',
@@ -46,6 +44,8 @@
         'security/campos_camp_day.xml',
         'views/campos_camp_day.xml',
         'templates/website_participant.xml',
+        'security/campos_accommodation_type.xml',
+        'views/campos_accommodation_type.xml',
     ],
     'demo': [
         'demo/campos_prereg_age_period.xml',

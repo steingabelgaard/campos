@@ -88,6 +88,8 @@ class CamposParticipant(models.Model):
     
     scout_org_id = fields.Many2one('campos.scout.org', 'Scout organization')
     accommodation_id = fields.Many2one('campos.accommodation.type', 'Accomodation')
+    
+    sspar_ids = fields.One2many('campos.ss.participant', 'participant_id', 'Snapshot')
 
     @api.multi
     def action_sync(self):
@@ -139,3 +141,19 @@ class CamposParticipant(models.Model):
             for par in self:
                 par._update_camp_days()
         return res
+
+    @api.multi
+    def do_snapshot(self, ssreg):
+        for par in self:
+            sspar = self.env['campos.ss.participant'].create({'ssreg_id': ssreg.id,
+                                                              'participant_id': par.id,
+                                                              'name': par.name,
+                                                              'arrival_date_id': par.arrival_date_id.id,
+                                                              'depature_date_id': par.depature_date_id.id,
+                                                              'employee_id': par.employee_id.id if par.employee_id else False,
+                                                              'camp_age': par.camp_age,
+                                                              'state': par.state,
+                                                              }
+            )
+                                                              
+               

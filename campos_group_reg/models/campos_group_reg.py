@@ -190,6 +190,8 @@ class CamposGroupReg(models.Model):
         track_visibility='onchange',
     )
     transport_form = fields.Text('Transportation form')
+    
+    ssreg_ids = fields.One2many('campos.ss.group.reg', 'registration_id', 'Snapshot')
 
     @api.model
     def create(self, vals):
@@ -339,3 +341,14 @@ class CamposGroupReg(models.Model):
             for group_reg_id, state, num in self._cr.fetchall():
                 group_reg = self.browse(group_reg_id)
                 group_reg[state_field[state]] += num
+
+    @api.multi
+    def do_snapshot(self, snapshot):
+        _logger.info('SS: %s %d', snapshot, snapshot.id)
+        for reg in self:
+            ssreg = self.env['campos.ss.group.reg'].create({'snapshot_id': snapshot.id,
+                                                            'registration_id': reg.id,
+                                                            'state': reg.state,
+                                                            'name': reg.name})
+            for par in ssreg.registration_id.participant_ids:
+                par.do_snapshot(ssreg)

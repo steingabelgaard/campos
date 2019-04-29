@@ -60,6 +60,9 @@
                      		</group>
                      	</group>
                      	</page>
+                     	<page name="snapshot" string="Snapshots">
+                     		<field name="sspar_ids" />
+                     	</page>
                      
                      </notebook>
                     

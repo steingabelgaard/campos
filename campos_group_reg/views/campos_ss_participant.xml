@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2019 Stein & Gabelgaard ApS
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+
+<odoo>
+
+    <record model="ir.ui.view" id="campos_ss_participant_form_view">
+        <field name="name">campos.ss.participant.form (in campos_group_reg)</field>
+        <field name="model">campos.ss.participant</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <!-- TODO -->
+                </header>
+                <sheet>
+                    <!-- TODO -->
+                    <group>
+                    	<field name="create_date"/>
+                		<field name="name"/>
+                		<field name="state"/>
+                		<field name="ssreg_id"/>
+                        <field name="arrival_date_id"/>
+    					<field name="depature_date_id"/>
+						<field name="participant_id"/>
+	   					<field name="employee_id"/>
+    					<field name="camp_age"/>
+                    </group>
+                </sheet>
+                <div class="oe_chatter"></div>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="campos_ss_participant_search_view">
+        <field name="name">campos.ss.participant.search (in campos_group_reg)</field>
+        <field name="model">campos.ss.participant</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="create_date"/>
+                <field name="name"/>
+                <field name="state"/>
+                <field name="ssreg_id"/>
+            </search>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="campos_ss_participant_tree_view">
+        <field name="name">campos.ss.participant.tree (in campos_group_reg)</field>
+        <field name="model">campos.ss.participant</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="create_date"/>
+                <field name="name"/>
+                <field name="state"/>
+                <field name="ssreg_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="campos_ss_participant_act_window">
+        <field name="name">Campos Ss Participant</field> <!-- TODO -->
+        <field name="res_model">campos.ss.participant</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[]</field>
+        <field name="context">{}</field>
+    </record>
+
+    <record model="ir.ui.menu" id="campos_ss_participant_menu">
+        <field name="name">Participant Snapshot</field>
+        <field name="parent_id" ref="campos_snapshot_menu"/> <!-- TODO -->
+        <field name="action" ref="campos_ss_participant_act_window"/>
+        <field name="sequence" eval="64"/> <!-- TODO -->
+    </record>
+
+</odoo>

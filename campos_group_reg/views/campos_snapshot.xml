@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2019 Stein & Gabelgaard ApS
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+
+<odoo>
+
+    <record model="ir.ui.view" id="campos_snapshot_form_view">
+        <field name="name">campos.snapshot.form (in campos_group_reg)</field>
+        <field name="model">campos.snapshot</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <field name="state" widget="statusbar" clickable="1"/>
+                    <button name="action_do_snapshot" type="object" states="draft" string="Execute"/>
+                </header>
+                <sheet>
+                    <!-- TODO -->
+                    <group>
+                        <field name="name"/>
+                        <field name="code" />
+                        <field name="ssreg_ids"/>
+                    </group>
+                </sheet>
+                <div class="oe_chatter"></div>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="campos_snapshot_search_view">
+        <field name="name">campos.snapshot.search (in campos_group_reg)</field>
+        <field name="model">campos.snapshot</field>
+        <field name="arch" type="xml">
+            <search>
+                <!-- TODO -->
+            </search>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="campos_snapshot_tree_view">
+        <field name="name">campos.snapshot.tree (in campos_group_reg)</field>
+        <field name="model">campos.snapshot</field>
+        <field name="arch" type="xml">
+            <tree>
+                <!-- TODO -->
+                <field name="ss_date"/>
+                <field name="state" />
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="campos_snapshot_act_window">
+        <field name="name">Campos Snapshot</field> <!-- TODO -->
+        <field name="res_model">campos.snapshot</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[]</field>
+        <field name="context">{}</field>
+    </record>
+
+    <record model="ir.ui.menu" id="campos_snapshot_snapshot_menu">
+        <field name="name">Snapshots</field>
+        <field name="parent_id" ref="campos_snapshot_menu"/>
+        <field name="action" ref="campos_snapshot_act_window"/>
+        <field name="sequence" eval="16"/>
+    </record>
+
+</odoo>

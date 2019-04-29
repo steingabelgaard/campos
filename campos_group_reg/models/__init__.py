@@ -12,3 +12,6 @@ from . import cms_form_campos_participant
 
 # from . import campos_participant_day
 from . import campos_accommodation_type
+from . import campos_ss_group_reg
+from . import campos_snapshot
+from . import campos_ss_participant

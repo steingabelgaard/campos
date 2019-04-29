@@ -21,9 +21,16 @@
         'partner_contact_gender',
     ],
     'data': [
+        'views/campos_menu.xml',
+        'security/campos_ss_participant.xml',
+        'views/campos_ss_participant.xml',
+        'security/campos_snapshot.xml',
+        'views/campos_snapshot.xml',
+        'security/campos_ss_group_reg.xml',
+        'views/campos_ss_group_reg.xml',
         #'views/res_partner.xml',
         #'wizards/campos_group_reg_wiz.xml',
-        'views/campos_menu.xml',
+        
         'security/campos_participant.xml',
         'views/campos_participant.xml',
         'security/campos_group_reg.xml',

@@ -64,6 +64,16 @@ msgid "# of trailers"
 msgstr ""
 
 #. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_camp_age18plus
+msgid "18+ (on camp)"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_accommodation_id
+msgid "Accomodation"
+msgstr ""
+
+#. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_active
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_active
 msgid "Active"
@@ -89,6 +99,11 @@ msgstr ""
 #. module: campos_group_reg
 #: model:ir.ui.view,arch_db:campos_group_reg.campos_prereg_age_period_search_view
 msgid "Age"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_camp_age
+msgid "Age (on camp)"
 msgstr ""
 
 #. module: campos_group_reg
@@ -182,6 +197,12 @@ msgid "Bounce"
 msgstr ""
 
 #. module: campos_group_reg
+#: selection:campos.participant,first_meal:0
+#: selection:campos.participant,last_meal:0
+msgid "Breakfast"
+msgstr ""
+
+#. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_ckr_ok
 msgid "CKR confirmed"
 msgstr ""
@@ -247,6 +268,13 @@ msgstr ""
 #: model:ir.module.category,name:campos_group_reg.module_category_campos_group_reg
 #: model:ir.ui.menu,name:campos_group_reg.campos_main_menu
 msgid "CampOS"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.actions.act_window,name:campos_group_reg.campos_accommodation_type_act_window
+#: model:ir.model,name:campos_group_reg.model_campos_accommodation_type
+#: model:ir.ui.menu,name:campos_group_reg.campos_accommodation_type_menu
+msgid "Campos Accommodation Type"
 msgstr ""
 
 #. module: campos_group_reg
@@ -493,6 +521,7 @@ msgid "Country..."
 msgstr ""
 
 #. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_accommodation_type_create_uid
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_age_group_create_uid
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_day_create_uid
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_period_create_uid
@@ -505,6 +534,7 @@ msgid "Created by"
 msgstr ""
 
 #. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_accommodation_type_create_date
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_age_group_create_date
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_day_create_date
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_period_create_date
@@ -554,6 +584,13 @@ msgid "Details for"
 msgstr ""
 
 #. module: campos_group_reg
+#: selection:campos.participant,first_meal:0
+#: selection:campos.participant,last_meal:0
+msgid "Dinner"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_accommodation_type_display_name
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_age_group_display_name
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_day_display_name
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_period_display_name
@@ -674,6 +711,11 @@ msgid "Final Registration"
 msgstr ""
 
 #. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_first_meal
+msgid "First meal on arrival date"
+msgstr ""
+
+#. module: campos_group_reg
 #: model:ir.model.fields,help:campos_group_reg.field_campos_group_reg_email_formatted
 #: model:ir.model.fields,help:campos_group_reg.field_campos_participant_email_formatted
 msgid "Format email address \"Name <email@domain>\""
@@ -731,6 +773,7 @@ msgid "Groups"
 msgstr ""
 
 #. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_accommodation_type_id
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_age_group_id
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_day_id
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_period_id
@@ -839,6 +882,7 @@ msgid "Large construction"
 msgstr ""
 
 #. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_accommodation_type___last_update
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_age_group___last_update
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_day___last_update
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_period___last_update
@@ -854,6 +898,7 @@ msgid "Last Modified on"
 msgstr ""
 
 #. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_accommodation_type_write_uid
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_age_group_write_uid
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_day_write_uid
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_period_write_uid
@@ -866,6 +911,7 @@ msgid "Last Updated by"
 msgstr ""
 
 #. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_accommodation_type_write_date
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_age_group_write_date
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_day_write_date
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_period_write_date
@@ -878,9 +924,20 @@ msgid "Last Updated on"
 msgstr ""
 
 #. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_last_meal
+msgid "Last meal on departure date"
+msgstr ""
+
+#. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_calendar_last_notif_ack
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_calendar_last_notif_ack
 msgid "Last notification marked as read from base Calendar"
+msgstr ""
+
+#. module: campos_group_reg
+#: selection:campos.participant,first_meal:0
+#: selection:campos.participant,last_meal:0
+msgid "Lunch"
 msgstr ""
 
 #. module: campos_group_reg
@@ -926,6 +983,7 @@ msgid "Municipality"
 msgstr ""
 
 #. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_accommodation_type_name
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_age_group_name
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_period_name
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_contact_name
@@ -1166,6 +1224,7 @@ msgstr ""
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_scout_org_id
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_scout_org_id
 msgid "Scout organization"
 msgstr ""
 
@@ -1241,6 +1300,11 @@ msgstr ""
 #: model:ir.model.fields,help:campos_group_reg.field_campos_group_reg_image_small
 #: model:ir.model.fields,help:campos_group_reg.field_campos_participant_image_small
 msgid "Small-sized image of this contact. It is automatically resized as a 64x64px image, with aspect ratio preserved. Use this field anywhere a small image is required."
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_employee_id
+msgid "Staff"
 msgstr ""
 
 #. module: campos_group_reg

@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2019-02-04 22:48+0000\n"
+"PO-Revision-Date: 2019-04-28 10:33+0000\n"
 "Last-Translator: Christian Eggert <christian@eggert.dk>\n"
 "Language-Team: Danish <https://example.com/projects/campos-11-0/"
 "campos-11-0-campos_hr_recruitment/da/>\n"
@@ -16,12 +16,27 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.4\n"
+"X-Generator: Weblate 3.5.1\n"
+
+#. module: campos_hr_recruitment
+#: model:ir.model.fields,field_description:campos_hr_recruitment.field_hr_employee_camp_age18plus
+msgid "18+ (on camp)"
+msgstr "Alder på lejren"
 
 #. module: campos_hr_recruitment
 #: model:ir.ui.view,arch_db:campos_hr_recruitment.apply
 msgid "<b>Below you can upload relevant documents.<br/></b>"
 msgstr "<b>1herunder kan du oploade relevante dokumenter.<br/>2</b>3"
+
+#. module: campos_hr_recruitment
+#: model:ir.model.fields,field_description:campos_hr_recruitment.field_hr_employee_accommodation_id
+msgid "Accomodation"
+msgstr "Overnatning"
+
+#. module: campos_hr_recruitment
+#: model:ir.model.fields,field_description:campos_hr_recruitment.field_hr_employee_camp_age
+msgid "Age (on camp)"
+msgstr "Alder på lejren"
 
 #. module: campos_hr_recruitment
 #: model:ir.ui.view,arch_db:campos_hr_recruitment.apply
@@ -34,9 +49,29 @@ msgid "Apply Job"
 msgstr "Ansøgning om job"
 
 #. module: campos_hr_recruitment
+#: model:ir.model.fields,field_description:campos_hr_recruitment.field_hr_employee_arrival_date_id
+msgid "Arrival date"
+msgstr "Ankomst dato"
+
+#. module: campos_hr_recruitment
 #: model:ir.ui.view,arch_db:campos_hr_recruitment.apply
 msgid "Birthdate"
 msgstr "Fødselsdato"
+
+#. module: campos_hr_recruitment
+#: model:ir.ui.view,arch_db:campos_hr_recruitment.hr_employee_form_view
+msgid "Camp"
+msgstr "lejrinfo"
+
+#. module: campos_hr_recruitment
+#: model:ir.model.fields,field_description:campos_hr_recruitment.field_hr_employee_camp_day_ids
+msgid "Camp Days"
+msgstr "Lejr dage"
+
+#. module: campos_hr_recruitment
+#: model:ir.ui.view,arch_db:campos_hr_recruitment.hr_employee_search_view
+msgid "Camp Participant"
+msgstr "Deltager på lejren"
 
 #. module: campos_hr_recruitment
 #: model:ir.ui.view,arch_db:campos_hr_recruitment.apply
@@ -54,9 +89,24 @@ msgid "Country..."
 msgstr "Land..."
 
 #. module: campos_hr_recruitment
+#: model:ir.model.fields,field_description:campos_hr_recruitment.field_hr_employee_depature_date_id
+msgid "Depature date"
+msgstr "Afrejse dato"
+
+#. module: campos_hr_recruitment
+#: model:ir.model,name:campos_hr_recruitment.model_hr_employee
+msgid "Employee"
+msgstr "Ansat"
+
+#. module: campos_hr_recruitment
 #: model:ir.ui.view,arch_db:campos_hr_recruitment.apply
 msgid "Female"
 msgstr "Kvinde"
+
+#. module: campos_hr_recruitment
+#: model:ir.model.fields,field_description:campos_hr_recruitment.field_hr_employee_first_meal
+msgid "First meal on arrival date"
+msgstr "Første måltid ankomst dag"
 
 #. module: campos_hr_recruitment
 #: model:ir.ui.view,arch_db:campos_hr_recruitment.apply
@@ -67,6 +117,11 @@ msgstr "Køn"
 #: model:ir.ui.view,arch_db:campos_hr_recruitment.apply
 msgid "Job Application Form"
 msgstr "Ansøgningsformular"
+
+#. module: campos_hr_recruitment
+#: model:ir.model.fields,field_description:campos_hr_recruitment.field_hr_employee_last_meal
+msgid "Last meal on departure date"
+msgstr "Sidste måltid afrejse dag"
 
 #. module: campos_hr_recruitment
 #: model:ir.ui.view,arch_db:campos_hr_recruitment.apply
@@ -89,9 +144,24 @@ msgid "Other relevant Document"
 msgstr "Andre relevante dokumenter"
 
 #. module: campos_hr_recruitment
+#: model:ir.model.fields,field_description:campos_hr_recruitment.field_hr_employee_participate
+msgid "Participate in Camp"
+msgstr "Deltager i lejren"
+
+#. module: campos_hr_recruitment
+#: model:ir.model.fields,field_description:campos_hr_recruitment.field_hr_employee_participant_id
+msgid "Paticipant record"
+msgstr ""
+
+#. module: campos_hr_recruitment
 #: model:ir.ui.view,arch_db:campos_hr_recruitment.apply
 msgid "Resume"
 msgstr "Yderlige informationer"
+
+#. module: campos_hr_recruitment
+#: model:ir.model.fields,field_description:campos_hr_recruitment.field_hr_employee_scout_org_id
+msgid "Scout organization"
+msgstr "Korps"
 
 #. module: campos_hr_recruitment
 #: model:ir.ui.view,arch_db:campos_hr_recruitment.apply

@@ -145,6 +145,7 @@ class CamposParticipant(models.Model):
     @api.multi
     def do_snapshot(self, ssreg):
         for par in self:
+            days = fields.Date.from_string(par.arrival_date_id.campday) - fields.Date.from_string(par.arrival_date_id.campday)
             sspar = self.env['campos.ss.participant'].create({'ssreg_id': ssreg.id,
                                                               'participant_id': par.id,
                                                               'name': par.name,
@@ -153,6 +154,8 @@ class CamposParticipant(models.Model):
                                                               'employee_id': par.employee_id.id if par.employee_id else False,
                                                               'camp_age': par.camp_age,
                                                               'state': par.state,
+                                                              'camp_day_count': days.days + 2,
+                                                              'nights': days.days + 1,
                                                               }
             )
                                                               

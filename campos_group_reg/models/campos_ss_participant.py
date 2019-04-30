@@ -15,6 +15,7 @@ class CamposSsParticipant(models.Model):
     participant_id = fields.Many2one('campos.participant', 'Participant')
     
     nights = fields.Integer('Nights')
+    camp_day_count = fields.Integer('Days')
     camp_product_id = fields.Many2one('product.product', 'Camp Fee Product')
     extra_camp_days = fields.Integer('Extra Camp dayes')
     extra_camp_days_product_id = fields.Many2one('product.product', 'Camp Fee Product Extra Days')
@@ -37,7 +38,7 @@ class CamposSsParticipant(models.Model):
     )
     
     employee_id = fields.Many2one('hr.employee', 'Staff')
-    camp_age = fields.Integer('Nights')
+    camp_age = fields.Integer('Age (on Camp)')
     
     state = fields.Selection(
         [

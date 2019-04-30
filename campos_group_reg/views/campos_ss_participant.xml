@@ -21,6 +21,8 @@
                 		<field name="ssreg_id"/>
                         <field name="arrival_date_id"/>
     					<field name="depature_date_id"/>
+    					<field name="camp_day_count" />
+    					<field name="nights" />
 						<field name="participant_id"/>
 	   					<field name="employee_id"/>
     					<field name="camp_age"/>

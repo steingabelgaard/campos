@@ -65,6 +65,7 @@
         <field name="arch" type="xml">
             <field name="department_id" position="after">
             	<field name="participate"/>
+            	<field name="ckr_ok" />
             </field>
         </field>
     </record>

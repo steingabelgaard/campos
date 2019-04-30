@@ -42,6 +42,7 @@
              </field>
              <field name="country_id" position="after">
              	<field name="scout_org_id" domain="[('country_id', '=', country_id)]"/>
+             	<field name="ckr_ok" />
              </field>
         </field>
     </record>

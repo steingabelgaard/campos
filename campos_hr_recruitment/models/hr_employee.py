@@ -26,6 +26,8 @@ class HrEmployee(models.Model):
     scout_org_id = fields.Many2one(related='participant_id.scout_org_id')
     accommodation_id = fields.Many2one(related='participant_id.accommodation_id')
     
+    ckr_ok = fields.Boolean('CKR', track_visibility='onchange')
+    
     @api.multi
     def toggle_participate(self):
         self.ensure_one()

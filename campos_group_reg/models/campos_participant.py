@@ -130,14 +130,14 @@ class CamposParticipant(models.Model):
         vals['type'] = 'other'
         _logger.info('CREATE: %s', vals)
         res = super(CamposParticipant, self.sudo()).create(vals)
-        if 'arrival_date_id' in vals and 'depature_day_id' in vals:
+        if 'arrival_date_id' in vals and 'depature_date_id' in vals:
             res._update_camp_days()
         return res
 
     @api.multi
     def write(self, vals):
         res = super(CamposParticipant, self).write(vals)
-        if 'arrival_date_id' in vals or 'depature_day_id' in vals:
+        if 'arrival_date_id' in vals or 'depature_date_id' in vals:
             for par in self:
                 par._update_camp_days()
         return res

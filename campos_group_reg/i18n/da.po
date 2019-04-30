@@ -7,16 +7,16 @@ msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2019-04-28 10:33+0000\n"
+"PO-Revision-Date: 2019-04-30 12:58+0200\n"
 "Last-Translator: Christian Eggert <christian@eggert.dk>\n"
-"Language-Team: Danish <https://example.com/projects/campos-11-0/"
-"campos-11-0-campos_group_reg/da/>\n"
+"Language-Team: Danish <https://example.com/projects/campos-11-0/campos-11-0-"
+"campos_group_reg/da/>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.5.1\n"
+"X-Generator: Poedit 2.0.6\n"
 
 #. module: campos_group_reg
 #: model:mail.template,body_html:campos_group_reg.contact_welcome_mail
@@ -71,6 +71,16 @@ msgid "# of trailers"
 msgstr "# Af trailere"
 
 #. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_camp_age18plus
+msgid "18+ (on camp)"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_accommodation_id
+msgid "Accomodation"
+msgstr ""
+
+#. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_active
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_active
 msgid "Active"
@@ -97,6 +107,11 @@ msgstr "Adressetype"
 #: model:ir.ui.view,arch_db:campos_group_reg.campos_prereg_age_period_search_view
 msgid "Age"
 msgstr "Alder"
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_camp_age
+msgid "Age (on camp)"
+msgstr ""
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_age_group_age_from
@@ -189,6 +204,12 @@ msgid "Bounce"
 msgstr "Spring"
 
 #. module: campos_group_reg
+#: selection:campos.participant,first_meal:0
+#: selection:campos.participant,last_meal:0
+msgid "Breakfast"
+msgstr ""
+
+#. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_ckr_ok
 msgid "CKR confirmed"
 msgstr "Børneattest bekræftet"
@@ -202,6 +223,24 @@ msgstr "Børneattest bekræftet af"
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_ckr_date
 msgid "CKR confirmed date"
 msgstr "Børneattest bekræftet den"
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_cms_delete_url
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_cms_delete_url
+msgid "CMS delete URL"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_cms_delete_confirm_url
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_cms_delete_confirm_url
+msgid "CMS delete confirm URL"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_cms_edit_url
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_cms_edit_url
+msgid "CMS edit URL"
+msgstr ""
 
 #. module: campos_group_reg
 #: code:addons/campos_group_reg/controllers/portal.py:401
@@ -237,6 +276,13 @@ msgstr "Lejrperioder"
 #: model:ir.ui.menu,name:campos_group_reg.campos_main_menu
 msgid "CampOS"
 msgstr "CampOS"
+
+#. module: campos_group_reg
+#: model:ir.actions.act_window,name:campos_group_reg.campos_accommodation_type_act_window
+#: model:ir.model,name:campos_group_reg.model_campos_accommodation_type
+#: model:ir.ui.menu,name:campos_group_reg.campos_accommodation_type_menu
+msgid "Campos Accommodation Type"
+msgstr ""
 
 #. module: campos_group_reg
 #: model:ir.model,name:campos_group_reg.model_campos_age_group
@@ -485,6 +531,7 @@ msgid "Country..."
 msgstr "Land..."
 
 #. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_accommodation_type_create_uid
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_age_group_create_uid
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_day_create_uid
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_period_create_uid
@@ -497,6 +544,7 @@ msgid "Created by"
 msgstr "Oprettet af"
 
 #. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_accommodation_type_create_date
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_age_group_create_date
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_day_create_date
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_period_create_date
@@ -546,6 +594,13 @@ msgid "Details for"
 msgstr "Detaljer for"
 
 #. module: campos_group_reg
+#: selection:campos.participant,first_meal:0
+#: selection:campos.participant,last_meal:0
+msgid "Dinner"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_accommodation_type_display_name
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_age_group_display_name
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_day_display_name
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_period_display_name
@@ -669,6 +724,11 @@ msgid "Final Registration"
 msgstr "Endelig tilmelding"
 
 #. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_first_meal
+msgid "First meal on arrival date"
+msgstr ""
+
+#. module: campos_group_reg
 #: model:ir.model.fields,help:campos_group_reg.field_campos_group_reg_email_formatted
 #: model:ir.model.fields,help:campos_group_reg.field_campos_participant_email_formatted
 msgid "Format email address \"Name <email@domain>\""
@@ -726,6 +786,7 @@ msgid "Groups"
 msgstr "Grupper"
 
 #. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_accommodation_type_id
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_age_group_id
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_day_id
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_period_id
@@ -844,6 +905,7 @@ msgid "Large construction"
 msgstr "Store konstruktioner (beskriv hvad det drejer sig om)"
 
 #. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_accommodation_type___last_update
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_age_group___last_update
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_day___last_update
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_period___last_update
@@ -859,6 +921,7 @@ msgid "Last Modified on"
 msgstr "Senest opdateret den"
 
 #. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_accommodation_type_write_uid
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_age_group_write_uid
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_day_write_uid
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_period_write_uid
@@ -871,6 +934,7 @@ msgid "Last Updated by"
 msgstr "Senest opdateret af"
 
 #. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_accommodation_type_write_date
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_age_group_write_date
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_day_write_date
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_period_write_date
@@ -881,6 +945,25 @@ msgstr "Senest opdateret af"
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_scout_org_write_date
 msgid "Last Updated on"
 msgstr "Senest opdateret den"
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_last_meal
+#, fuzzy
+#| msgid "Expected departure (date) - 1"
+msgid "Last meal on departure date"
+msgstr "Forventet afrejse (dato) - 1"
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_calendar_last_notif_ack
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_calendar_last_notif_ack
+msgid "Last notification marked as read from base Calendar"
+msgstr ""
+
+#. module: campos_group_reg
+#: selection:campos.participant,first_meal:0
+#: selection:campos.participant,last_meal:0
+msgid "Lunch"
+msgstr ""
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_image_medium
@@ -930,6 +1013,7 @@ msgid "Municipality"
 msgstr "Kommune"
 
 #. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_accommodation_type_name
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_age_group_name
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_camp_period_name
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_contact_name
@@ -1172,6 +1256,7 @@ msgstr "Din spejdergruppe er blevet opdateret."
 
 #. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_scout_org_id
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_scout_org_id
 msgid "Scout organization"
 msgstr "Korps"
 
@@ -1256,6 +1341,11 @@ msgstr ""
 "required."
 
 #. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_employee_id
+msgid "Staff"
+msgstr ""
+
+#. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_state
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_state_id
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_state
@@ -1309,6 +1399,11 @@ msgid "Submit"
 msgstr "Indsend"
 
 #. module: campos_group_reg
+#: model:ir.ui.view,arch_db:campos_group_reg.campos_participant_form_view
+msgid "Sync"
+msgstr ""
+
+#. module: campos_group_reg
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_vat
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_vat
 msgid "TIN"
@@ -1335,6 +1430,12 @@ msgstr ""
 #: model:ir.ui.view,arch_db:campos_group_reg.thank_you_login
 msgid "Thank you"
 msgstr "Tak"
+
+#. module: campos_group_reg
+#: model:ir.model.fields,help:campos_group_reg.field_campos_group_reg_website_url
+#: model:ir.model.fields,help:campos_group_reg.field_campos_participant_website_url
+msgid "The full URL to access the document through the website."
+msgstr ""
 
 #. module: campos_group_reg
 #: model:ir.model.fields,help:campos_group_reg.field_campos_group_reg_user_id
@@ -1478,6 +1579,12 @@ msgid "Value"
 msgstr "Værdi"
 
 #. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_website_published
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_website_published
+msgid "Visible in Website"
+msgstr ""
+
+#. module: campos_group_reg
 #: selection:campos.scout.org,worldorg:0
 msgid "WAGGGS"
 msgstr "WAGGGS"
@@ -1497,6 +1604,48 @@ msgstr "WOSM"
 #: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_website
 msgid "Website"
 msgstr "Hjemmeside"
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_website_description
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_website_description
+#, fuzzy
+#| msgid "Website of Partner or Company"
+msgid "Website Partner Full Description"
+msgstr "Website of Partner or Company"
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_website_short_description
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_website_short_description
+#, fuzzy
+#| msgid "Website of Partner or Company"
+msgid "Website Partner Short Description"
+msgstr "Website of Partner or Company"
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_website_url
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_website_url
+#, fuzzy
+#| msgid "Website"
+msgid "Website URL"
+msgstr "Hjemmeside"
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_website_meta_description
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_website_meta_description
+msgid "Website meta description"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_website_meta_keywords
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_website_meta_keywords
+msgid "Website meta keywords"
+msgstr ""
+
+#. module: campos_group_reg
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_group_reg_website_meta_title
+#: model:ir.model.fields,field_description:campos_group_reg.field_campos_participant_website_meta_title
+msgid "Website meta title"
+msgstr ""
 
 #. module: campos_group_reg
 #: model:ir.model.fields,help:campos_group_reg.field_campos_group_reg_website

@@ -203,7 +203,7 @@
                 <field name="city" />
                 <field name="country_id" />
                 <field name="state"/>
-                <field name="participants_confirmed" />
+                <field name="participants_confirmed" sum="Total"/>
             </tree>
         </field>
     </record>

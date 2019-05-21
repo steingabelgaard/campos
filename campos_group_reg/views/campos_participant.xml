@@ -40,6 +40,7 @@
                             </div>
                         </group>
                         <group>
+                        	<field name="group_reg_id"/>
                         	<field name="birthdate_date"/>
                         	<field name="camp_age"/>
                         	<field name="gender"/>

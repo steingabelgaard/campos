@@ -15,6 +15,10 @@
         'campos_group_reg',
         ],
     'data': [
-        'views/hr_employee.xml','templates/recruitment_template.xml'],
+        #'views/res_company.xml',
+        'views/hr_employee.xml',
+        'templates/recruitment_template.xml',
+        'report/hr_employee_badge.xml'
+        ],
     'demo': [],
 }

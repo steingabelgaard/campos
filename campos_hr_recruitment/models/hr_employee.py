@@ -27,6 +27,7 @@ class HrEmployee(models.Model):
     accommodation_id = fields.Many2one(related='participant_id.accommodation_id')
     
     ckr_ok = fields.Boolean('CKR', track_visibility='onchange')
+    ekstra_text = fields.Char("Extra badge info")
     
     @api.multi
     def toggle_participate(self):

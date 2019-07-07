@@ -33,6 +33,7 @@
                      			<field name="depature_date_id" domain="[]"/>
                      			<field name="last_meal" />
                      			<field name="accommodation_id" />
+                     			<field name="ekstra_text"/>
                      		</group>
                      	</group>
              	</page>

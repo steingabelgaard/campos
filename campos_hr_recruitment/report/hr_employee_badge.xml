@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <report
+        id="hr_employee_print_badge"
+        string="Print Staff Badge"
+        model="hr.employee"
+        report_type="qweb-pdf"
+        name="campos_hr_recruitment.print_employee_badge"
+        file="campos_hr_recruitment.print_employee_badge"
+        print_report_name="'Print Staff Badge - %s' % (object.name).replace('/', '')"
+    />
+
+    <template id="print_employee_badge">
+        <t t-call="web.basic_layout">
+            <div class="page">
+                <t t-foreach="docs" t-as="employee">
+                    <div class="col-sm-6">
+                        <table style="width:240pt; height:155pt; border: 1pt solid black; border-collapse:separate; margin:5pt">
+                        	<tr style="height:30pt;">
+                               <td style="width:99%;" align="center" valign="center" colspan="2">
+                                    <img src='/campos_hr_recruitment/static/src/img/badgelogo.png' style="max-height:29pt;max-width:235pt" alt="Company Logo"/>
+                                </td>
+                            </tr>
+                            <tr style="height:100pt;">
+                                   <td style="width:33%;" valign="center">
+	                                <table style="width:75pt; height:100pt">
+	                                    <tr style="height:70%;">
+	                                        <td align="center" valign="center">
+	                                            <img t-if="employee.image" t-att-src="'data:image/png;base64,%s' % to_text(employee.image)" style="max-height:85pt;max-width:90%" alt="Employee Image"/>
+	                                        </td>
+	                                    </tr>
+	                                </table>
+	                            </td>
+	                            <td style="width:67%" valign="center">
+	                                <table style="width:155pt; height:100pt">
+	                                    <tr><th><div style="font-size:15pt; margin-bottom:0pt;margin-top:0pt;" align="center"><t t-esc="employee.name"/></div></th></tr>
+	                                    <tr><td><div align="center" style="font-size:10pt;margin-bottom:5pt;"><t t-esc="employee.department_id.display_name"/></div></td></tr>
+	                                    
+	                                    <tr t-if="employee.ekstra_text"><td><div align="left" style="font-size:8pt;margin-bottom:5pt;">Ekstra: <t t-esc="employee.ekstra_text"/></div></td></tr>
+	                                    <tr><td><div align="right" style="font-size:24pt;margin-bottom:5pt;"><t t-esc="employee.camp_age18plus"/></div></td></tr>
+	                                </table>
+	                            </td>
+                            </tr>
+                            <tr style="height:22pt;">
+                            	<td style="width:240pt" align="center" valign="center"  colspan="2">
+                            		<div align="center" style="font-size:10pt">Deltager: <span t-esc="employee.participant_id.camp_days"/></div> 
+                            	</td>
+                            </tr>
+                        </table>
+                    </div>
+                </t>
+            </div>
+        </t>
+    </template>
+</odoo>

@@ -86,6 +86,8 @@ class CamposParticipant(models.Model):
     camp_age = fields.Integer('Age (on camp)', compute='_compute_camp_age', store=True)
     camp_age18plus = fields.Char('18+ (on camp)', compute='_compute_camp_age', store=True)
     
+    camp_days = fields.Char('Camp Days text', compute='_compute_camp_days')
+    
     scout_org_id = fields.Many2one('campos.scout.org', 'Scout organization')
     accommodation_id = fields.Many2one('campos.accommodation.type', 'Accomodation')
     
@@ -116,7 +118,16 @@ class CamposParticipant(models.Model):
             part.update({'camp_age': camp_age,
                          'camp_age18plus': camp_age18plus})
 
-
+    @api.multi
+    @api.depends('birthdate_date')
+    def _compute_camp_days(self):
+        for part in self:
+            camp_days = []
+            for day in part.camp_day_ids:
+                camp_days.append(day.campday[-2:])
+            part.camp_days = ','.join(camp_days)
+            
+    
     @api.model
     def create(self, vals):
         if 'group_reg_id' not in vals:

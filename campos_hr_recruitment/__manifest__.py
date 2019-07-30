@@ -6,7 +6,7 @@
     'name': 'Campos Hr Recruitment',
     'description': """
         CampOS HR Recruitment modifications""",
-    'version': '11.0.1.0.0',
+    'version': '12.0.1.0.0',
     'license': 'AGPL-3',
     'author': 'Stein & Gabelgaard ApS',
     'website': 'www.steingabelgaard.dk',

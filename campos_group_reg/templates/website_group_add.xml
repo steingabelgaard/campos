@@ -589,7 +589,7 @@
             </div>
         </t>
     </template>
-
+<!--  
     <template id="my_group_link" name="Link to frontend Group" inherit_id="portal.frontend_layout">
         <xpath expr="//li[@id='o_logout']" position="before">
             <li><a href="/my/group_reg" role="menuitem">Our Scout Troop</a></li>
@@ -597,6 +597,6 @@
             <li><a href="/participants" role="menuitem">Our Participants</a></li>
         </xpath>
     </template>
-    
+     -->
 </odoo>
    

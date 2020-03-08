@@ -40,13 +40,13 @@ class CamposGroupReg(models.Model):
         'res.partner', 'Group', required=True, ondelete="restrict"
     )
 
-    name = fields.Char(related='partner_id.name', required=True)
-    street = fields.Char(related='partner_id.street')
-    street2 = fields.Char(related='partner_id.street2')
-    zip = fields.Char(related='partner_id.zip')
-    city = fields.Char(related='partner_id.city')
-    country_id = fields.Many2one(related='partner_id.country_id')
-    municipality_id = fields.Many2one(related='partner_id.municipality_id')
+    name = fields.Char(related='partner_id.name', required=True, readonly=False)
+    street = fields.Char(related='partner_id.street', readonly=False)
+    street2 = fields.Char(related='partner_id.street2', readonly=False)
+    zip = fields.Char(related='partner_id.zip', readonly=False)
+    city = fields.Char(related='partner_id.city', readonly=False)
+    country_id = fields.Many2one(related='partner_id.country_id', readonly=False)
+    municipality_id = fields.Many2one(related='partner_id.municipality_id', readonly=False)
 
     state = fields.Selection(
         [
@@ -66,34 +66,34 @@ class CamposGroupReg(models.Model):
 
     contact_partner_id = fields.Many2one('res.partner', 'Contact')
 
-    contact_name = fields.Char(related='contact_partner_id.name')
-    contact_street = fields.Char(related='contact_partner_id.street')
-    contact_street2 = fields.Char(related='contact_partner_id.street2')
-    contact_zip = fields.Char(related='contact_partner_id.zip')
-    contact_city = fields.Char(related='contact_partner_id.city')
-    contact_country_id = fields.Many2one(related='partner_id.country_id')
-    contact_email = fields.Char(related='contact_partner_id.email')
-    contact_mobile = fields.Char(related='contact_partner_id.mobile')
+    contact_name = fields.Char(related='contact_partner_id.name', readonly=False)
+    contact_street = fields.Char(related='contact_partner_id.street', readonly=False)
+    contact_street2 = fields.Char(related='contact_partner_id.street2', readonly=False)
+    contact_zip = fields.Char(related='contact_partner_id.zip', readonly=False)
+    contact_city = fields.Char(related='contact_partner_id.city', readonly=False)
+    contact_country_id = fields.Many2one(related='partner_id.country_id', readonly=False)
+    contact_email = fields.Char(related='contact_partner_id.email', readonly=False)
+    contact_mobile = fields.Char(related='contact_partner_id.mobile', readonly=False)
     contact_participant = fields.Boolean(
-        related='contact_partner_id.participant'
+        related='contact_partner_id.participant', readonly=False
     )
 
     treasurer_partner_id = fields.Many2one('res.partner', 'Treasurer')
 
-    treasurer_name = fields.Char(related='treasurer_partner_id.name')
-    treasurer_street = fields.Char(related='treasurer_partner_id.street')
-    treasurer_street2 = fields.Char(related='treasurer_partner_id.street2')
-    treasurer_zip = fields.Char(related='treasurer_partner_id.zip')
-    treasurer_city = fields.Char(related='treasurer_partner_id.city')
-    treasurer_country_id = fields.Many2one(related='partner_id.country_id')
-    treasurer_email = fields.Char(related='treasurer_partner_id.email')
-    treasurer_mobile = fields.Char(related='treasurer_partner_id.mobile')
+    treasurer_name = fields.Char(related='treasurer_partner_id.name', readonly=False)
+    treasurer_street = fields.Char(related='treasurer_partner_id.street', readonly=False)
+    treasurer_street2 = fields.Char(related='treasurer_partner_id.street2', readonly=False)
+    treasurer_zip = fields.Char(related='treasurer_partner_id.zip', readonly=False)
+    treasurer_city = fields.Char(related='treasurer_partner_id.city', readonly=False)
+    treasurer_country_id = fields.Many2one(related='partner_id.country_id', readonly=False)
+    treasurer_email = fields.Char(related='treasurer_partner_id.email', readonly=False)
+    treasurer_mobile = fields.Char(related='treasurer_partner_id.mobile', readonly=False)
 
     security_partner_id = fields.Many2one(
         'res.partner', 'Security Contact', domain=[('scoutgroup', '!=', True)]
     )
-    security_email = fields.Char(related='security_partner_id.email')
-    security_mobile = fields.Char(related='security_partner_id.mobile')
+    security_email = fields.Char(related='security_partner_id.email', readonly=False)
+    security_mobile = fields.Char(related='security_partner_id.mobile', readonly=False)
 
     prereg_ids = fields.One2many(
         'campos.prereg.age.period',
@@ -208,6 +208,8 @@ class CamposGroupReg(models.Model):
                 }
             )
             vals['partner_id'] = group_partner.id
+        if 'partner_id' in vals:
+            group_partner = self.env['res.partner'].browse(vals['partner_id'])
 
         if 'contact_name' in vals and vals['contact_name']:
             _logger.info("Creating Contact")

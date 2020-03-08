@@ -16,6 +16,7 @@
                     <!-- TODO -->
                     <group>
                         <field name="campday"/>
+                        <field name="name" />
                     </group>
                 </sheet>
                 <div class="oe_chatter"></div>
@@ -29,6 +30,7 @@
         <field name="arch" type="xml">
             <search>
                 <field name="campday"/>
+                <field name="name"/>
             </search>
         </field>
     </record>
@@ -40,6 +42,7 @@
             <tree editable="bottom">
                 <!-- TODO -->
                 <field name="campday"/>
+                <field name="name" />
                 <field name="arrival_day"/>
                 <field name="depature_day"/>
                 <field name="valid_dk"/>

@@ -19,10 +19,11 @@
         'cms_account_form',
         'partner_contact_birthdate',
         'partner_contact_gender',
+        'excel_import_export',
     ],
     'data': [
         'views/campos_menu.xml',
-        # 'views/res_partner.xml',
+        'views/res_partner.xml',
         # 'wizards/campos_group_reg_wiz.xml',
         
         'security/campos_participant.xml',
@@ -53,6 +54,7 @@
         'views/campos_snapshot.xml',
         'security/campos_ss_group_reg.xml',
         'views/campos_ss_group_reg.xml',
+        'reports/templates.xml',
         
     ],
     'demo': [

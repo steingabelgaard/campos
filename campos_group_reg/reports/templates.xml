@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="participant_list_xlsx_template" model="xlsx.template">
+        <field name="res_model">campos.group.reg</field>
+        <field name="fname">participant_list.xlsx</field>
+        <field name="name">Participant List Report Template</field>
+        <field name="description">Sample Partner List Report Template for testing</field>
+        <field name="input_instruction">
+       {
+		    '__EXPORT__': {
+		        'Sheet1': {  # sheet can be name (string) or index (integer)
+		            '_HEAD_': {
+		                'G1': 'name${value or ""}#{align=right;style=text}',
+		                'B3': 'contact_name${value or ""}#{align=left;style=text}',
+		                'B4': 'contact_email${value or ""}#{align=left;style=text}',
+		            },
+		            'participant_ids': {  # prefix with _CONT_ to continue rows from previous row field
+		                'A7': 'name${value or ""}#{style=text}',
+		                'B7': 'age_group_id.name${value or ""}#{style=text}',
+		                'C7': 'arrival_date_id.name${value or ""}#{style=text}',
+		                'D7': 'depature_date_id.name${value or ""}#{style=text}',
+		                'G7': 'state${value or ""}#{style=text}',
+		            },
+		        },
+		    },
+		}
+        </field>
+    </record>
+
+    <function model="xlsx.template" name="load_xlsx_template">
+        <value eval="[ref('participant_list_xlsx_template')]"/>
+    </function>
+    
+    <act_window id="action_sale_oder_export_xlsx"
+        name="Export Excel"
+        res_model="export.xlsx.wizard"
+        src_model="campos.group.reg"
+        view_mode="form"
+        target="new"
+        context="{
+          'template_domain': [('res_model', '=', 'campos.group.reg'),
+                              ('fname', '=', 'participant_list.xlsx'),
+                              ('gname', '=', False)],
+        }"/>
+
+</odoo>

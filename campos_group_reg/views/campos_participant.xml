@@ -43,6 +43,7 @@
                         	<field name="group_reg_id"/>
                         	<field name="birthdate_date"/>
                         	<field name="camp_age"/>
+                        	<field name="age_group_id" />
                         	<field name="gender"/>
                         </group>
                      </group>
@@ -57,6 +58,7 @@
                      		<group>
                      			<field name="arrival_date_id" domain="[]"/>
                      			<field name="depature_date_id" domain="[]"/>
+                     			<field name="camp_day_co"/>
                      			<button name="action_sync" type="object" string="Sync"/>
                      		</group>
                      	</group>

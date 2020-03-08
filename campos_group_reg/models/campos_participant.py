@@ -83,10 +83,13 @@ class CamposParticipant(models.Model):
                                   ('lunch', 'Lunch'),
                                   ('dinner', 'Dinner')], string='Last meal on departure date')
 
+    age_group_id = fields.Many2one('campos.age.group', 'Age Group')
+
     camp_age = fields.Integer('Age (on camp)', compute='_compute_camp_age', store=True)
     camp_age18plus = fields.Char('18+ (on camp)', compute='_compute_camp_age', store=True)
     
     camp_days = fields.Char('Camp Days text', compute='_compute_camp_days')
+    camp_day_co = fields.Integer('# Camp Days')
     
     scout_org_id = fields.Many2one('campos.scout.org', 'Scout organization')
     accommodation_id = fields.Many2one('campos.accommodation.type', 'Accomodation')
@@ -106,6 +109,7 @@ class CamposParticipant(models.Model):
         )
         if days:
             self.suspend_security().camp_day_ids = days
+            self.suspend_security().camp_day_co = len(days)
             
     @api.multi
     @api.depends('birthdate_date')
@@ -119,7 +123,7 @@ class CamposParticipant(models.Model):
                          'camp_age18plus': camp_age18plus})
 
     @api.multi
-    @api.depends('birthdate_date')
+    @api.depends('arrival_date_id', 'depature_date_id' )
     def _compute_camp_days(self):
         for part in self:
             camp_days = []

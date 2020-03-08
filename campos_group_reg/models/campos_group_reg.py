@@ -211,7 +211,7 @@ class CamposGroupReg(models.Model):
         if 'partner_id' in vals:
             group_partner = self.env['res.partner'].browse(vals['partner_id'])
 
-        if 'contact_name' in vals and vals['contact_name']:
+        if 'contact_name' in vals and vals['contact_name'] and not 'contact_partner_id' in vals:
             _logger.info("Creating Contact")
             contact_partner = self.env['res.partner'].create(
                 {
@@ -228,7 +228,7 @@ class CamposGroupReg(models.Model):
                 }
             )
             vals['contact_partner_id'] = contact_partner.id
-        if 'treasurer_name' in vals and vals['treasurer_name']:
+        if 'treasurer_name' in vals and vals['treasurer_name'] and not 'treasurer_partner_id' in vals:
             _logger.info("Creating Trasurer")
             treasurer_partner = self.env['res.partner'].create(
                 {

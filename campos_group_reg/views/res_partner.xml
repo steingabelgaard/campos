@@ -7,20 +7,32 @@
     <record model="ir.ui.view" id="res_partner_form_view">
         <field name="name">res.partner.form (in campos_group_reg)</field>
         <field name="model">res.partner</field>
-        <field name="inherit_id" ref="TODO othermodule.form_view"/>
+        <field name="inherit_id" ref="base.view_partner_form"/>
         <field name="arch" type="xml">
-            <!-- TODO -->
+            <page name="sales_purchases" position="after">
+            	<page name="campos" string="CampOS" >
+            		<group>
+            			<field name="scoutgroup" />
+            			<field name="participant" />
+            			<field name="is_dk" />
+            			<field name="is_non_dk" />
+            		</group>
+            	
+            	</page>
+            </page>
         </field>
     </record>
+    
+    <!-- 
 
     <record model="ir.ui.view" id="res_partner_search_view">
         <field name="name">res.partner.search (in campos_group_reg)</field>
         <field name="model">res.partner</field>
         <field name="inherit_id" ref="TODO othermodule.search_view"/>
         <field name="arch" type="xml">
-            <!-- TODO -->
+    
         </field>
     </record>
-
+ -->
 
 </odoo>

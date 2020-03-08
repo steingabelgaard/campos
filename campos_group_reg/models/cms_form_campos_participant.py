@@ -12,7 +12,7 @@ class cmsParticipantForm(models.AbstractModel):
         #  'street', 'street2', 'zip', 'city',
         # 'country_id',
         'gender',
-        'birthdate_date',
+        'age_group_id',
         'arrival_date_id',
         'depature_date_id',
         'participant_state',
@@ -20,7 +20,7 @@ class cmsParticipantForm(models.AbstractModel):
     _form_required_fields = (
         'name',
         'gender',
-        'birthdate_date',
+        'age_group_id',
         'arrival_date_id',
         'depature_date_id',
     )
@@ -29,7 +29,7 @@ class cmsParticipantForm(models.AbstractModel):
         #'street', 'street2', 'zip', 'city',
         #'country_id',
         'gender',
-        'birthdate_date',
+        'age_group_id',
         'arrival_date_id',
         'depature_date_id',
         'participant_state',

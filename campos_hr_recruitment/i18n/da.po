@@ -7,16 +7,16 @@ msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2019-04-30 19:26+0000\n"
-"Last-Translator: Christian Eggert <christian@eggert.dk>\n"
-"Language-Team: Danish <https://example.com/projects/campos-11-0/"
-"campos-11-0-campos_hr_recruitment/da/>\n"
+"PO-Revision-Date: 2020-03-10 20:19+0000\n"
+"Last-Translator: Hans Henrik Gabelgaard <hhg@gabelgaard.org>\n"
+"Language-Team: Danish <http://weblate.steingabelgaard.dk/projects/"
+"campos-12-0/campos-12-0-campos_hr_recruitment/da/>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.5.1\n"
+"X-Generator: Weblate 3.9\n"
 
 #. module: campos_hr_recruitment
 #: model:ir.model.fields,field_description:campos_hr_recruitment.field_hr_employee_camp_age18plus
@@ -121,7 +121,7 @@ msgstr "Ansøgningsformular"
 #. module: campos_hr_recruitment
 #: model:ir.model.fields,field_description:campos_hr_recruitment.field_hr_employee_last_meal
 msgid "Last meal on departure date"
-msgstr "Sidste måltid afrejse dag"
+msgstr "Seneste måltid på afrejse dato"
 
 #. module: campos_hr_recruitment
 #: model:ir.ui.view,arch_db:campos_hr_recruitment.apply

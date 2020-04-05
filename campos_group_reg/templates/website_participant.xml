@@ -21,14 +21,28 @@ License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl.html).
 
 
 <template id="participant_search_results" name="CMS form search results">
-  <a href="/participant/add">Add new participant</a> 	
+  <a href="/participant/add" class="btn btn-primary">Add new participant</a>
+  <table> 	
   <t t-foreach="form.form_search_results['results']" t-as="item">
+  	<tr><td>
     <div t-attf-id="list_item_#{item.id}" class="list_item" t-attf-data-item='{"id": #{item.id}}'>
       <h3 class="item-name">
           <a t-attf-href="/participant/#{item.id}/edit" t-field="item.display_name" />
       </h3>
     </div>
+    </td>
+    <td>
+    <span t-field="item.arrival_date_id.name"/>
+    </td>
+    <td>
+    <span t-field="item.depature_date_id.name"/>
+    </td>
+    <td>
+    <span t-field="item.age_group_id.name"/>
+    
+    </td></tr>
   </t>
+  </table>
   <div class="text-center mb32">
     <t t-call="website.pager">
     <t t-set="pager" t-value="form.form_search_results['pager']" />

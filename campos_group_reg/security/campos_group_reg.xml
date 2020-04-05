@@ -10,7 +10,7 @@
 
     <record id="group_campos_group_reg_user" model="res.groups">
         <field name="name">Group Reg read</field>
-        <field name="category_id" ref=""/>
+        <field name="category_id" ref="module_category_campos_group_reg"/>
         <field name="comment">the user will have read only access to groups.</field>
     </record>
     
